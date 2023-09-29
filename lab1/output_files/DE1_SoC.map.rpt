@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Fri Sep 29 14:37:37 2023
+Fri Sep 29 15:39:15 2023
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Sep 29 14:37:37 2023       ;
+; Analysis & Synthesis Status     ; Successful - Fri Sep 29 15:39:15 2023       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE1_SoC                                     ;
 ; Top-level Entity Name           ; car_detection                               ;
@@ -275,11 +275,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Sep 29 14:37:27 2023
+    Info: Processing started: Fri Sep 29 15:39:05 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file car_detection.sv
+Info (12021): Found 2 design units, including 2 entities, in source file car_detection.sv
     Info (12023): Found entity 1: car_detection File: C:/Users/Anna/Documents/ee_371/ee_371/lab1/car_detection.sv Line: 1
+    Info (12023): Found entity 2: car_detection_tb File: C:/Users/Anna/Documents/ee_371/ee_371/lab1/car_detection.sv Line: 68
 Info (12127): Elaborating entity "car_detection" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -290,8 +291,8 @@ Info (21057): Implemented 14 device resources after synthesis - the final resour
     Info (21061): Implemented 8 logic cells
 Info (144001): Generated suppressed messages file C:/Users/Anna/Documents/ee_371/ee_371/lab1/output_files/DE1_SoC.map.smsg
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4823 megabytes
-    Info: Processing ended: Fri Sep 29 14:37:37 2023
+    Info: Peak virtual memory: 4824 megabytes
+    Info: Processing ended: Fri Sep 29 15:39:15 2023
     Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:20
 
