@@ -2,7 +2,7 @@ module car_detection (reset, clk, outer, inner, enter, exit);
 	input logic reset, clk, outer, inner;
 	output logic enter, exit;
 	
-	enum {no_car, maybe_entering, maybe_exiting, is_entering, is_exiting, finish_entering, finish_exiting, done_entering, done_exiting} ps, ns;
+	enum { no_car, maybe_entering, maybe_exiting, is_entering, is_exiting, finish_entering, finish_exiting, done_entering, done_exiting } ps, ns;
 
 	always_comb begin
 		case (ps)
@@ -52,12 +52,13 @@ module car_detection (reset, clk, outer, inner, enter, exit);
 			case (ps)
 				done_entering:
 					enter <= 1'b1;
-					exit <= 1'b0;
-				done_exiting:
-					enter <= 1'b0;
-					exit <= 1'b1;
 				default:
 					enter <= 1'b0;
+			endcase
+			case (ps)
+				done_exiting:
+					exit <= 1'b1;
+				default:
 					exit <= 1'b0;
 			endcase
 		end
