@@ -1,0 +1,114 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Documents/ee_371/lab1/simulation/modelsim
+vDE1_SoC
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1695874076
+!i10b 1
+!s100 78MeN=m<N7bFI`TIPlo>30
+Ie<ImfS7UMeG]XD4?hYnmd1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 DE1_SoC_sv_unit
+S1
+R0
+Z5 w1695873909
+Z6 8D:/Documents/ee_371/lab1/DE1_SoC.sv
+Z7 FD:/Documents/ee_371/lab1/DE1_SoC.sv
+L0 1
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1695874075.000000
+Z10 !s107 D:/Documents/ee_371/lab1/DE1_SoC.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371/lab1|D:/Documents/ee_371/lab1/DE1_SoC.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work +incdir+D:/Documents/ee_371/lab1
+Z14 tCvgOpt 0
+n@d@e1_@so@c
+vDE1_SoC_testbench
+R1
+R2
+!i10b 1
+!s100 kdJ^A@d20<e8L]JSTGdXh1
+I^e8HG3Fn6YFSo`_7C2a<O2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 19
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c_testbench
+vfullAdder
+R1
+Z15 !s110 1695874075
+!i10b 1
+!s100 5RBCE``PHJL]<2PmaAi[D0
+IImVic`^zHfmE8:8L][zXF2
+R3
+Z16 !s105 fullAdder_sv_unit
+S1
+R0
+Z17 w1695872513
+Z18 8D:/Documents/ee_371/lab1/fullAdder.sv
+Z19 FD:/Documents/ee_371/lab1/fullAdder.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+Z20 !s107 D:/Documents/ee_371/lab1/fullAdder.sv|
+Z21 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371/lab1|D:/Documents/ee_371/lab1/fullAdder.sv|
+!i113 1
+R12
+R13
+R14
+nfull@adder
+vfullAdder_testbench
+R1
+R15
+!i10b 1
+!s100 @2UD?3FAiK>^zV5QI;eo[1
+IAVSZ@diOFeN[CSjWG97DG0
+R3
+R16
+S1
+R0
+R17
+R18
+R19
+L0 11
+R8
+r1
+!s85 0
+31
+R9
+R20
+R21
+!i113 1
+R12
+R13
+R14
+nfull@adder_testbench
