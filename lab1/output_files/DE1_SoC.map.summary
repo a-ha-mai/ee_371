@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Fri Sep 29 15:39:15 2023
+Analysis & Synthesis Status : Successful - Sun Oct 01 18:45:40 2023
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : DE1_SoC
-Top-level Entity Name : car_detection
+Top-level Entity Name : car_counter
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 6
-Total pins : 6
+Total pins : 9
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

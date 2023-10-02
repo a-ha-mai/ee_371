@@ -65,7 +65,7 @@ module car_detection (reset, clk, outer, inner, enter, exit);
 	end
 endmodule
 
-module car_detection_tb();
+module car_detection_tb ();
 	logic reset, clk, outer, inner, exit, enter;
 	
 	car_detection dut (.reset, .clk, .outer, .inner, .exit, .enter);
@@ -111,7 +111,7 @@ module car_detection_tb();
 		outer <= 0; inner <= 1; repeat (3) @(posedge clk); // finishing_entering
 		outer <= 1; inner <= 1; repeat (3) @(posedge clk); // is entering
 		outer <= 0; inner <= 1; repeat (3) @(posedge clk); // finishing_entering
-		outer <= 0; inner <= 0; repeat (5) @(posedge clk); // no car + enter signal
+		outer <= 0; inner <= 0; repeat (5) @(posedge clk); // no car + enter signal for 1 clk cycle
 		$stop;
 	end
 endmodule

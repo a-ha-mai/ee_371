@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Fri Sep 29 15:39:15 2023
+Sun Oct 01 18:45:41 2023
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -13,12 +13,13 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
- 13. Analysis & Synthesis Suppressed Messages
+  8. User-Specified and Inferred Latches
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+ 14. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -45,14 +46,14 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Sep 29 15:39:15 2023       ;
+; Analysis & Synthesis Status     ; Successful - Sun Oct 01 18:45:40 2023       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE1_SoC                                     ;
-; Top-level Entity Name           ; car_detection                               ;
+; Top-level Entity Name           ; car_counter                                 ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 6                                           ;
-; Total pins                      ; 6                                           ;
+; Total pins                      ; 9                                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -71,7 +72,7 @@ agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; car_detection      ; DE1_SoC            ;
+; Top-level entity name                                                           ; car_counter        ; DE1_SoC            ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; State Machine Processing                                                        ; User-Encoded       ; Auto               ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
@@ -157,62 +158,80 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                    ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
-; car_detection.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Anna/Documents/ee_371/ee_371/lab1/car_detection.sv ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                  ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path              ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------+---------+
+; car_detection.sv                 ; yes             ; User SystemVerilog HDL File  ; D:/Documents/ee_371/lab1/car_detection.sv ;         ;
+; car_counter.sv                   ; yes             ; User SystemVerilog HDL File  ; D:/Documents/ee_371/lab1/car_counter.sv   ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimate of Logic utilization (ALMs needed) ; 2     ;
-;                                             ;       ;
-; Combinational ALUT usage for logic          ; 8     ;
-;     -- 7 input functions                    ; 0     ;
-;     -- 6 input functions                    ; 4     ;
-;     -- 5 input functions                    ; 0     ;
-;     -- 4 input functions                    ; 2     ;
-;     -- <=3 input functions                  ; 2     ;
-;                                             ;       ;
-; Dedicated logic registers                   ; 6     ;
-;                                             ;       ;
-; I/O pins                                    ; 6     ;
-;                                             ;       ;
-; Total DSP Blocks                            ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; ps[0] ;
-; Maximum fan-out                             ; 6     ;
-; Total fan-out                               ; 58    ;
-; Average fan-out                             ; 2.23  ;
-+---------------------------------------------+-------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 15          ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 23          ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 7           ;
+;     -- 5 input functions                    ; 2           ;
+;     -- 4 input functions                    ; 9           ;
+;     -- <=3 input functions                  ; 5           ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 6           ;
+;                                             ;             ;
+; I/O pins                                    ; 9           ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; reset~input ;
+; Maximum fan-out                             ; 12          ;
+; Total fan-out                               ; 129         ;
+; Average fan-out                             ; 2.74        ;
++---------------------------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+---------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name   ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+---------------+--------------+
-; |car_detection             ; 8 (8)               ; 6 (6)                     ; 0                 ; 0          ; 6    ; 0            ; |car_detection      ; car_detection ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+---------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+---------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name           ; Entity Name   ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+---------------+--------------+
+; |car_counter               ; 23 (12)             ; 6 (0)                     ; 0                 ; 0          ; 9    ; 0            ; |car_counter                  ; car_counter   ; work         ;
+;    |car_detection:cd|      ; 11 (11)             ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |car_counter|car_detection:cd ; car_detection ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; car_count[0]$latch                                 ; Selector0           ; yes                    ;
+; car_count[1]$latch                                 ; Selector0           ; yes                    ;
+; car_count[2]$latch                                 ; Selector0           ; yes                    ;
+; car_count[3]$latch                                 ; Selector0           ; yes                    ;
+; car_count[4]$latch                                 ; Selector0           ; yes                    ;
+; Number of user-specified and inferred latches = 5  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +---------------------------------------------------------------------------------+
@@ -220,7 +239,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+----------------------------------------+
 ; Register name                          ; Reason for Removal                     ;
 +----------------------------------------+----------------------------------------+
-; ps[4..31]                              ; Stuck at GND due to stuck port data_in ;
+; car_detection:cd|ps[4..31]             ; Stuck at GND due to stuck port data_in ;
 ; Total Number of Removed Registers = 28 ;                                        ;
 +----------------------------------------+----------------------------------------+
 
@@ -248,15 +267,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; arriav_ff             ; 6                           ;
 ;     ENA               ; 2                           ;
 ;     plain             ; 4                           ;
-; arriav_lcell_comb     ; 8                           ;
-;     normal            ; 8                           ;
+; arriav_lcell_comb     ; 23                          ;
+;     normal            ; 23                          ;
 ;         2 data inputs ; 2                           ;
-;         4 data inputs ; 2                           ;
-;         6 data inputs ; 4                           ;
-; boundary_port         ; 6                           ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 9                           ;
+;         5 data inputs ; 2                           ;
+;         6 data inputs ; 7                           ;
+; boundary_port         ; 9                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.39                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.97                        ;
 +-----------------------+-----------------------------+
 
 
@@ -275,31 +296,52 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Sep 29 15:39:05 2023
+    Info: Processing started: Sun Oct 01 18:45:33 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 2 entities, in source file car_detection.sv
-    Info (12023): Found entity 1: car_detection File: C:/Users/Anna/Documents/ee_371/ee_371/lab1/car_detection.sv Line: 1
-    Info (12023): Found entity 2: car_detection_tb File: C:/Users/Anna/Documents/ee_371/ee_371/lab1/car_detection.sv Line: 68
-Info (12127): Elaborating entity "car_detection" for the top level hierarchy
+    Info (12023): Found entity 1: car_detection File: D:/Documents/ee_371/lab1/car_detection.sv Line: 1
+    Info (12023): Found entity 2: car_detection_tb File: D:/Documents/ee_371/lab1/car_detection.sv Line: 68
+Info (12021): Found 2 design units, including 2 entities, in source file car_counter.sv
+    Info (12023): Found entity 1: car_counter File: D:/Documents/ee_371/lab1/car_counter.sv Line: 1
+    Info (12023): Found entity 2: car_counter_tb File: D:/Documents/ee_371/lab1/car_counter.sv Line: 27
+Info (12127): Elaborating entity "car_counter" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at car_counter.sv(18): truncated value with size 32 to match size of target (5) File: D:/Documents/ee_371/lab1/car_counter.sv Line: 18
+Warning (10230): Verilog HDL assignment warning at car_counter.sv(20): truncated value with size 32 to match size of target (5) File: D:/Documents/ee_371/lab1/car_counter.sv Line: 20
+Info (10264): Verilog HDL Case Statement information at car_counter.sv(16): all case item expressions in this case statement are onehot File: D:/Documents/ee_371/lab1/car_counter.sv Line: 16
+Warning (10240): Verilog HDL Always Construct warning at car_counter.sv(12): inferring latch(es) for variable "car_count", which holds its previous value in one or more paths through the always construct File: D:/Documents/ee_371/lab1/car_counter.sv Line: 12
+Info (10041): Inferred latch for "car_count[0]" at car_counter.sv(12) File: D:/Documents/ee_371/lab1/car_counter.sv Line: 12
+Info (10041): Inferred latch for "car_count[1]" at car_counter.sv(12) File: D:/Documents/ee_371/lab1/car_counter.sv Line: 12
+Info (10041): Inferred latch for "car_count[2]" at car_counter.sv(12) File: D:/Documents/ee_371/lab1/car_counter.sv Line: 12
+Info (10041): Inferred latch for "car_count[3]" at car_counter.sv(12) File: D:/Documents/ee_371/lab1/car_counter.sv Line: 12
+Info (10041): Inferred latch for "car_count[4]" at car_counter.sv(12) File: D:/Documents/ee_371/lab1/car_counter.sv Line: 12
+Info (12128): Elaborating entity "car_detection" for hierarchy "car_detection:cd" File: D:/Documents/ee_371/lab1/car_counter.sv Line: 7
+Warning (13012): Latch car_count[1]$latch has unsafe behavior File: D:/Documents/ee_371/lab1/car_counter.sv Line: 12
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal car_count[1]$latch File: D:/Documents/ee_371/lab1/car_counter.sv Line: 12
+Warning (13012): Latch car_count[2]$latch has unsafe behavior File: D:/Documents/ee_371/lab1/car_counter.sv Line: 12
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal car_count[2]$latch File: D:/Documents/ee_371/lab1/car_counter.sv Line: 12
+Warning (13012): Latch car_count[3]$latch has unsafe behavior File: D:/Documents/ee_371/lab1/car_counter.sv Line: 12
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal car_count[3]$latch File: D:/Documents/ee_371/lab1/car_counter.sv Line: 12
+Warning (13012): Latch car_count[4]$latch has unsafe behavior File: D:/Documents/ee_371/lab1/car_counter.sv Line: 12
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal car_count[4]$latch File: D:/Documents/ee_371/lab1/car_counter.sv Line: 12
 Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file D:/Documents/ee_371/lab1/output_files/DE1_SoC.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 14 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 32 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 8 logic cells
-Info (144001): Generated suppressed messages file C:/Users/Anna/Documents/ee_371/ee_371/lab1/output_files/DE1_SoC.map.smsg
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4824 megabytes
-    Info: Processing ended: Fri Sep 29 15:39:15 2023
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:20
+    Info (21059): Implemented 5 output pins
+    Info (21061): Implemented 23 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4883 megabytes
+    Info: Processing ended: Sun Oct 01 18:45:41 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:17
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Anna/Documents/ee_371/ee_371/lab1/output_files/DE1_SoC.map.smsg.
+The suppressed messages can be found in D:/Documents/ee_371/lab1/output_files/DE1_SoC.map.smsg.
 
 
