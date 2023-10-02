@@ -8,7 +8,7 @@ module car_counter (reset, clk, outer, inner, car_count);
 	
 	assign gate_sensors = {enter, exit};
 	
-	always_ff begin
+	always_ff @(posedge clk) begin
 		if (reset) begin
 			car_count <= 5'b0;
 		end
@@ -28,7 +28,7 @@ module car_counter_tb ();
 	logic reset, clk, outer, inner, enter, exit;
 	logic [4:0] car_count;
 	
-	car_counter dut (.reset(reset), .clk(clk), .outer(outer), .inner(inner), .car_count(car_count));
+	car_counter dut (.reset, .clk, .outer, .inner, .car_count);
 	
 	parameter CLOCK_PERIOD = 100;
 	
@@ -41,7 +41,7 @@ module car_counter_tb ();
 									  repeat (1) @(posedge clk);
 		reset <= 1; 
 		enter <= 0; exit <= 0; repeat (1) @(posedge clk);
-		reset <= 1;				  repeat (1) @(posedge clk);
+		reset <= 0;				  repeat (1) @(posedge clk);
 		
 		enter <= 1; exit <= 0; repeat (1) @(posedge clk); // 1
 		enter <= 0; exit <= 0; repeat (3) @(posedge clk);

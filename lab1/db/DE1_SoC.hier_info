@@ -1,18 +1,23 @@
 |car_counter
 reset => car_detection:cd.reset
-reset => car_count[4]$latch.ACLR
-reset => car_count[3]$latch.ACLR
-reset => car_count[2]$latch.ACLR
-reset => car_count[1]$latch.ACLR
-reset => car_count[0]$latch.ACLR
+reset => car_count.OUTPUTSELECT
+reset => car_count.OUTPUTSELECT
+reset => car_count.OUTPUTSELECT
+reset => car_count.OUTPUTSELECT
+reset => car_count.OUTPUTSELECT
 clk => car_detection:cd.clk
+clk => car_count[0]~reg0.CLK
+clk => car_count[1]~reg0.CLK
+clk => car_count[2]~reg0.CLK
+clk => car_count[3]~reg0.CLK
+clk => car_count[4]~reg0.CLK
 outer => car_detection:cd.outer
 inner => car_detection:cd.inner
-car_count[0] << car_count[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-car_count[1] << car_count[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-car_count[2] << car_count[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-car_count[3] << car_count[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-car_count[4] << car_count[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+car_count[0] <= car_count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+car_count[1] <= car_count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+car_count[2] <= car_count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+car_count[3] <= car_count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+car_count[4] <= car_count[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |car_counter|car_detection:cd

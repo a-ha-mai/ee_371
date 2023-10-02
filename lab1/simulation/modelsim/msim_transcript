@@ -12,56 +12,42 @@
 # 
 # vlog -sv -work work +incdir+D:/Documents/ee_371/lab1 {D:/Documents/ee_371/lab1/car_detection.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:53:31 on Oct 01,2023
+# Start time: 20:06:46 on Oct 01,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Documents/ee_371/lab1" D:/Documents/ee_371/lab1/car_detection.sv 
 # -- Compiling module car_detection
 # -- Compiling module car_detection_tb
 # 
 # Top level modules:
 # 	car_detection_tb
-# End time: 18:53:31 on Oct 01,2023, Elapsed time: 0:00:00
+# End time: 20:06:46 on Oct 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/Documents/ee_371/lab1 {D:/Documents/ee_371/lab1/car_counter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:53:31 on Oct 01,2023
+# Start time: 20:06:46 on Oct 01,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Documents/ee_371/lab1" D:/Documents/ee_371/lab1/car_counter.sv 
 # -- Compiling module car_counter
-# ** Error: D:/Documents/ee_371/lab1/car_counter.sv(12): An always_ff block must have an event control.
 # -- Compiling module car_counter_tb
-# End time: 18:53:31 on Oct 01,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./DE1_SoC_run_msim_rtl_verilog.do line 9
-# D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog -sv -work work +incdir+D:/Documents/ee_371/lab1 {D:/Documents/ee_371/lab1/car_counter.sv}"
-vsim work.car_detection_tb
-# vsim work.car_detection_tb 
-# Start time: 18:53:44 on Oct 01,2023
-# Loading sv_std.std
-# Loading work.car_detection_tb
-# Loading work.car_detection
-add wave -position end  sim:/car_detection_tb/reset
-add wave -position end  sim:/car_detection_tb/clk
-add wave -position end  sim:/car_detection_tb/outer
-add wave -position end  sim:/car_detection_tb/inner
-add wave -position end  sim:/car_detection_tb/exit
-add wave -position end  sim:/car_detection_tb/enter
-run -all
-# ** Note: $stop    : D:/Documents/ee_371/lab1/car_detection.sv(115)
-#    Time: 6850 ps  Iteration: 1  Instance: /car_detection_tb
-# Break in Module car_detection_tb at D:/Documents/ee_371/lab1/car_detection.sv line 115
-vsim work.car_counter_tb
-# End time: 18:54:03 on Oct 01,2023, Elapsed time: 0:00:19
+# 
+# Top level modules:
+# 	car_counter_tb
+# End time: 20:06:46 on Oct 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# 
+vsim work.car_counter_tb
 # vsim work.car_counter_tb 
-# Start time: 18:54:03 on Oct 01,2023
+# Start time: 20:06:49 on Oct 01,2023
 # Loading sv_std.std
 # Loading work.car_counter_tb
-# ** Error: (vsim-3033) D:/Documents/ee_371/lab1/car_counter.sv(31): Instantiation of 'car_counter' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /car_counter_tb File: D:/Documents/ee_371/lab1/car_counter.sv
-#         Searched libraries:
-#             D:/Documents/ee_371/lab1/simulation/modelsim/rtl_work
-# Error loading design
-# End time: 18:54:04 on Oct 01,2023, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
+# Loading work.car_counter
+# Loading work.car_detection
+add wave -position end  sim:/car_counter_tb/reset
+add wave -position end  sim:/car_counter_tb/clk
+add wave -position end  sim:/car_counter_tb/enter
+add wave -position end  sim:/car_counter_tb/exit
+add wave -position end  sim:/car_counter_tb/car_count
+run -all
+# ** Note: $stop    : D:/Documents/ee_371/lab1/car_counter.sv(90)
+#    Time: 9050 ps  Iteration: 1  Instance: /car_counter_tb
+# Break in Module car_counter_tb at D:/Documents/ee_371/lab1/car_counter.sv line 90
+# End time: 20:08:12 on Oct 01,2023, Elapsed time: 0:01:23
+# Errors: 0, Warnings: 0
