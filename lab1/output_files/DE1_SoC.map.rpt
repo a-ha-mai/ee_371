@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Sun Oct 01 20:04:11 2023
+Mon Oct 02 20:55:14 2023
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Oct 01 20:04:11 2023       ;
+; Analysis & Synthesis Status     ; Successful - Mon Oct 02 20:55:14 2023       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE1_SoC                                     ;
 ; Top-level Entity Name           ; car_counter                                 ;
@@ -185,12 +185,12 @@ agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 13          ;
+; Estimate of Logic utilization (ALMs needed) ; 14          ;
 ;                                             ;             ;
-; Combinational ALUT usage for logic          ; 21          ;
+; Combinational ALUT usage for logic          ; 23          ;
 ;     -- 7 input functions                    ; 0           ;
 ;     -- 6 input functions                    ; 5           ;
-;     -- 5 input functions                    ; 6           ;
+;     -- 5 input functions                    ; 8           ;
 ;     -- 4 input functions                    ; 5           ;
 ;     -- <=3 input functions                  ; 5           ;
 ;                                             ;             ;
@@ -201,9 +201,9 @@ agreement for further details.
 ; Total DSP Blocks                            ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; reset~input ;
-; Maximum fan-out                             ; 12          ;
-; Total fan-out                               ; 134         ;
-; Average fan-out                             ; 2.68        ;
+; Maximum fan-out                             ; 11          ;
+; Total fan-out                               ; 140         ;
+; Average fan-out                             ; 2.69        ;
 +---------------------------------------------+-------------+
 
 
@@ -212,7 +212,7 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name           ; Entity Name   ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+---------------+--------------+
-; |car_counter               ; 21 (9)              ; 11 (5)                    ; 0                 ; 0          ; 9    ; 0            ; |car_counter                  ; car_counter   ; work         ;
+; |car_counter               ; 23 (11)             ; 11 (5)                    ; 0                 ; 0          ; 9    ; 0            ; |car_counter                  ; car_counter   ; work         ;
 ;    |car_detection:cd|      ; 12 (12)             ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |car_counter|car_detection:cd ; car_detection ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -238,7 +238,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 6     ;
+; Number of registers using Clock Enable       ; 2     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -248,7 +248,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |car_counter|car_count[0]~reg0 ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |car_counter|car_count[0]~reg0 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
 
 
@@ -258,19 +258,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 11                          ;
-;     ENA               ; 6                           ;
-;     plain             ; 5                           ;
-; arriav_lcell_comb     ; 21                          ;
-;     normal            ; 21                          ;
+;     ENA               ; 2                           ;
+;     plain             ; 9                           ;
+; arriav_lcell_comb     ; 23                          ;
+;     normal            ; 23                          ;
 ;         2 data inputs ; 3                           ;
 ;         3 data inputs ; 2                           ;
 ;         4 data inputs ; 5                           ;
-;         5 data inputs ; 6                           ;
+;         5 data inputs ; 8                           ;
 ;         6 data inputs ; 5                           ;
 ; boundary_port         ; 9                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.78                        ;
+; Average LUT depth     ; 1.89                        ;
 +-----------------------+-----------------------------+
 
 
@@ -289,7 +289,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sun Oct 01 20:04:03 2023
+    Info: Processing started: Mon Oct 02 20:55:06 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 2 entities, in source file car_detection.sv
@@ -297,23 +297,20 @@ Info (12021): Found 2 design units, including 2 entities, in source file car_det
     Info (12023): Found entity 2: car_detection_tb File: D:/Documents/ee_371/lab1/car_detection.sv Line: 68
 Info (12021): Found 2 design units, including 2 entities, in source file car_counter.sv
     Info (12023): Found entity 1: car_counter File: D:/Documents/ee_371/lab1/car_counter.sv Line: 1
-    Info (12023): Found entity 2: car_counter_tb File: D:/Documents/ee_371/lab1/car_counter.sv Line: 27
+    Info (12023): Found entity 2: car_counter_tb File: D:/Documents/ee_371/lab1/car_counter.sv Line: 19
 Info (12127): Elaborating entity "car_counter" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at car_counter.sv(18): truncated value with size 32 to match size of target (5) File: D:/Documents/ee_371/lab1/car_counter.sv Line: 18
-Warning (10230): Verilog HDL assignment warning at car_counter.sv(20): truncated value with size 32 to match size of target (5) File: D:/Documents/ee_371/lab1/car_counter.sv Line: 20
-Info (10264): Verilog HDL Case Statement information at car_counter.sv(16): all case item expressions in this case statement are onehot File: D:/Documents/ee_371/lab1/car_counter.sv Line: 16
-Info (12128): Elaborating entity "car_detection" for hierarchy "car_detection:cd" File: D:/Documents/ee_371/lab1/car_counter.sv Line: 7
+Info (12128): Elaborating entity "car_detection" for hierarchy "car_detection:cd" File: D:/Documents/ee_371/lab1/car_counter.sv Line: 6
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file D:/Documents/ee_371/lab1/output_files/DE1_SoC.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 30 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 32 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 21 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4881 megabytes
-    Info: Processing ended: Sun Oct 01 20:04:11 2023
+    Info (21061): Implemented 23 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4869 megabytes
+    Info: Processing ended: Mon Oct 02 20:55:14 2023
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:16
 

@@ -2,25 +2,17 @@ module car_counter (reset, clk, outer, inner, car_count);
 	input logic reset, clk, outer, inner;
 	output logic [4:0] car_count;
 	logic enter, exit;
-	logic [1:0] gate_sensors;
 	
 	car_detection cd(.reset, .clk, .outer, .inner, .enter, .exit);
-	
-	assign gate_sensors = {enter, exit};
 	
 	always_ff @(posedge clk) begin
 		if (reset) begin
 			car_count <= 5'b0;
 		end
-		else
-			case (gate_sensors)
-				2'b10:
-					if (car_count <= 5'b10000) car_count <= car_count + 1;
-				2'b01:
-					if (car_count > 5'b0) car_count <= car_count - 1;
-				default:
-					car_count <= car_count;
-			endcase
+		else begin
+			if (enter && car_count < 5'b10000) car_count <= car_count + 1'b1;
+			else if (exit && car_count > 5'b0) car_count <= car_count - 1'b1;
+		end
 	end
 endmodule
 
@@ -38,55 +30,126 @@ module car_counter_tb ();
 	end
 	
 	initial begin
-									  repeat (1) @(posedge clk);
-		reset <= 1; 
-		enter <= 0; exit <= 0; repeat (1) @(posedge clk);
-		reset <= 0;				  repeat (1) @(posedge clk);
+										repeat (1) @(posedge clk);
+		reset <= 1;
+		outer <= 0; inner <= 0; repeat (1) @(posedge clk);
+		reset <= 0;					repeat (1) @(posedge clk);
 		
-		enter <= 1; exit <= 0; repeat (1) @(posedge clk); // 1
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
-		enter <= 0; exit <= 1; repeat (1) @(posedge clk); // 0
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
-		enter <= 0; exit <= 1; repeat (1) @(posedge clk); // 0
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
-		enter <= 1; exit <= 0; repeat (1) @(posedge clk); // 1
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
-		enter <= 1; exit <= 0; repeat (1) @(posedge clk); // 2
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
-		enter <= 1; exit <= 0; repeat (1) @(posedge clk); // 3
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
-		enter <= 1; exit <= 0; repeat (1) @(posedge clk); // 4
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
-		enter <= 1; exit <= 0; repeat (1) @(posedge clk); // 5
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
-		enter <= 1; exit <= 0; repeat (1) @(posedge clk); // 6
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
-		enter <= 1; exit <= 0; repeat (1) @(posedge clk); // 7
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
-		enter <= 1; exit <= 0; repeat (1) @(posedge clk); // 8
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
-		enter <= 1; exit <= 0; repeat (1) @(posedge clk); // 9
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
-		enter <= 1; exit <= 0; repeat (1) @(posedge clk); // 10
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
-		enter <= 1; exit <= 0; repeat (1) @(posedge clk); // 11
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
-		enter <= 1; exit <= 0; repeat (1) @(posedge clk); // 12
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
-		enter <= 1; exit <= 0; repeat (1) @(posedge clk); // 13
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
-		enter <= 1; exit <= 0; repeat (1) @(posedge clk); // 14
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
-		enter <= 1; exit <= 0; repeat (1) @(posedge clk); // 15
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
-		enter <= 1; exit <= 0; repeat (1) @(posedge clk); // 16
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
-		enter <= 1; exit <= 0; repeat (1) @(posedge clk); // 16
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
-		enter <= 1; exit <= 0; repeat (1) @(posedge clk); // 16
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
-		enter <= 0; exit <= 1; repeat (1) @(posedge clk); // 15
-		enter <= 0; exit <= 0; repeat (3) @(posedge clk);
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 1
+		
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 2
+		
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 1
+		
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 0
+		
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 0
+		
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 1
+		
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 2
+		
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 3
+		
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 4
+		
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 5
+		
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 6
+		
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 7
+		
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 8
+		
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 9
+		
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 10
+		
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 11
+		
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 12
+		
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 13
+		
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 14
+		
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 15
+		
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 16
+		
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (3) @(posedge clk); // 16
+		
+		outer <= 0; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 1; repeat (1) @(posedge clk);
+		outer <= 1; inner <= 0; repeat (1) @(posedge clk);
+		outer <= 0; inner <= 0; repeat (9) @(posedge clk); // 15
+		
 		$stop;
 	end
 endmodule

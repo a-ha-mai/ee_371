@@ -10,15 +10,15 @@ cModel Technology
 Z0 dD:/Documents/ee_371/lab1/simulation/modelsim
 vcar_counter
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1696216006
+Z2 !s110 1696305252
 !i10b 1
-!s100 lOGX64o;cciFCUl`i>MT@2
-II]2^9=?X?G3IIo>D4k_L?3
+!s100 S<[o:dLN2Ti>0`?`0h_dh3
+IN1<fURNaDY0GiTi?96]d83
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 Z4 !s105 car_counter_sv_unit
 S1
 R0
-Z5 w1696215976
+Z5 w1696305233
 Z6 8D:/Documents/ee_371/lab1/car_counter.sv
 Z7 FD:/Documents/ee_371/lab1/car_counter.sv
 L0 1
@@ -26,7 +26,7 @@ Z8 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1696216006.000000
+Z9 !s108 1696305252.000000
 Z10 !s107 D:/Documents/ee_371/lab1/car_counter.sv|
 Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371/lab1|D:/Documents/ee_371/lab1/car_counter.sv|
 !i113 1
@@ -37,8 +37,8 @@ vcar_counter_tb
 R1
 R2
 !i10b 1
-!s100 f;Y;jC3fN6E5`1E[68fC>3
-I=eN5YHONdARGzL8EaJUMj3
+!s100 AWgHi`BC^5o:T?`0393KW1
+IoH@Lc0;5N:DlAK9S__2kC3
 R3
 R4
 S1
@@ -46,7 +46,7 @@ R0
 R5
 R6
 R7
-L0 27
+L0 19
 R8
 r1
 !s85 0
