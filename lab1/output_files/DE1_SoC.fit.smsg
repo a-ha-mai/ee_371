@@ -8,8 +8,6 @@ Extra Info (176239): Inferring scan chains for DSP blocks is complete
 Extra Info (176246): Moving registers into I/O cells, DSP blocks, and RAM blocks to improve timing and density
 Extra Info (176247): Finished moving registers into I/O cells, DSP blocks, and RAM blocks
 Warning (15705): Ignored locations or region assignments to the following nodes
-Warning (332174): Ignored filter at DE1_SoC_golden_top.sdc(9): CLOCK_50 could not be matched with a port File: D:/Documents/ee_371/lab1/DE1_SoC_golden_top.sdc Line: 9
-Warning (332049): Ignored create_clock at DE1_SoC_golden_top.sdc(9): Argument <targets> is an empty collection File: D:/Documents/ee_371/lab1/DE1_SoC_golden_top.sdc Line: 9
 Warning (332174): Ignored filter at DE1_SoC_golden_top.sdc(10): CLOCK2_50 could not be matched with a port File: D:/Documents/ee_371/lab1/DE1_SoC_golden_top.sdc Line: 10
 Warning (332049): Ignored create_clock at DE1_SoC_golden_top.sdc(10): Argument <targets> is an empty collection File: D:/Documents/ee_371/lab1/DE1_SoC_golden_top.sdc Line: 10
 Warning (332174): Ignored filter at DE1_SoC_golden_top.sdc(11): CLOCK3_50 could not be matched with a port File: D:/Documents/ee_371/lab1/DE1_SoC_golden_top.sdc Line: 11
@@ -109,3 +107,4 @@ Warning (332049): Ignored set_output_delay at DE1_SoC_golden_top.sdc(93): Argume
 Warning (332049): Ignored set_output_delay at DE1_SoC_golden_top.sdc(93): Argument -clock is not an object ID File: D:/Documents/ee_371/lab1/DE1_SoC_golden_top.sdc Line: 93
 Warning (332049): Ignored set_output_delay at DE1_SoC_golden_top.sdc(94): Argument <targets> is an empty collection File: D:/Documents/ee_371/lab1/DE1_SoC_golden_top.sdc Line: 94
 Warning (332049): Ignored set_output_delay at DE1_SoC_golden_top.sdc(94): Argument -clock is not an object ID File: D:/Documents/ee_371/lab1/DE1_SoC_golden_top.sdc Line: 94
+Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.

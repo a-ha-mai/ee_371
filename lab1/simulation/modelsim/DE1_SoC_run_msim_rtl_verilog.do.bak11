@@ -7,4 +7,5 @@ vmap work rtl_work
 
 vlog -sv -work work +incdir+D:/Documents/ee_371/lab1 {D:/Documents/ee_371/lab1/car_detection.sv}
 vlog -sv -work work +incdir+D:/Documents/ee_371/lab1 {D:/Documents/ee_371/lab1/car_counter.sv}
+vlog -sv -work work +incdir+D:/Documents/ee_371/lab1 {D:/Documents/ee_371/lab1/parking_lot_occupancy.sv}
 

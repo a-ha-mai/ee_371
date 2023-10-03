@@ -1,6 +1,4 @@
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Warning (332174): Ignored filter at DE1_SoC_golden_top.sdc(9): CLOCK_50 could not be matched with a port File: D:/Documents/ee_371/lab1/DE1_SoC_golden_top.sdc Line: 9
-Warning (332049): Ignored create_clock at DE1_SoC_golden_top.sdc(9): Argument <targets> is an empty collection File: D:/Documents/ee_371/lab1/DE1_SoC_golden_top.sdc Line: 9
 Warning (332174): Ignored filter at DE1_SoC_golden_top.sdc(10): CLOCK2_50 could not be matched with a port File: D:/Documents/ee_371/lab1/DE1_SoC_golden_top.sdc Line: 10
 Warning (332049): Ignored create_clock at DE1_SoC_golden_top.sdc(10): Argument <targets> is an empty collection File: D:/Documents/ee_371/lab1/DE1_SoC_golden_top.sdc Line: 10
 Warning (332174): Ignored filter at DE1_SoC_golden_top.sdc(11): CLOCK3_50 could not be matched with a port File: D:/Documents/ee_371/lab1/DE1_SoC_golden_top.sdc Line: 11

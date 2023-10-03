@@ -1,4 +1,83 @@
-|car_counter
+|parking_lot_occupancy
+V_GPIO[0] <> <UNC>
+V_GPIO[1] <> <UNC>
+V_GPIO[2] <> <UNC>
+V_GPIO[3] <> <UNC>
+V_GPIO[4] <> <UNC>
+V_GPIO[5] <> <UNC>
+V_GPIO[6] <> <UNC>
+V_GPIO[7] <> <UNC>
+V_GPIO[8] <> <UNC>
+V_GPIO[9] <> <UNC>
+V_GPIO[10] <> <UNC>
+V_GPIO[11] <> <UNC>
+V_GPIO[12] <> <UNC>
+V_GPIO[13] <> <UNC>
+V_GPIO[14] <> <UNC>
+V_GPIO[15] <> <UNC>
+V_GPIO[16] <> <UNC>
+V_GPIO[17] <> <UNC>
+V_GPIO[18] <> <UNC>
+V_GPIO[19] <> <UNC>
+V_GPIO[20] <> <UNC>
+V_GPIO[21] <> <UNC>
+V_GPIO[22] <> <UNC>
+V_GPIO[23] <> <UNC>
+V_GPIO[24] <> <UNC>
+V_GPIO[25] <> <UNC>
+V_GPIO[26] <> <UNC>
+V_GPIO[27] <> <UNC>
+V_GPIO[31] <> V_GPIO[31]
+V_GPIO[32] <> <UNC>
+V_GPIO[33] <> V_GPIO[33]
+V_GPIO[34] <> <UNC>
+V_GPIO[35] <> <UNC>
+CLOCK_50 => car_counter:comb_5.clk
+HEX0[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[3] <= <VCC>
+HEX1[4] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[5] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[6] <= <VCC>
+HEX2[0] <= <VCC>
+HEX2[1] <= <VCC>
+HEX2[2] <= <VCC>
+HEX2[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[4] <= HEX2.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[6] <= <VCC>
+HEX3[0] <= <VCC>
+HEX3[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[2] <= <VCC>
+HEX3[3] <= <VCC>
+HEX3[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[5] <= HEX2.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[6] <= <VCC>
+HEX4[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[1] <= <VCC>
+HEX4[2] <= <VCC>
+HEX4[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[4] <= HEX2.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[6] <= <VCC>
+HEX5[0] <= HEX2.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[1] <= HEX2.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[2] <= HEX2.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[3] <= HEX2.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[4] <= HEX2.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[5] <= <VCC>
+HEX5[6] <= <VCC>
+
+
+|parking_lot_occupancy|car_counter:comb_5
 reset => car_detection:cd.reset
 reset => car_count.OUTPUTSELECT
 reset => car_count.OUTPUTSELECT
@@ -20,7 +99,7 @@ car_count[3] <= car_count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 car_count[4] <= car_count[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|car_counter|car_detection:cd
+|parking_lot_occupancy|car_counter:comb_5|car_detection:cd
 reset => ps.OUTPUTSELECT
 reset => ps.OUTPUTSELECT
 reset => ps.OUTPUTSELECT
