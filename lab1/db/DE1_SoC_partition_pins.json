@@ -112,23 +112,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "V_GPIO[28]",
+					"name" : "LEDR[0]",
 					"strict" : false
 				},
 				{
-					"name" : "V_GPIO[29]",
+					"name" : "LEDR[1]",
 					"strict" : false
 				},
 				{
-					"name" : "V_GPIO[30]",
+					"name" : "SW[0]",
 					"strict" : false
 				},
 				{
-					"name" : "V_GPIO[31]",
+					"name" : "SW[1]",
 					"strict" : false
 				},
 				{
-					"name" : "V_GPIO[33]",
+					"name" : "SW[9]",
 					"strict" : false
 				},
 				{

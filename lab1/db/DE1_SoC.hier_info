@@ -1,38 +1,5 @@
-|parking_lot_occupancy
-V_GPIO[0] <> <UNC>
-V_GPIO[1] <> <UNC>
-V_GPIO[2] <> <UNC>
-V_GPIO[3] <> <UNC>
-V_GPIO[4] <> <UNC>
-V_GPIO[5] <> <UNC>
-V_GPIO[6] <> <UNC>
-V_GPIO[7] <> <UNC>
-V_GPIO[8] <> <UNC>
-V_GPIO[9] <> <UNC>
-V_GPIO[10] <> <UNC>
-V_GPIO[11] <> <UNC>
-V_GPIO[12] <> <UNC>
-V_GPIO[13] <> <UNC>
-V_GPIO[14] <> <UNC>
-V_GPIO[15] <> <UNC>
-V_GPIO[16] <> <UNC>
-V_GPIO[17] <> <UNC>
-V_GPIO[18] <> <UNC>
-V_GPIO[19] <> <UNC>
-V_GPIO[20] <> <UNC>
-V_GPIO[21] <> <UNC>
-V_GPIO[22] <> <UNC>
-V_GPIO[23] <> <UNC>
-V_GPIO[24] <> <UNC>
-V_GPIO[25] <> <UNC>
-V_GPIO[26] <> <UNC>
-V_GPIO[27] <> <UNC>
-V_GPIO[31] <> V_GPIO[31]
-V_GPIO[32] <> <UNC>
-V_GPIO[33] <> V_GPIO[33]
-V_GPIO[34] <> <UNC>
-V_GPIO[35] <> <UNC>
-CLOCK_50 => car_counter:comb_5.clk
+|parking_lot_occupancy_copy
+CLOCK_50 => car_counter:cc.clk
 HEX0[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
 HEX0[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
 HEX0[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
@@ -75,9 +42,35 @@ HEX5[3] <= HEX2.DB_MAX_OUTPUT_PORT_TYPE
 HEX5[4] <= HEX2.DB_MAX_OUTPUT_PORT_TYPE
 HEX5[5] <= <VCC>
 HEX5[6] <= <VCC>
+KEY[0] => ~NO_FANOUT~
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[3] => ~NO_FANOUT~
+LEDR[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= SW[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= <GND>
+LEDR[3] <= <GND>
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+SW[0] => car_counter:cc.outer
+SW[0] => LEDR[0].DATAIN
+SW[1] => car_counter:cc.inner
+SW[1] => LEDR[1].DATAIN
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => car_counter:cc.reset
 
 
-|parking_lot_occupancy|car_counter:comb_5
+|parking_lot_occupancy_copy|car_counter:cc
 reset => car_detection:cd.reset
 reset => car_count.OUTPUTSELECT
 reset => car_count.OUTPUTSELECT
@@ -99,7 +92,7 @@ car_count[3] <= car_count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 car_count[4] <= car_count[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|parking_lot_occupancy|car_counter:comb_5|car_detection:cd
+|parking_lot_occupancy_copy|car_counter:cc|car_detection:cd
 reset => ps.OUTPUTSELECT
 reset => ps.OUTPUTSELECT
 reset => ps.OUTPUTSELECT
