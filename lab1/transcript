@@ -1,0 +1,102 @@
+# Reading C:/Users/Jason/Documents/CSE369/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:19:47 on Oct 06,2023
+# vlog -reportprogress 300 ./car_detection.sv 
+# -- Compiling module car_detection
+# -- Compiling module car_detection_tb
+# 
+# Top level modules:
+# 	car_detection_tb
+# End time: 12:19:48 on Oct 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:19:48 on Oct 06,2023
+# vlog -reportprogress 300 ./car_detection_tb.sv 
+# ** Error: (vlog-7) Failed to open design unit file "./car_detection_tb.sv" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 12:19:48 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/Users/Jason/Documents/CSE369/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 8
+# C:/Users/Jason/Documents/CSE369/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./car_detection_tb.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:25 on Oct 06,2023
+# vlog -reportprogress 300 ./car_detection.sv 
+# -- Compiling module car_detection
+# -- Compiling module car_detection_tb
+# 
+# Top level modules:
+# 	car_detection_tb
+# End time: 12:20:25 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:20:25 on Oct 06,2023
+# vlog -reportprogress 300 ./car_detection_tb.sv 
+# ** Error: (vlog-7) Failed to open design unit file "./car_detection_tb.sv" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 12:20:25 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/Users/Jason/Documents/CSE369/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 8
+# C:/Users/Jason/Documents/CSE369/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./car_detection_tb.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:21:06 on Oct 06,2023
+# vlog -reportprogress 300 ./car_detection.sv 
+# -- Compiling module car_detection
+# -- Compiling module car_detection_tb
+# 
+# Top level modules:
+# 	car_detection_tb
+# End time: 12:21:06 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work car_detection 
+# Start time: 12:21:07 on Oct 06,2023
+# Loading sv_std.std
+# Loading work.car_detection
+# ** Error: Cannot open macro file: car_detection_wave.do
+# Error in macro ./runlab.do line 17
+# Cannot open macro file: car_detection_wave.do
+#     while executing
+# "do car_detection_wave.do"
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab1/car_detection_wave.do
+add wave -position end  sim:/car_detection/reset
+add wave -position end  sim:/car_detection/clk
+add wave -position end  sim:/car_detection/outer
+add wave -position end  sim:/car_detection/inner
+add wave -position end  sim:/car_detection/enter
+add wave -position end  sim:/car_detection/exit
+add wave -position end  sim:/car_detection/ps
+add wave -position end  sim:/car_detection/ns
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab1/car_detection_wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:22:28 on Oct 06,2023
+# vlog -reportprogress 300 ./car_detection.sv 
+# -- Compiling module car_detection
+# -- Compiling module car_detection_tb
+# 
+# Top level modules:
+# 	car_detection_tb
+# End time: 12:22:28 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:22:29 on Oct 06,2023, Elapsed time: 0:01:22
+# Errors: 3, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work car_detection 
+# Start time: 12:22:29 on Oct 06,2023
+# Loading sv_std.std
+# Loading work.car_detection
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# End time: 12:40:02 on Oct 06,2023, Elapsed time: 0:17:33
+# Errors: 0, Warnings: 0

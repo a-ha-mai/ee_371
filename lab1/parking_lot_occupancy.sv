@@ -1,3 +1,7 @@
+// The parking lot occupancy module is used to display the current occupancy
+// rate of the parking lot on the HEX display. It uses an instance of the 
+// car_counter module to get the car count by using switches as the sensors,
+// and changes the HEX display based on this value using a combinational logic statement.
 module parking_lot_occupancy (V_GPIO, CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
 	inout logic [35:0] V_GPIO;
 	input logic CLOCK_50;
@@ -7,6 +11,7 @@ module parking_lot_occupancy (V_GPIO, CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX4, HE
 	assign V_GPIO[31] = V_GPIO[28]; // outer led indicator
 	assign V_GPIO[33] = V_GPIO[29]; // inner led indicator
 	
+	// Connect the signals as specified in the header comment.
 	car_counter cc(.reset(V_GPIO[30]), .clk(CLOCK_50), .outer(V_GPIO[28]), .inner(V_GPIO[29]), .car_count);
 	
 	always_comb begin
@@ -185,9 +190,13 @@ module parking_lot_occupancy_tb ();
 		end 
 	endgenerate
 	
+	// We instantiate the testbench with signals that we will set during testing.
 	parking_lot_occupancy dut (.V_GPIO, .CLOCK_50, .HEX0, .HEX1, .HEX2, .HEX3, .HEX4, .HEX5);
 	
+	// We designate the clock period as 100 ms.
 	parameter CLOCK_PERIOD = 100;
+	
+	// This loop creates a simple clock cycle.
 	initial begin
 		clk <= 0;
 		forever #(CLOCK_PERIOD/2) clk <= ~clk;

@@ -1,3 +1,8 @@
+// The car_detection module serves to detect whether a car is entering or exiting
+// the parking lot. It uses an outer and inner sensor (input values) to determine
+// the status of the car (entering and exiting), and outputs this value to either
+// enter or exit; if the car is entering, enter will be output as 1 and exit will
+// be output as 0, and vice versa.
 module car_detection (reset, clk, outer, inner, enter, exit);
 	input logic reset, clk, outer, inner;
 	output logic enter, exit;
@@ -63,15 +68,18 @@ module car_detection (reset, clk, outer, inner, enter, exit);
 			endcase
 		end
 	end
-endmodule
+endmodule // car_detection
 
 module car_detection_tb ();
 	logic reset, clk, outer, inner, exit, enter;
 	
+	// We instantiate the testbench with signals that we will set during testing.
 	car_detection dut (.reset, .clk, .outer, .inner, .exit, .enter);
 	
+	// We designate the clock period as 100 ms.
 	parameter CLOCK_PERIOD = 100;
 	
+	// This loop creates a simple clock cycle.
 	initial begin
 		clk <= 0;
 		forever #(CLOCK_PERIOD/2) clk <= ~clk;
@@ -114,4 +122,4 @@ module car_detection_tb ();
 		outer <= 0; inner <= 0; repeat (5) @(posedge clk); // no car + enter signal for 1 clk cycle
 		$stop;
 	end
-endmodule
+endmodule // car_detection_tb

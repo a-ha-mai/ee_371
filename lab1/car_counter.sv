@@ -1,3 +1,7 @@
+// The car counter module counts the number of cars that are currently in the
+// parking lot, which can range from 0 to 16. It uses an outer and inner sensor
+// (input values), and uses an instance of the car_detection module to determine
+// whether to increment or decrement the current count.
 module car_counter (reset, clk, outer, inner, car_count);
 	input logic reset, clk, outer, inner;
 	output logic [4:0] car_count;
@@ -20,10 +24,13 @@ module car_counter_tb ();
 	logic reset, clk, outer, inner, enter, exit;
 	logic [4:0] car_count;
 	
+	// We instantiate the testbench with signals that we will set during testing.
 	car_counter dut (.reset, .clk, .outer, .inner, .car_count);
 	
+	// We designate the clock period as 100 ms.
 	parameter CLOCK_PERIOD = 100;
 	
+	// This loop creates a simple clock cycle.
 	initial begin
 		clk <= 0;
 		forever #(CLOCK_PERIOD/2) clk <= ~clk;
