@@ -193,6 +193,10 @@ module parking_lot_occupancy_tb ();
 	
 	// We instantiate the testbench with signals that we will set during testing.
 	parking_lot_occupancy dut (.V_GPIO, .CLOCK_50, .HEX0, .HEX1, .HEX2, .HEX3, .HEX4, .HEX5);
+	car_counter dut2 (.reset(V_GPIO[30]), .clk, .outer(V_GPIO[28]), .inner(V_GPIO[29]), .car_count);
+	car_detection dut3 (.reset(V_GPIO[30]), .clk, .outer(V_GPIO[28]), .inner(V_GPIO[29]), .enter, .exit);
+   
+	assign car_count = dut2.car_count;
 	
 	// We designate the clock period as 100 ms.
 	parameter CLOCK_PERIOD = 100;
