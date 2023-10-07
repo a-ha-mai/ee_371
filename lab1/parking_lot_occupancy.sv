@@ -14,6 +14,7 @@ module parking_lot_occupancy (V_GPIO, CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX4, HE
 	// Connect the signals as specified in the header comment.
 	car_counter cc(.reset(V_GPIO[30]), .clk(CLOCK_50), .outer(V_GPIO[28]), .inner(V_GPIO[29]), .car_count);
 	
+	// This code showcases the combinational logic used in the HEX display.
 	always_comb begin
 		case (car_count)
 			5'b00000: begin

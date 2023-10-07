@@ -9,6 +9,8 @@ module car_detection (reset, clk, outer, inner, enter, exit);
 	
 	enum { no_car, maybe_entering, maybe_exiting, is_entering, is_exiting, finishing_entering, finishing_exiting, done_entering, done_exiting } ps, ns;
 
+	// This logic determines whether a car is entering or exiting the garage, and includes states to check for if
+	// it is a car entering the garage or a pedestrian triggering the sensor.
 	always_comb begin
 		case (ps)
 			no_car:
@@ -48,6 +50,7 @@ module car_detection (reset, clk, outer, inner, enter, exit);
 		endcase
 	end
 	
+	// This code determines whether to output that a car has entered or exited the garage fully.
 	always_ff @(posedge clk) begin
 		if (reset) begin
 			ps <= no_car;

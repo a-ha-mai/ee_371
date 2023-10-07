@@ -9,6 +9,7 @@ module car_counter (reset, clk, outer, inner, car_count);
 	
 	car_detection cd(.reset, .clk, .outer, .inner, .enter, .exit);
 	
+	// This code runs the car counter, making sure that it is always a value between 0 and 16.
 	always_ff @(posedge clk) begin
 		if (reset) begin
 			car_count <= 5'b0;
