@@ -4,55 +4,95 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "q[0]",
+					"name" : "HEX1[0]",
 					"strict" : false
 				},
 				{
-					"name" : "q[1]",
+					"name" : "HEX1[3]",
 					"strict" : false
 				},
 				{
-					"name" : "q[2]",
+					"name" : "HEX1[4]",
 					"strict" : false
 				},
 				{
-					"name" : "wren",
+					"name" : "HEX1[5]",
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "HEX4[0]",
 					"strict" : false
 				},
 				{
-					"name" : "data[0]",
+					"name" : "HEX4[3]",
 					"strict" : false
 				},
 				{
-					"name" : "address[0]",
+					"name" : "HEX4[4]",
 					"strict" : false
 				},
 				{
-					"name" : "address[1]",
+					"name" : "HEX4[5]",
 					"strict" : false
 				},
 				{
-					"name" : "address[2]",
+					"name" : "HEX5[0]",
 					"strict" : false
 				},
 				{
-					"name" : "address[3]",
+					"name" : "HEX5[3]",
 					"strict" : false
 				},
 				{
-					"name" : "address[4]",
+					"name" : "HEX5[4]",
 					"strict" : false
 				},
 				{
-					"name" : "data[1]",
+					"name" : "HEX5[5]",
 					"strict" : false
 				},
 				{
-					"name" : "data[2]",
+					"name" : "SW[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[5]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[2]",
 					"strict" : false
 				}
 			]

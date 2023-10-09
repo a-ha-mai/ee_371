@@ -1,496 +1,74 @@
 # Reading D:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
-do runlab.do
+do DE1_SoC_runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:57:38 on Oct 08,2023
-# vlog -reportprogress 300 ./ram32x3.v 
-# -- Compiling module ram32x3
-# 
-# Top level modules:
-# 	ram32x3
-# End time: 18:57:38 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:57:38 on Oct 08,2023
-# vlog -reportprogress 300 ./task1.sv 
-# -- Compiling module task1
-# 
-# Top level modules:
-# 	task1
-# End time: 18:57:38 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:57:38 on Oct 08,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
-# ** Error (suppressible): (vlog-2997) ./task2.sv(13): Cannot assign a packed type 'bit signed[31:0]' to an unpacked type 'reg[2:0] $[31:0]'.
-# End time: 18:57:38 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 9
-# D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./task2.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:58:28 on Oct 08,2023
-# vlog -reportprogress 300 ./ram32x3.v 
-# -- Compiling module ram32x3
-# 
-# Top level modules:
-# 	ram32x3
-# End time: 18:58:28 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:58:28 on Oct 08,2023
-# vlog -reportprogress 300 ./task1.sv 
-# -- Compiling module task1
-# 
-# Top level modules:
-# 	task1
-# End time: 18:58:28 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:58:28 on Oct 08,2023
+# Start time: 21:56:52 on Oct 08,2023
 # vlog -reportprogress 300 ./task2.sv 
 # -- Compiling module task2
 # 
 # Top level modules:
 # 	task2
-# End time: 18:58:28 on Oct 08,2023, Elapsed time: 0:00:00
+# End time: 21:56:52 on Oct 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:58:28 on Oct 08,2023
-# vlog -reportprogress 300 ./task1_tb.sv 
-# -- Compiling module task1_tb
+# Start time: 21:56:52 on Oct 08,2023
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
 # 
 # Top level modules:
-# 	task1_tb
-# End time: 18:58:28 on Oct 08,2023, Elapsed time: 0:00:00
+# 	seg7
+# End time: 21:56:52 on Oct 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work task1_tb -Lf altera_mf_ver 
-# Start time: 18:58:28 on Oct 08,2023
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:56:52 on Oct 08,2023
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 21:56:52 on Oct 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:56:52 on Oct 08,2023
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# -- Compiling module DE1_SoC_tb
+# 
+# Top level modules:
+# 	DE1_SoC_tb
+# End time: 21:56:52 on Oct 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb 
+# Start time: 21:56:52 on Oct 08,2023
 # Loading sv_std.std
-# Loading work.task1_tb
-# Loading work.task1
-# Loading work.ram32x3
-# Loading altera_mf_ver.altsyncram
+# Loading work.DE1_SoC_tb
+# Loading work.DE1_SoC
 # Loading work.task2
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Error: Cannot open macro file: task2_wave.do
-# Error in macro ./runlab.do line 20
-# Cannot open macro file: task2_wave.do
+# Loading work.seg7
+# ** Error: Cannot open macro file: DE1_SoC_wave.do
+# Error in macro ./DE1_SoC_runlab.do line 20
+# Cannot open macro file: DE1_SoC_wave.do
 #     while executing
-# "do task2_wave.do"
-add wave -position end  sim:/task1_tb/address
-add wave -position end  sim:/task1_tb/clk
-add wave -position end  sim:/task1_tb/reset
-add wave -position end  sim:/task1_tb/wren
-add wave -position end  sim:/task1_tb/data
-add wave -position end  sim:/task1_tb/q
-add wave -position end  sim:/task1_tb/q2
-run -all
-# ** Note: $stop    : ./task1_tb.sv(96)
-#    Time: 2450 ps  Iteration: 1  Instance: /task1_tb
-# Break in Module task1_tb at ./task1_tb.sv line 96
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:16 on Oct 08,2023
-# vlog -reportprogress 300 ./ram32x3.v 
-# -- Compiling module ram32x3
-# 
-# Top level modules:
-# 	ram32x3
-# End time: 19:00:16 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:16 on Oct 08,2023
-# vlog -reportprogress 300 ./task1.sv 
-# -- Compiling module task1
-# 
-# Top level modules:
-# 	task1
-# End time: 19:00:16 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:16 on Oct 08,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
-# ** Error: (vlog-13069) ./task2.sv(22): near "end": syntax error, unexpected end.
-# End time: 19:00:16 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 9
-# D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./task2.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:29 on Oct 08,2023
-# vlog -reportprogress 300 ./ram32x3.v 
-# -- Compiling module ram32x3
-# 
-# Top level modules:
-# 	ram32x3
-# End time: 19:00:29 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:29 on Oct 08,2023
-# vlog -reportprogress 300 ./task1.sv 
-# -- Compiling module task1
-# 
-# Top level modules:
-# 	task1
-# End time: 19:00:29 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:29 on Oct 08,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
-# 
-# Top level modules:
-# 	task2
-# End time: 19:00:29 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:29 on Oct 08,2023
-# vlog -reportprogress 300 ./task1_tb.sv 
-# -- Compiling module task1_tb
-# 
-# Top level modules:
-# 	task1_tb
-# End time: 19:00:29 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 19:00:30 on Oct 08,2023, Elapsed time: 0:02:02
-# Errors: 7, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work task1_tb -Lf altera_mf_ver 
-# Start time: 19:00:30 on Oct 08,2023
-# Loading sv_std.std
-# Loading work.task1_tb
-# Loading work.task1
-# Loading work.ram32x3
-# Loading altera_mf_ver.altsyncram
-# Loading work.task2
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Error: Cannot open macro file: task2_wave.do
-# Error in macro ./runlab.do line 20
-# Cannot open macro file: task2_wave.do
-#     while executing
-# "do task2_wave.do"
-add wave -position end  sim:/task1_tb/address
-add wave -position end  sim:/task1_tb/clk
-add wave -position end  sim:/task1_tb/reset
-add wave -position end  sim:/task1_tb/wren
-add wave -position end  sim:/task1_tb/data
-add wave -position end  sim:/task1_tb/q
-add wave -position end  sim:/task1_tb/q2
-run -all
-# ** Note: $stop    : ./task1_tb.sv(96)
-#    Time: 2450 ps  Iteration: 1  Instance: /task1_tb
-# Break in Module task1_tb at ./task1_tb.sv line 96
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:02:46 on Oct 08,2023
-# vlog -reportprogress 300 ./ram32x3.v 
-# -- Compiling module ram32x3
-# 
-# Top level modules:
-# 	ram32x3
-# End time: 19:02:46 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:02:46 on Oct 08,2023
-# vlog -reportprogress 300 ./task1.sv 
-# -- Compiling module task1
-# 
-# Top level modules:
-# 	task1
-# End time: 19:02:46 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:02:46 on Oct 08,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
-# 
-# Top level modules:
-# 	task2
-# End time: 19:02:46 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:02:46 on Oct 08,2023
-# vlog -reportprogress 300 ./task1_tb.sv 
-# -- Compiling module task1_tb
-# 
-# Top level modules:
-# 	task1_tb
-# End time: 19:02:46 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 19:02:47 on Oct 08,2023, Elapsed time: 0:02:17
-# Errors: 3, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work task1_tb -Lf altera_mf_ver 
-# Start time: 19:02:47 on Oct 08,2023
-# Loading sv_std.std
-# Loading work.task1_tb
-# Loading work.task1
-# Loading work.ram32x3
-# Loading altera_mf_ver.altsyncram
-# Loading work.task2
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Error: Cannot open macro file: task2_wave.do
-# Error in macro ./runlab.do line 20
-# Cannot open macro file: task2_wave.do
-#     while executing
-# "do task2_wave.do"
-add wave -position end  sim:/task1_tb/address
-add wave -position end  sim:/task1_tb/clk
-add wave -position end  sim:/task1_tb/reset
-add wave -position end  sim:/task1_tb/wren
-add wave -position end  sim:/task1_tb/data
-add wave -position end  sim:/task1_tb/q
-add wave -position end  sim:/task1_tb/q2
-run -all
-# ** Note: $stop    : ./task1_tb.sv(96)
-#    Time: 2450 ps  Iteration: 1  Instance: /task1_tb
-# Break in Module task1_tb at ./task1_tb.sv line 96
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:05:06 on Oct 08,2023
-# vlog -reportprogress 300 ./ram32x3.v 
-# -- Compiling module ram32x3
-# 
-# Top level modules:
-# 	ram32x3
-# End time: 19:05:06 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:05:06 on Oct 08,2023
-# vlog -reportprogress 300 ./task1.sv 
-# -- Compiling module task1
-# 
-# Top level modules:
-# 	task1
-# End time: 19:05:06 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:05:06 on Oct 08,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
-# ** Error: (vlog-13069) ./task2.sv(22): near "end": syntax error, unexpected end.
-# End time: 19:05:06 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 9
-# D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./task2.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:05:22 on Oct 08,2023
-# vlog -reportprogress 300 ./ram32x3.v 
-# -- Compiling module ram32x3
-# 
-# Top level modules:
-# 	ram32x3
-# End time: 19:05:22 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:05:22 on Oct 08,2023
-# vlog -reportprogress 300 ./task1.sv 
-# -- Compiling module task1
-# 
-# Top level modules:
-# 	task1
-# End time: 19:05:22 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:05:22 on Oct 08,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
-# 
-# Top level modules:
-# 	task2
-# End time: 19:05:22 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:05:22 on Oct 08,2023
-# vlog -reportprogress 300 ./task1_tb.sv 
-# -- Compiling module task1_tb
-# 
-# Top level modules:
-# 	task1_tb
-# End time: 19:05:22 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 19:05:23 on Oct 08,2023, Elapsed time: 0:02:36
-# Errors: 7, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work task1_tb -Lf altera_mf_ver 
-# Start time: 19:05:23 on Oct 08,2023
-# Loading sv_std.std
-# Loading work.task1_tb
-# Loading work.task1
-# Loading work.ram32x3
-# Loading altera_mf_ver.altsyncram
-# Loading work.task2
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Error: Cannot open macro file: task2_wave.do
-# Error in macro ./runlab.do line 20
-# Cannot open macro file: task2_wave.do
-#     while executing
-# "do task2_wave.do"
-add wave -position end  sim:/task1_tb/address
-add wave -position end  sim:/task1_tb/clk
-add wave -position end  sim:/task1_tb/reset
-add wave -position end  sim:/task1_tb/wren
-add wave -position end  sim:/task1_tb/data
-add wave -position end  sim:/task1_tb/q
-add wave -position end  sim:/task1_tb/q2
-run -all
-# ** Note: $stop    : ./task1_tb.sv(96)
-#    Time: 2450 ps  Iteration: 1  Instance: /task1_tb
-# Break in Module task1_tb at ./task1_tb.sv line 96
+# "do DE1_SoC_wave.do"
+add wave -position end  sim:/DE1_SoC_tb/dut/HEX0
+add wave -position end  sim:/DE1_SoC_tb/dut/HEX1
+add wave -position end  sim:/DE1_SoC_tb/dut/HEX4
+add wave -position end  sim:/DE1_SoC_tb/dut/HEX5
+add wave -position 0  sim:/DE1_SoC_tb/dut/SW[9]
+add wave -position 1  sim:/DE1_SoC_tb/dut/SW[8]
+add wave -position 2  sim:/DE1_SoC_tb/dut/SW[7]
+add wave -position 3  sim:/DE1_SoC_tb/dut/SW[6]
+add wave -position 4  sim:/DE1_SoC_tb/dut/SW[5]
+add wave -position 5  sim:/DE1_SoC_tb/dut/SW[4]
+add wave -position 6  sim:/DE1_SoC_tb/dut/SW[3]
+add wave -position 7  sim:/DE1_SoC_tb/dut/SW[2]
+add wave -position 8  sim:/DE1_SoC_tb/dut/SW[1]
+add wave -position 9  sim:/DE1_SoC_tb/dut/SW[0]
+add wave -position 1  sim:/DE1_SoC_tb/dut2/address
+add wave -position 7  sim:/DE1_SoC_tb/dut2/data
+add wave -position 11  sim:/DE1_SoC_tb/dut2/wren
+add wave -position 16  sim:/DE1_SoC_tb/dut2/q
 run -all
 # Break key hit
-# Break in Module altsyncram_body at /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v line 49250
-# Error opening D:/build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v
-# Path name 'D:/build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v' doesn't exist.
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:04 on Oct 08,2023
-# vlog -reportprogress 300 ./ram32x3.v 
-# -- Compiling module ram32x3
-# 
-# Top level modules:
-# 	ram32x3
-# End time: 19:07:04 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:04 on Oct 08,2023
-# vlog -reportprogress 300 ./task1.sv 
-# -- Compiling module task1
-# 
-# Top level modules:
-# 	task1
-# End time: 19:07:04 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:04 on Oct 08,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
-# 
-# Top level modules:
-# 	task2
-# End time: 19:07:04 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:04 on Oct 08,2023
-# vlog -reportprogress 300 ./task1_tb.sv 
-# -- Compiling module task1_tb
-# 
-# Top level modules:
-# 	task1_tb
-# End time: 19:07:04 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 19:07:07 on Oct 08,2023, Elapsed time: 0:01:44
-# Errors: 4, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work task1_tb -Lf altera_mf_ver 
-# Start time: 19:07:07 on Oct 08,2023
-# Loading sv_std.std
-# Loading work.task1_tb
-# Loading work.task1
-# Loading work.ram32x3
-# Loading altera_mf_ver.altsyncram
-# Loading work.task2
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Error: Cannot open macro file: task2_wave.do
-# Error in macro ./runlab.do line 20
-# Cannot open macro file: task2_wave.do
-#     while executing
-# "do task2_wave.do"
-restart -f
-restart -f
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:12 on Oct 08,2023
-# vlog -reportprogress 300 ./ram32x3.v 
-# -- Compiling module ram32x3
-# 
-# Top level modules:
-# 	ram32x3
-# End time: 19:07:12 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:12 on Oct 08,2023
-# vlog -reportprogress 300 ./task1.sv 
-# -- Compiling module task1
-# 
-# Top level modules:
-# 	task1
-# End time: 19:07:12 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:12 on Oct 08,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
-# 
-# Top level modules:
-# 	task2
-# End time: 19:07:12 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:07:12 on Oct 08,2023
-# vlog -reportprogress 300 ./task1_tb.sv 
-# -- Compiling module task1_tb
-# 
-# Top level modules:
-# 	task1_tb
-# End time: 19:07:12 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 19:07:13 on Oct 08,2023, Elapsed time: 0:00:06
-# Errors: 3, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work task1_tb -Lf altera_mf_ver 
-# Start time: 19:07:13 on Oct 08,2023
-# Loading sv_std.std
-# Loading work.task1_tb
-# Loading work.task1
-# Loading work.ram32x3
-# Loading altera_mf_ver.altsyncram
-# Loading work.task2
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Error: Cannot open macro file: task2_wave.do
-# Error in macro ./runlab.do line 20
-# Cannot open macro file: task2_wave.do
-#     while executing
-# "do task2_wave.do"
-add wave -position end  sim:/task1_tb/address
-add wave -position end  sim:/task1_tb/clk
-add wave -position end  sim:/task1_tb/reset
-add wave -position end  sim:/task1_tb/wren
-add wave -position end  sim:/task1_tb/data
-add wave -position end  sim:/task1_tb/q
-add wave -position end  sim:/task1_tb/q2
-run -all
-# ** Note: $stop    : ./task1_tb.sv(96)
-#    Time: 2450 ps  Iteration: 1  Instance: /task1_tb
-# Break in Module task1_tb at ./task1_tb.sv line 96
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/Documents/ee_371/lab2/task2_wave.do
-# End time: 19:08:24 on Oct 08,2023, Elapsed time: 0:01:11
+# Break in Module DE1_SoC_tb at ./DE1_SoC_tb.sv line 20
+# End time: 21:58:49 on Oct 08,2023, Elapsed time: 0:01:57
 # Errors: 3, Warnings: 0
