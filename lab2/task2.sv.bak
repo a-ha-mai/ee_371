@@ -1,0 +1,16 @@
+module task2 (address, clk, data, wren, q);
+	logic [2:0] memory_array [31:0];
+	
+	input [4:0] address;
+	input clk, wren; // wren = [wr]ite [en]able
+	input [2:0] data;
+	output [2:0] q;
+	
+	always_ff @(posedge clk) begin
+		if (wren) begin
+			memory_array[address] <= data;
+		end else begin
+			q <= memory_array[address];
+		end
+	end
+endmodule

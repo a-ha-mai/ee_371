@@ -9,9 +9,9 @@ data[0] => data[0].IN1
 data[1] => data[1].IN1
 data[2] => data[2].IN1
 wren => wren.IN1
-q[0] <= ram32x3:ram.q
-q[1] <= ram32x3:ram.q
-q[2] <= ram32x3:ram.q
+q[0] << ram32x3:ram.q
+q[1] << ram32x3:ram.q
+q[2] << ram32x3:ram.q
 
 
 |task1|ram32x3:ram
