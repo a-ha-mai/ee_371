@@ -9,8 +9,8 @@ module DE1_SoC (KEY, SW, HEX0, HEX1, HEX4, HEX5);
 	logic [3:0] h0, h1, h4, h5;
 	logic [4:0] Address;
 	
-	task2 t2 (.address(Address), .clk(CLOCK_50), .reset(KEY[3]), .data(DataIn), .wren(SW[0]), .enable(SW[9]), .q(DataOut2));
-	task3 t3 (.address(Address), .clk(CLOCK_50), .reset(KEY[3]), .data(DataIn), .wren(SW[0]), .enable(SW[9]), .q(DataOut3))
+	task2 t2 (.address(Address), .clk(CLOCK_50), .reset(KEY[3]), .data(DataIn), .wren(SW[0]), .select(SW[9]), .q(DataOut2));
+	task3 t3 (.address(Address), .clk(CLOCK_50), .reset(KEY[3]), .data(DataIn), .wren(SW[0]), .select(SW[9]), .q(DataOut3))
 	
 	seg7 hex0 (.hex(h0), .leds(HEX0));
 	seg7 hex1 (.hex(h1), .leds(HEX1));
@@ -53,7 +53,7 @@ module DE1_SoC (KEY, SW, HEX0, HEX1, HEX4, HEX5);
 			default: h1 = 1'h0;
 		endcase
 		
-		if (enable) begin
+		if (select) begin
 			DataOut = DataOut3;
 		end else begin
 			DataOut = DataOut2;
