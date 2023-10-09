@@ -57,23 +57,43 @@ R5
 R6
 n@d@e1_@so@c_tb
 vram32x3
-Z7 !s110 1696822727
+Z7 !s110 1696884236
 !i10b 1
 !s100 >i_=LX@Q5h;U6@m4D`gHo2
 IF9LFi]JIjV5GI?6l5GF;h1
 R3
-R0
-w1696815100
+Z8 dC:/Users/Anna/Documents/ee_371/ee_371/lab2
+w1696880928
 8./ram32x3.v
 F./ram32x3.v
-L0 40
+Z9 L0 40
 R4
 r1
 !s85 0
 31
-Z8 !s108 1696822727.000000
+Z10 !s108 1696884236.000000
 !s107 ./ram32x3.v|
 !s90 -reportprogress|300|./ram32x3.v|
+!i113 1
+R6
+vram32x3port2
+Z11 !s110 1696884284
+!i10b 1
+!s100 DJF=moLPRDj4YQPiEC59Q0
+IFGkT]Y[JXic]C:gD?E8V80
+R3
+R8
+w1696881430
+8./ram32x3port2.v
+F./ram32x3port2.v
+R9
+R4
+r1
+!s85 0
+31
+Z12 !s108 1696884284.000000
+!s107 ./ram32x3port2.v|
+!s90 -reportprogress|300|./ram32x3port2.v|
 !i113 1
 R6
 vseg7
@@ -108,8 +128,8 @@ IMKGP3al1i]aeS:W2>0l6@2
 R3
 !s105 task1_sv_unit
 S1
-R0
-w1696817330
+R8
+Z13 w1696880404
 8./task1.sv
 F./task1.sv
 L0 3
@@ -117,22 +137,22 @@ R4
 r1
 !s85 0
 31
-R8
+R10
 !s107 ./task1.sv|
 !s90 -reportprogress|300|./task1.sv|
 !i113 1
 R6
 vtask1_tb
 R1
-R7
+Z14 !s110 1696884237
 !i10b 1
 !s100 PGYT?`X:^fCH9j7n;aWS:2
 IT1a`PF58I[:7=Kf?@KH1>2
 R3
 !s105 task1_tb_sv_unit
 S1
-R0
-w1696816615
+R8
+R13
 8./task1_tb.sv
 F./task1_tb.sv
 L0 3
@@ -140,22 +160,22 @@ R4
 r1
 !s85 0
 31
-R8
+Z15 !s108 1696884237.000000
 !s107 ./task1_tb.sv|
 !s90 -reportprogress|300|./task1_tb.sv|
 !i113 1
 R6
 vtask2
 R1
-R2
+R14
 !i10b 1
 !s100 :DYY45z1;XfB8_kd54dl=3
 IGlPZFX<[U]39h;CaDo[CQ1
 R3
 !s105 task2_sv_unit
 S1
-R0
-w1696817201
+R8
+R13
 8./task2.sv
 F./task2.sv
 L0 3
@@ -163,8 +183,54 @@ R4
 r1
 !s85 0
 31
-R5
+R15
 !s107 ./task2.sv|
 !s90 -reportprogress|300|./task2.sv|
+!i113 1
+R6
+vtask3
+R1
+R11
+!i10b 1
+!s100 Bn>8>HzJBQA3AJ36Af=jZ3
+IhdKTjnkGO[T74=P9I]D212
+R3
+!s105 task3_sv_unit
+S1
+R8
+w1696883428
+8./task3.sv
+F./task3.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R12
+!s107 ./task3.sv|
+!s90 -reportprogress|300|./task3.sv|
+!i113 1
+R6
+vtask3_tb
+R1
+R11
+!i10b 1
+!s100 Y@Qf2jmU3kjHIz:1_P6J91
+I994z9WE;mW58mAiWG:3Xe3
+R3
+!s105 task3_tb_sv_unit
+S1
+R8
+w1696883698
+8./task3_tb.sv
+F./task3_tb.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R12
+!s107 ./task3_tb.sv|
+!s90 -reportprogress|300|./task3_tb.sv|
 !i113 1
 R6

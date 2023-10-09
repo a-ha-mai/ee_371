@@ -2,7 +2,7 @@
 KEY[0] => KEY[0].IN1
 KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
-KEY[3] => ~NO_FANOUT~
+KEY[3] => KEY[3].IN1
 SW[0] => SW[0].IN1
 SW[1] => DataIn[0].IN1
 SW[2] => DataIn[1].IN1
@@ -12,7 +12,7 @@ SW[5] => Address[1].IN1
 SW[6] => Address[2].IN1
 SW[7] => Address[3].IN1
 SW[8] => h5[0].IN2
-SW[9] => SW[9].IN1
+SW[9] => ~NO_FANOUT~
 HEX0[0] << seg7:hex0.leds
 HEX0[1] << seg7:hex0.leds
 HEX0[2] << seg7:hex0.leds

@@ -5,11 +5,12 @@ module DE1_SoC (KEY, SW, HEX0, HEX1, HEX4, HEX5);
 	input logic [9:0] SW;
 	output logic [6:0] HEX0, HEX1, HEX4, HEX5;
 	
-	logic [2:0] DataIn, DataOut;
+	logic [2:0] DataIn, DataOut, DataOut2, DataOut3;
 	logic [3:0] h0, h1, h4, h5;
 	logic [4:0] Address;
 	
-	task2 t2 (.address(Address), .clk(KEY[0]), .reset(KEY[3]), .data(DataIn), .wren(SW[0]), .q(DataOut));
+	task2 t2 (.address(Address), .clk(CLOCK_50), .reset(KEY[3]), .data(DataIn), .wren(SW[0]), .enable(SW[9]), .q(DataOut2));
+	task3 t3 (.address(Address), .clk(CLOCK_50), .reset(KEY[3]), .data(DataIn), .wren(SW[0]), .enable(SW[9]), .q(DataOut3))
 	
 	seg7 hex0 (.hex(h0), .leds(HEX0));
 	seg7 hex1 (.hex(h1), .leds(HEX1));
@@ -51,6 +52,12 @@ module DE1_SoC (KEY, SW, HEX0, HEX1, HEX4, HEX5);
 			4'b0111: h1 = 1'h7;
 			default: h1 = 1'h0;
 		endcase
+		
+		if (enable) begin
+			DataOut = DataOut3;
+		end else begin
+			DataOut = DataOut2;
+		end
 		
 		case (DataOut)
 			4'b0000: h1 = 1'h0;

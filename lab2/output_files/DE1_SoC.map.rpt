@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Sun Oct 08 22:01:36 2023
+Mon Oct 09 13:35:11 2023
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -48,7 +48,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Oct 08 22:01:36 2023       ;
+; Analysis & Synthesis Status     ; Successful - Mon Oct 09 13:35:11 2023       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE1_SoC                                     ;
 ; Top-level Entity Name           ; DE1_SoC                                     ;
@@ -160,54 +160,54 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                            ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path        ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------+---------+
-; task2.sv                         ; yes             ; User SystemVerilog HDL File  ; D:/Documents/ee_371/lab2/task2.sv   ;         ;
-; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File  ; D:/Documents/ee_371/lab2/DE1_SoC.sv ;         ;
-; seg7.sv                          ; yes             ; User SystemVerilog HDL File  ; D:/Documents/ee_371/lab2/seg7.sv    ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                              ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                          ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------+---------+
+; task2.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Anna/Documents/ee_371/ee_371/lab2/task2.sv   ;         ;
+; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv ;         ;
+; seg7.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Anna/Documents/ee_371/ee_371/lab2/seg7.sv    ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 87          ;
-;                                             ;             ;
-; Combinational ALUT usage for logic          ; 99          ;
-;     -- 7 input functions                    ; 0           ;
-;     -- 6 input functions                    ; 59          ;
-;     -- 5 input functions                    ; 6           ;
-;     -- 4 input functions                    ; 0           ;
-;     -- <=3 input functions                  ; 34          ;
-;                                             ;             ;
-; Dedicated logic registers                   ; 99          ;
-;                                             ;             ;
-; I/O pins                                    ; 42          ;
-;                                             ;             ;
-; Total DSP Blocks                            ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; SW[9]~input ;
-; Maximum fan-out                             ; 131         ;
-; Total fan-out                               ; 900         ;
-; Average fan-out                             ; 3.19        ;
-+---------------------------------------------+-------------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimate of Logic utilization (ALMs needed) ; 87           ;
+;                                             ;              ;
+; Combinational ALUT usage for logic          ; 99           ;
+;     -- 7 input functions                    ; 0            ;
+;     -- 6 input functions                    ; 59           ;
+;     -- 5 input functions                    ; 6            ;
+;     -- 4 input functions                    ; 0            ;
+;     -- <=3 input functions                  ; 34           ;
+;                                             ;              ;
+; Dedicated logic registers                   ; 99           ;
+;                                             ;              ;
+; I/O pins                                    ; 42           ;
+;                                             ;              ;
+; Total DSP Blocks                            ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; KEY[3]~input ;
+; Maximum fan-out                             ; 131          ;
+; Total fan-out                               ; 900          ;
+; Average fan-out                             ; 3.19         ;
++---------------------------------------------+--------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -341,90 +341,96 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sun Oct 08 22:01:29 2023
+    Info: Processing started: Mon Oct 09 13:34:59 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file ram32x3.v
-    Info (12023): Found entity 1: ram32x3 File: D:/Documents/ee_371/lab2/ram32x3.v Line: 40
+    Info (12023): Found entity 1: ram32x3 File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/ram32x3.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file task1.sv
-    Info (12023): Found entity 1: task1 File: D:/Documents/ee_371/lab2/task1.sv Line: 3
+    Info (12023): Found entity 1: task1 File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/task1.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file task2.sv
-    Info (12023): Found entity 1: task2 File: D:/Documents/ee_371/lab2/task2.sv Line: 3
+    Info (12023): Found entity 1: task2 File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/task2.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file task1_tb.sv
-    Info (12023): Found entity 1: task1_tb File: D:/Documents/ee_371/lab2/task1_tb.sv Line: 3
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(26): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 26
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(27): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 27
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(28): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 28
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(29): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 29
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(30): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 30
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(31): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 31
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(32): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 32
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(33): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 33
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(34): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 34
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(35): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 35
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(36): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 36
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(37): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 37
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(38): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 38
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(39): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 39
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(46): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 46
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(47): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 47
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(49): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 49
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(50): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 50
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(51): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 51
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(58): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 58
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(59): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 59
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(61): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 61
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(62): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 62
-Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(63): truncated literal to match 1 bits File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 63
+    Info (12023): Found entity 1: task1_tb File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/task1_tb.sv Line: 3
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(26): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 26
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(27): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 27
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(28): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 28
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(29): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 29
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(30): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 30
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(31): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 31
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(32): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 32
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(33): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 33
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(34): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 34
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(35): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 35
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(36): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 36
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(37): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 37
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(38): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 38
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(39): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 39
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(46): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 46
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(47): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 47
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(49): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 49
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(50): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 50
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(51): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 51
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(58): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 58
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(59): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 59
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(61): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 61
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(62): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 62
+Warning (10229): Verilog HDL Expression warning at DE1_SoC.sv(63): truncated literal to match 1 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 63
 Info (12021): Found 1 design units, including 1 entities, in source file de1_soc.sv
-    Info (12023): Found entity 1: DE1_SoC File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 3
+    Info (12023): Found entity 1: DE1_SoC File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file seg7.sv
-    Info (12023): Found entity 1: seg7 File: D:/Documents/ee_371/lab2/seg7.sv Line: 10
+    Info (12023): Found entity 1: seg7 File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/seg7.sv Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file de1_soc_tb.sv
-    Info (12023): Found entity 1: DE1_SoC_tb File: D:/Documents/ee_371/lab2/DE1_SoC_tb.sv Line: 3
+    Info (12023): Found entity 1: DE1_SoC_tb File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC_tb.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file ram32x3port2.v
+    Info (12023): Found entity 1: ram32x3port2 File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/ram32x3port2.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file task3_tb.sv
+    Info (12023): Found entity 1: task3_tb File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/task3_tb.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file task3.sv
+    Info (12023): Found entity 1: task3 File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/task3.sv Line: 3
 Info (12127): Elaborating entity "DE1_SoC" for the top level hierarchy
-Info (12128): Elaborating entity "task2" for hierarchy "task2:t2" File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 12
-Info (12128): Elaborating entity "seg7" for hierarchy "seg7:hex0" File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 14
+Info (12128): Elaborating entity "task2" for hierarchy "task2:t2" File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 12
+Info (12128): Elaborating entity "seg7" for hierarchy "seg7:hex0" File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 14
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[0]" is stuck at GND File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 6
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 6
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 6
-    Warning (13410): Pin "HEX0[3]" is stuck at GND File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 6
-    Warning (13410): Pin "HEX0[4]" is stuck at GND File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 6
-    Warning (13410): Pin "HEX0[5]" is stuck at GND File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 6
-    Warning (13410): Pin "HEX0[6]" is stuck at VCC File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 6
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 6
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 6
-    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 6
-    Warning (13410): Pin "HEX4[1]" is stuck at GND File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 6
-    Warning (13410): Pin "HEX4[2]" is stuck at GND File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 6
-    Warning (13410): Pin "HEX4[6]" is stuck at VCC File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 6
-    Warning (13410): Pin "HEX5[1]" is stuck at GND File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 6
-    Warning (13410): Pin "HEX5[2]" is stuck at GND File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 6
-    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 6
+    Warning (13410): Pin "HEX0[0]" is stuck at GND File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 6
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 6
+    Warning (13410): Pin "HEX0[2]" is stuck at GND File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 6
+    Warning (13410): Pin "HEX0[3]" is stuck at GND File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 6
+    Warning (13410): Pin "HEX0[4]" is stuck at GND File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 6
+    Warning (13410): Pin "HEX0[5]" is stuck at GND File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 6
+    Warning (13410): Pin "HEX0[6]" is stuck at VCC File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 6
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 6
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 6
+    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 6
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 6
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 6
+    Warning (13410): Pin "HEX4[6]" is stuck at VCC File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 6
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 6
+    Warning (13410): Pin "HEX5[2]" is stuck at GND File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 6
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 6
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file D:/Documents/ee_371/lab2/output_files/DE1_SoC.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/Anna/Documents/ee_371/ee_371/lab2/output_files/DE1_SoC.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[1]" File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 4
-    Warning (15610): No output dependent on input pin "KEY[2]" File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 4
-    Warning (15610): No output dependent on input pin "KEY[3]" File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 4
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 4
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/Anna/Documents/ee_371/ee_371/lab2/DE1_SoC.sv Line: 5
 Info (21057): Implemented 237 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 28 output pins
     Info (21061): Implemented 195 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 46 warnings
-    Info: Peak virtual memory: 4881 megabytes
-    Info: Processing ended: Sun Oct 08 22:01:36 2023
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Peak virtual memory: 4827 megabytes
+    Info: Processing ended: Mon Oct 09 13:35:11 2023
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:23
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in D:/Documents/ee_371/lab2/output_files/DE1_SoC.map.smsg.
+The suppressed messages can be found in C:/Users/Anna/Documents/ee_371/ee_371/lab2/output_files/DE1_SoC.map.smsg.
 
 
