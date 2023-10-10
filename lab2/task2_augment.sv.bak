@@ -1,9 +1,9 @@
 `timescale 1 ps / 1 ps
 
-module task2_augment (rdaddress, wraddress, clk, reset, data, wren, select, q);
+module task2 (rdaddress, wraddress, clk, reset, data, wren, select, q);
 	logic [2:0] memory_array [31:0];
 	
-	input logic [4:0] rdaddress, wraddress;
+	input logic [4:0] address;
 	input logic clk, reset, wren, select; // wren = [wr]ite [en]able
 	input logic [2:0] data;
 	output logic [2:0] q;

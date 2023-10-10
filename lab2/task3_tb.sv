@@ -6,7 +6,7 @@ module task3_tb ();
 	logic [2:0] data;
 	logic [2:0] q;
 	
-	task3 dut (.address(address), .clk(clk), .data(data), .wren(wren), .enable(enable), .q(q));
+	task3 dut (.rdaddress(address), .wraddress(address), .clk(clk), .data(data), .wren(wren), .enable(enable), .q(q));
 	
 	parameter CLOCK_PERIOD = 100;
 	
