@@ -1,5 +1,10 @@
 `timescale 1 ps / 1 ps
 
+// task2 is a module that implements read and write functions to memory using SystemVerilog and
+// implements the functionality of single-port ram.
+// The 3-bit data is sent to memory_array at a given 5-bit address. memory_array has a capacity of
+// 32 words with each word being 3-bits. This module then outputs the value of memory_array the given
+// 5-bit address as a 3-bit signal named q.
 module task2 (address, clk, reset, data, wren, q);
 	logic [2:0] memory_array [31:0];
 	
