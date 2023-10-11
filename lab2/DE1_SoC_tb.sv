@@ -17,6 +17,10 @@ module DE1_SoC_tb ();
 	
 	// initialize signals
 	initial begin
+		Address <= 0;
+		DataIn <= 0;
+		SW[0] <= 0;
+		clk <= 0;
 		forever #(CLOCK_PERIOD/2) clk <= ~clk;
 	end
 	
