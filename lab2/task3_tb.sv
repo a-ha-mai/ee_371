@@ -2,11 +2,11 @@
 
 module task3_tb ();
 	logic [4:0] address;
-	logic clk, reset, wren, enable;
+	logic clk, reset, wren, select;
 	logic [2:0] data;
 	logic [2:0] q;
 	
-	task3 dut (.rdaddress(address), .wraddress(address), .clk(clk), .data(data), .wren(wren), .enable(enable), .q(q));
+	task3 dut (.rdaddress(address), .wraddress(address), .clk(clk), .data(data), .wren(wren), .select(select), .q(q));
 	
 	parameter CLOCK_PERIOD = 100;
 	
@@ -15,7 +15,7 @@ module task3_tb ();
 		address <= 0;
 		data <= 0;
 		wren <= 0;
-		enable <= 0;
+		select <= 0;
 		clk <= 0;
 		forever #(CLOCK_PERIOD/2) clk <= ~clk;
 	end
@@ -28,23 +28,23 @@ module task3_tb ();
 		reset <= 0;
 		@(posedge clk);
 		
-		// write operation no enable test
-		wren <= 1; // enable write operation
-		enable <= 0;
+		// write operation no select test
+		wren <= 1; // select write operation
+		select <= 0;
 		address <= 0; // set address for writing
 		data <= 3; // set data to be written
 		repeat (2) @(posedge clk);
 		
-		// write operation yes enable test
-		wren <= 1; // enable write operation
-		enable <= 1;
+		// write operation yes select test
+		wren <= 1; // select write operation
+		select <= 1;
 		address <= 0; // set address for writing
 		data <= 3; // set data to be written
 		repeat (2) @(posedge clk);
 		
-		// read operation yes enable test
+		// read operation yes select test
 		wren <= 0; // disable write operation
-		enable <= 1;
+		select <= 1;
 		address <= 0; // set address for reading
 		data <= 3; 
 		repeat (2) @(posedge clk);
@@ -79,7 +79,7 @@ module task3_tb ();
 		data <= 2;
 		repeat (2) @(posedge clk);
 		
-		// changing data when write enabled test
+		// changing data when write selectd test
 		wren <= 1;
 		address <= 4; 
 		data <= 5;
