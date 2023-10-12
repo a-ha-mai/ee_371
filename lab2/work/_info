@@ -8,61 +8,132 @@ z2
 !i10f 100
 cModel Technology
 Z0 dD:/Documents/ee_371/lab2
-vDE1_SoC
+vclock_divider
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1697092130
+!i10b 1
+!s100 ;;cR1iFKl;SYA5AjF[83c3
+Ic]7KP2VdgN8VCEKP[BMEA0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 clock_divider_sv_unit
+S1
+R0
+Z4 w1696998282
+8./clock_divider.sv
+F./clock_divider.sv
+L0 3
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1697092130.000000
+!s107 ./clock_divider.sv|
+!s90 -reportprogress|300|./clock_divider.sv|
+!i113 1
+Z7 tCvgOpt 0
+vDE1_SoC
+R1
 !s110 1697088115
 !i10b 1
 !s100 <C3;4ZX^k3S;4fH0alJd_2
 I`Ybn^oAh?=nDD=4S4042A3
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 !s105 DE1_SoC_50_sv_unit
+R3
+Z8 !s105 DE1_SoC_50_sv_unit
 S1
 R0
 w1697087918
-Z4 8./DE1_SoC_50.sv
-Z5 F./DE1_SoC_50.sv
+Z9 8./DE1_SoC_50.sv
+Z10 F./DE1_SoC_50.sv
 L0 7
-Z6 OV;L;10.5b;63
+R5
 r1
 !s85 0
 31
 !s108 1697088115.000000
-Z7 !s107 ./DE1_SoC_50.sv|
-Z8 !s90 -reportprogress|300|./DE1_SoC_50.sv|
+Z11 !s107 ./DE1_SoC_50.sv|
+Z12 !s90 -reportprogress|300|./DE1_SoC_50.sv|
 !i113 1
-Z9 tCvgOpt 0
+R7
 n@d@e1_@so@c
 vDE1_SoC_50
 R1
-Z10 !s110 1697088148
+Z13 !s110 1697088148
 !i10b 1
 !s100 9d0ERVni05Q52RDoc4F5e3
 IE`EGPBUc?gTDUAQF8d0WC3
-R2
 R3
+R8
 S1
 R0
 w1697088139
-R4
-R5
+R9
+R10
 L0 7
-R6
+R5
 r1
 !s85 0
 31
-Z11 !s108 1697088148.000000
-R7
-R8
+Z14 !s108 1697088148.000000
+R11
+R12
 !i113 1
-R9
+R7
 n@d@e1_@so@c_50
+vDE1_SoC_augment
+R1
+R2
+!i10b 1
+!s100 4=eVN17GX<lH]?k[fAa810
+Ize2lJgMo6=:7U21=8d:eP2
+R3
+!s105 DE1_SoC_augment_sv_unit
+S1
+R0
+w1697091862
+8./DE1_SoC_augment.sv
+F./DE1_SoC_augment.sv
+L0 6
+R5
+r1
+!s85 0
+31
+R6
+!s107 ./DE1_SoC_augment.sv|
+!s90 -reportprogress|300|./DE1_SoC_augment.sv|
+!i113 1
+R7
+n@d@e1_@so@c_augment
+vDE1_SoC_augment_tb
+R1
+R2
+!i10b 1
+!s100 N9BQZ@o7QLYi[5jm<jSAF3
+I4HfKA;ieaDLYaE5il79>10
+R3
+!s105 DE1_SoC_augment_tb_sv_unit
+S1
+R0
+w1697091987
+8./DE1_SoC_augment_tb.sv
+F./DE1_SoC_augment_tb.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+!s107 ./DE1_SoC_augment_tb.sv|
+!s90 -reportprogress|300|./DE1_SoC_augment_tb.sv|
+!i113 1
+R7
+n@d@e1_@so@c_augment_tb
 vDE1_SoC_tb
 R1
-R10
+R13
 !i10b 1
 !s100 4YWL5TWelk2=ChhM5;43k1
 I1camf52=oFc`=:;Xz[m<50
-R2
+R3
 !s105 DE1_SoC_tb_sv_unit
 S1
 R0
@@ -70,109 +141,109 @@ w1697088050
 8./DE1_SoC_tb.sv
 F./DE1_SoC_tb.sv
 L0 3
-R6
+R5
 r1
 !s85 0
 31
-R11
+R14
 !s107 ./DE1_SoC_tb.sv|
 !s90 -reportprogress|300|./DE1_SoC_tb.sv|
 !i113 1
-R9
+R7
 n@d@e1_@so@c_tb
 vdff_pair
 R1
-R10
+R13
 !i10b 1
 !s100 H]Q[nAeVULVO>UUFkKa200
 I0:oK=Z`^O<F:6[e@mRRjk1
-R2
+R3
 !s105 dff_pair_sv_unit
 S1
 R0
-Z12 w1697080209
+Z15 w1697080209
 8./dff_pair.sv
 F./dff_pair.sv
 L0 1
-R6
+R5
 r1
 !s85 0
 31
-R11
+R14
 !s107 ./dff_pair.sv|
 !s90 -reportprogress|300|./dff_pair.sv|
 !i113 1
-R9
+R7
 vdff_single
 R1
-R10
+R13
 !i10b 1
 !s100 [XM62d1=>B35==RbgQZU43
 IBcWGF@cCUW<B_9B?;^m?52
-R2
+R3
 !s105 dff_single_sv_unit
 S1
 R0
-R12
+R15
 8./dff_single.sv
 F./dff_single.sv
 L0 1
-R6
+R5
 r1
 !s85 0
 31
-R11
+R14
 !s107 ./dff_single.sv|
 !s90 -reportprogress|300|./dff_single.sv|
 !i113 1
-R9
+R7
 vram32x3
-Z13 !s110 1697047108
+Z16 !s110 1697090114
 !i10b 1
 !s100 >i_=LX@Q5h;U6@m4D`gHo2
 IF9LFi]JIjV5GI?6l5GF;h1
-R2
-Z14 dC:/Users/Anna/Documents/ee_371/ee_371/lab2
-w1696880928
+R3
+R0
+w1696815100
 8./ram32x3.v
 F./ram32x3.v
-Z15 L0 40
-R6
+Z17 L0 40
+R5
 r1
 !s85 0
 31
-Z16 !s108 1697047108.000000
+!s108 1697090113.000000
 !s107 ./ram32x3.v|
 !s90 -reportprogress|300|./ram32x3.v|
 !i113 1
-R9
+R7
 vram32x3port2
-Z17 !s110 1697046938
+R2
 !i10b 1
 !s100 DJF=moLPRDj4YQPiEC59Q0
 IFGkT]Y[JXic]C:gD?E8V80
-R2
-R14
-w1696881430
+R3
+R0
+w1696910704
 8./ram32x3port2.v
 F./ram32x3port2.v
-R15
-R6
+R17
+R5
 r1
 !s85 0
 31
-Z18 !s108 1697046938.000000
+R6
 !s107 ./ram32x3port2.v|
 !s90 -reportprogress|300|./ram32x3port2.v|
 !i113 1
-R9
+R7
 vseg7
 R1
-R10
+R2
 !i10b 1
 !s100 jj9HOZ_?ONU=EkYa?Y1[J2
 IOHV<;HWWTn3d95DFVdPKk1
-R2
+R3
 !s105 seg7_sv_unit
 S1
 R0
@@ -180,68 +251,68 @@ w1696822773
 8./seg7.sv
 F./seg7.sv
 L0 10
-R6
+R5
 r1
 !s85 0
 31
-R11
+R6
 !s107 ./seg7.sv|
 !s90 -reportprogress|300|./seg7.sv|
 !i113 1
-R9
+R7
 vtask1
 R1
-R13
+R16
 !i10b 1
 !s100 8c]nAiiLLiU028jQ8GWeg1
 IIAZ[lT]51XDNHE6[1MUcg1
-R2
+R3
 !s105 task1_sv_unit
 S1
-R14
-w1696963891
+R0
+R4
 8./task1.sv
 F./task1.sv
 L0 6
-R6
+R5
 r1
 !s85 0
 31
-R16
+Z18 !s108 1697090114.000000
 !s107 ./task1.sv|
 !s90 -reportprogress|300|./task1.sv|
 !i113 1
-R9
+R7
 vtask1_tb
 R1
-R13
+R16
 !i10b 1
 !s100 PGYT?`X:^fCH9j7n;aWS:2
 IT1a`PF58I[:7=Kf?@KH1>2
-R2
+R3
 !s105 task1_tb_sv_unit
 S1
-R14
-w1696880404
+R0
+w1696816615
 8./task1_tb.sv
 F./task1_tb.sv
 L0 3
-R6
+R5
 r1
 !s85 0
 31
-R16
+R18
 !s107 ./task1_tb.sv|
 !s90 -reportprogress|300|./task1_tb.sv|
 !i113 1
-R9
+R7
 vtask2
 R1
-R10
+R16
 !i10b 1
 !s100 hDJk66GiJg;;<b=L[D[<42
 IHOS@WG2Dog3MmFU0c_[6H3
-R2
+R3
 !s105 task2_sv_unit
 S1
 R0
@@ -249,58 +320,81 @@ w1697001995
 8./task2.sv
 F./task2.sv
 L0 8
-R6
-r1
-!s85 0
-31
-R11
-!s107 ./task2.sv|
-!s90 -reportprogress|300|./task2.sv|
-!i113 1
-R9
-vtask3
-R1
-R17
-!i10b 1
-!s100 h]0]ZVBSh3VbF1kzkIV^91
-I]d61FOoegbk:]akb`eI4M0
-R2
-!s105 task3_sv_unit
-S1
-R14
-w1696966723
-8./task3.sv
-F./task3.sv
-L0 8
-R6
+R5
 r1
 !s85 0
 31
 R18
+!s107 ./task2.sv|
+!s90 -reportprogress|300|./task2.sv|
+!i113 1
+R7
+vtask2_augment
+R1
+R2
+!i10b 1
+!s100 A2A^lC2b2b@@Wb__NiJK>0
+IQnAKKJY4ko_BM;HJBW@?W3
+R3
+!s105 task2_augment_sv_unit
+S1
+R0
+R4
+8./task2_augment.sv
+F./task2_augment.sv
+L0 8
+R5
+r1
+!s85 0
+31
+R6
+!s107 ./task2_augment.sv|
+!s90 -reportprogress|300|./task2_augment.sv|
+!i113 1
+R7
+vtask3
+R1
+R2
+!i10b 1
+!s100 h]0]ZVBSh3VbF1kzkIV^91
+I]d61FOoegbk:]akb`eI4M0
+R3
+!s105 task3_sv_unit
+S1
+R0
+R4
+8./task3.sv
+F./task3.sv
+L0 8
+R5
+r1
+!s85 0
+31
+R6
 !s107 ./task3.sv|
 !s90 -reportprogress|300|./task3.sv|
 !i113 1
-R9
+R7
 vtask3_tb
 R1
-R17
+!s110 1697046938
 !i10b 1
 !s100 PGSW1Vmk=kzg`2_X=jUbk3
 I;D1<Kn:QjafSZJ4@<Jh?<1
-R2
+R3
 !s105 task3_tb_sv_unit
 S1
-R14
+dC:/Users/Anna/Documents/ee_371/ee_371/lab2
 w1697046933
 8./task3_tb.sv
 F./task3_tb.sv
 L0 3
-R6
+R5
 r1
 !s85 0
 31
-R18
+!s108 1697046938.000000
 !s107 ./task3_tb.sv|
 !s90 -reportprogress|300|./task3_tb.sv|
 !i113 1
-R9
+R7

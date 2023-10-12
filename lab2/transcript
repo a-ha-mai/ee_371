@@ -1,198 +1,768 @@
 # Reading D:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
-do DE1_Soc_runlab.do
+do DE1_SoC_augment_runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:21:07 on Oct 11,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
+# Start time: 23:23:11 on Oct 11,2023
+# vlog -reportprogress 300 ./task2_augment.sv 
+# -- Compiling module task2_augment
 # 
 # Top level modules:
-# 	task2
-# End time: 22:21:07 on Oct 11,2023, Elapsed time: 0:00:00
+# 	task2_augment
+# End time: 23:23:11 on Oct 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:21:07 on Oct 11,2023
+# Start time: 23:23:11 on Oct 11,2023
 # vlog -reportprogress 300 ./seg7.sv 
 # -- Compiling module seg7
 # 
 # Top level modules:
 # 	seg7
-# End time: 22:21:07 on Oct 11,2023, Elapsed time: 0:00:00
+# End time: 23:23:11 on Oct 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:21:07 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_single.sv 
-# -- Compiling module dff_single
+# Start time: 23:23:11 on Oct 11,2023
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
 # 
 # Top level modules:
-# 	dff_single
-# End time: 22:21:07 on Oct 11,2023, Elapsed time: 0:00:00
+# 	clock_divider
+# End time: 23:23:11 on Oct 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:21:07 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_pair.sv 
-# -- Compiling module dff_pair
-# 
-# Top level modules:
-# 	dff_pair
-# End time: 22:21:07 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:21:07 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC_50.sv 
-# ** Error: (vlog-7) Failed to open design unit file "./DE1_SoC_50.sv" in read mode.
+# Start time: 23:23:11 on Oct 11,2023
+# vlog -reportprogress 300 ./ram32x3port2.sv 
+# ** Error: (vlog-7) Failed to open design unit file "./ram32x3port2.sv" in read mode.
 # No such file or directory. (errno = ENOENT)
-# End time: 22:21:07 on Oct 11,2023, Elapsed time: 0:00:00
+# End time: 23:23:11 on Oct 11,2023, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
 # ** Error: D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./DE1_Soc_runlab.do line 11
+# Error in macro ./DE1_SoC_augment_runlab.do line 10
 # D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
 #     while executing
-# "vlog "./DE1_SoC_50.sv""
-do DE1_Soc_runlab.do
+# "vlog "./ram32x3port2.sv""
+do DE1_SoC_augment_runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:21:55 on Oct 11,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
+# Start time: 23:23:32 on Oct 11,2023
+# vlog -reportprogress 300 ./task2_augment.sv 
+# -- Compiling module task2_augment
 # 
 # Top level modules:
-# 	task2
-# End time: 22:21:55 on Oct 11,2023, Elapsed time: 0:00:00
+# 	task2_augment
+# End time: 23:23:32 on Oct 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:21:55 on Oct 11,2023
+# Start time: 23:23:32 on Oct 11,2023
 # vlog -reportprogress 300 ./seg7.sv 
 # -- Compiling module seg7
 # 
 # Top level modules:
 # 	seg7
-# End time: 22:21:55 on Oct 11,2023, Elapsed time: 0:00:00
+# End time: 23:23:32 on Oct 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:21:55 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_single.sv 
-# -- Compiling module dff_single
+# Start time: 23:23:32 on Oct 11,2023
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
 # 
 # Top level modules:
-# 	dff_single
-# End time: 22:21:55 on Oct 11,2023, Elapsed time: 0:00:00
+# 	clock_divider
+# End time: 23:23:32 on Oct 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:21:55 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_pair.sv 
-# -- Compiling module dff_pair
+# Start time: 23:23:32 on Oct 11,2023
+# vlog -reportprogress 300 ./ram32x3port2.v 
+# -- Compiling module ram32x3port2
 # 
 # Top level modules:
-# 	dff_pair
-# End time: 22:21:55 on Oct 11,2023, Elapsed time: 0:00:00
+# 	ram32x3port2
+# End time: 23:23:32 on Oct 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:21:55 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC_50.sv 
-# -- Compiling module DE1_SoC
+# Start time: 23:23:32 on Oct 11,2023
+# vlog -reportprogress 300 ./task3.sv 
+# -- Compiling module task3
 # 
 # Top level modules:
-# 	DE1_SoC
-# End time: 22:21:55 on Oct 11,2023, Elapsed time: 0:00:00
+# 	task3
+# End time: 23:23:32 on Oct 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:21:55 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
-# -- Compiling module DE1_SoC_tb
+# Start time: 23:23:32 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_augment.sv 
+# -- Compiling module DE1_SoC_augment
+# ** Error: ./DE1_SoC_augment.sv(82): (vlog-2110) Illegal reference to net "h3".
+# ** Error: ./DE1_SoC_augment.sv(84): (vlog-2110) Illegal reference to net "h3".
+# ** Error: ./DE1_SoC_augment.sv(87): (vlog-2110) Illegal reference to net "h2".
+# ** Error: ./DE1_SoC_augment.sv(88): (vlog-2110) Illegal reference to net "h2".
+# ** Error: ./DE1_SoC_augment.sv(89): (vlog-2110) Illegal reference to net "h2".
+# ** Error: ./DE1_SoC_augment.sv(90): (vlog-2110) Illegal reference to net "h2".
+# ** Error: ./DE1_SoC_augment.sv(91): (vlog-2110) Illegal reference to net "h2".
+# ** Error: ./DE1_SoC_augment.sv(92): (vlog-2110) Illegal reference to net "h2".
+# ** Error: ./DE1_SoC_augment.sv(93): (vlog-2110) Illegal reference to net "h2".
+# ** Error: ./DE1_SoC_augment.sv(94): (vlog-2110) Illegal reference to net "h2".
+# ** Error: ./DE1_SoC_augment.sv(95): (vlog-2110) Illegal reference to net "h2".
+# ** Error: ./DE1_SoC_augment.sv(96): (vlog-2110) Illegal reference to net "h2".
+# ** Error: ./DE1_SoC_augment.sv(97): (vlog-2110) Illegal reference to net "h2".
+# ** Error: ./DE1_SoC_augment.sv(98): (vlog-2110) Illegal reference to net "h2".
+# ** Error: ./DE1_SoC_augment.sv(99): (vlog-2110) Illegal reference to net "h2".
+# ** Error: ./DE1_SoC_augment.sv(100): (vlog-2110) Illegal reference to net "h2".
+# ** Error: ./DE1_SoC_augment.sv(101): (vlog-2110) Illegal reference to net "h2".
+# ** Error: ./DE1_SoC_augment.sv(102): (vlog-2110) Illegal reference to net "h2".
+# ** Error: ./DE1_SoC_augment.sv(103): (vlog-2110) Illegal reference to net "h2".
+# End time: 23:23:32 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 19, Warnings: 0
+# ** Error: D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./DE1_SoC_augment_runlab.do line 12
+# D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./DE1_SoC_augment.sv""
+do DE1_SoC_augment_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:24:44 on Oct 11,2023
+# vlog -reportprogress 300 ./task2_augment.sv 
+# -- Compiling module task2_augment
 # 
 # Top level modules:
-# 	DE1_SoC_tb
-# End time: 22:21:55 on Oct 11,2023, Elapsed time: 0:00:00
+# 	task2_augment
+# End time: 23:24:44 on Oct 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb 
-# Start time: 22:21:55 on Oct 11,2023
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:24:44 on Oct 11,2023
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 23:24:44 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:24:44 on Oct 11,2023
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 23:24:44 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:24:44 on Oct 11,2023
+# vlog -reportprogress 300 ./ram32x3port2.v 
+# -- Compiling module ram32x3port2
+# 
+# Top level modules:
+# 	ram32x3port2
+# End time: 23:24:44 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:24:44 on Oct 11,2023
+# vlog -reportprogress 300 ./task3.sv 
+# -- Compiling module task3
+# 
+# Top level modules:
+# 	task3
+# End time: 23:24:44 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:24:44 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_augment.sv 
+# -- Compiling module DE1_SoC_augment
+# 
+# Top level modules:
+# 	DE1_SoC_augment
+# End time: 23:24:44 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:24:44 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_augment_tb.sv 
+# -- Compiling module DE1_SoC_augment_tb
+# 
+# Top level modules:
+# 	DE1_SoC_augment_tb
+# End time: 23:24:44 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_augment_tb 
+# Start time: 23:24:44 on Oct 11,2023
 # Loading sv_std.std
-# Loading work.DE1_SoC_tb
-# ** Error: (vsim-3033) ./DE1_SoC_tb.sv(13): Instantiation of 'DE1_SoC_50' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb File: ./DE1_SoC_tb.sv
+# Loading work.DE1_SoC_augment_tb
+# Loading work.DE1_SoC_augment
+# Loading work.task2_augment
+# Loading work.task3
+# Loading work.ram32x3port2
+# ** Error: (vsim-3033) ./ram32x3port2.v(66): Instantiation of 'altsyncram' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_augment_tb/dut/t3/ram File: ./ram32x3port2.v
 #         Searched libraries:
 #             D:/Documents/ee_371/lab2/work
-# Loading work.task2
+# Loading work.clock_divider
+# Loading work.seg7
 # Error loading design
 # Error: Error loading design
 #        Pausing macro execution
-# MACRO ./DE1_Soc_runlab.do PAUSED at line 17
-do DE1_Soc_runlab.do
+# MACRO ./DE1_SoC_augment_runlab.do PAUSED at line 18
+do DE1_SoC_augment_runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:22:28 on Oct 11,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
+# Start time: 23:25:12 on Oct 11,2023
+# vlog -reportprogress 300 ./task2_augment.sv 
+# -- Compiling module task2_augment
 # 
 # Top level modules:
-# 	task2
-# End time: 22:22:28 on Oct 11,2023, Elapsed time: 0:00:00
+# 	task2_augment
+# End time: 23:25:12 on Oct 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:22:28 on Oct 11,2023
+# Start time: 23:25:12 on Oct 11,2023
 # vlog -reportprogress 300 ./seg7.sv 
 # -- Compiling module seg7
 # 
 # Top level modules:
 # 	seg7
-# End time: 22:22:28 on Oct 11,2023, Elapsed time: 0:00:00
+# End time: 23:25:12 on Oct 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:22:28 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_single.sv 
-# -- Compiling module dff_single
+# Start time: 23:25:12 on Oct 11,2023
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
 # 
 # Top level modules:
-# 	dff_single
-# End time: 22:22:28 on Oct 11,2023, Elapsed time: 0:00:00
+# 	clock_divider
+# End time: 23:25:12 on Oct 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:22:28 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_pair.sv 
-# -- Compiling module dff_pair
+# Start time: 23:25:12 on Oct 11,2023
+# vlog -reportprogress 300 ./ram32x3port2.v 
+# -- Compiling module ram32x3port2
 # 
 # Top level modules:
-# 	dff_pair
-# End time: 22:22:28 on Oct 11,2023, Elapsed time: 0:00:00
+# 	ram32x3port2
+# End time: 23:25:12 on Oct 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:22:28 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC_50.sv 
-# -- Compiling module DE1_SoC_50
+# Start time: 23:25:12 on Oct 11,2023
+# vlog -reportprogress 300 ./task3.sv 
+# -- Compiling module task3
 # 
 # Top level modules:
-# 	DE1_SoC_50
-# End time: 22:22:28 on Oct 11,2023, Elapsed time: 0:00:00
+# 	task3
+# End time: 23:25:12 on Oct 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:22:28 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
-# -- Compiling module DE1_SoC_tb
+# Start time: 23:25:12 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_augment.sv 
+# -- Compiling module DE1_SoC_augment
 # 
 # Top level modules:
-# 	DE1_SoC_tb
-# End time: 22:22:28 on Oct 11,2023, Elapsed time: 0:00:00
+# 	DE1_SoC_augment
+# End time: 23:25:12 on Oct 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb 
-# Start time: 22:21:55 on Oct 11,2023
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:25:12 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_augment_tb.sv 
+# -- Compiling module DE1_SoC_augment_tb
+# 
+# Top level modules:
+# 	DE1_SoC_augment_tb
+# End time: 23:25:13 on Oct 11,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_augment_tb -Lf altera_mf_ver 
+# Start time: 23:24:44 on Oct 11,2023
 # Loading sv_std.std
-# Loading work.DE1_SoC_tb
-# Loading work.DE1_SoC_50
-# Loading work.dff_pair
-# Loading work.dff_single
-# Loading work.task2
+# Loading work.DE1_SoC_augment_tb
+# Loading work.DE1_SoC_augment
+# Loading work.task2_augment
+# Loading work.task3
+# Loading work.ram32x3port2
+# Loading altera_mf_ver.altsyncram
+# Loading work.clock_divider
 # Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) ./DE1_SoC_augment_tb.sv(13): [TFMPC] - Too few port connections. Expected 9, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_augment_tb/dut File: ./DE1_SoC_augment.sv
+# ** Warning: (vsim-3722) ./DE1_SoC_augment_tb.sv(13): [TFMPC] - Missing connection for port 'HEX2'.
+# ** Warning: (vsim-3722) ./DE1_SoC_augment_tb.sv(13): [TFMPC] - Missing connection for port 'HEX3'.
+# ** Error: Cannot open macro file: DE1_SoC_augment_wave.do
+# Error in macro ./DE1_SoC_augment_runlab.do line 23
+# Cannot open macro file: DE1_SoC_augment_wave.do
+#     while executing
+# "do DE1_SoC_augment_wave.do"
+do DE1_SoC_augment_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:06 on Oct 11,2023
+# vlog -reportprogress 300 ./task2_augment.sv 
+# -- Compiling module task2_augment
+# 
+# Top level modules:
+# 	task2_augment
+# End time: 23:26:06 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:07 on Oct 11,2023
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 23:26:07 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:07 on Oct 11,2023
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 23:26:07 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:07 on Oct 11,2023
+# vlog -reportprogress 300 ./ram32x3port2.v 
+# -- Compiling module ram32x3port2
+# 
+# Top level modules:
+# 	ram32x3port2
+# End time: 23:26:07 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:07 on Oct 11,2023
+# vlog -reportprogress 300 ./task3.sv 
+# -- Compiling module task3
+# 
+# Top level modules:
+# 	task3
+# End time: 23:26:07 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:07 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_augment.sv 
+# -- Compiling module DE1_SoC_augment
+# 
+# Top level modules:
+# 	DE1_SoC_augment
+# End time: 23:26:07 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:07 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_augment_tb.sv 
+# -- Compiling module DE1_SoC_augment_tb
+# 
+# Top level modules:
+# 	DE1_SoC_augment_tb
+# End time: 23:26:07 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 23:26:07 on Oct 11,2023, Elapsed time: 0:01:23
+# Errors: 4, Warnings: 3
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_augment_tb -Lf altera_mf_ver 
+# Start time: 23:26:07 on Oct 11,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_augment_tb
+# Loading work.DE1_SoC_augment
+# Loading work.task2_augment
+# Loading work.task3
+# Loading work.ram32x3port2
+# Loading altera_mf_ver.altsyncram
+# Loading work.clock_divider
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) ./DE1_SoC_augment_tb.sv(13): [PCDPC] - Port size (7) does not match connection size (1) for port 'HEX2'. The port definition is at: ./DE1_SoC_augment.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_augment_tb/dut File: ./DE1_SoC_augment.sv
+# ** Warning: (vsim-3015) ./DE1_SoC_augment_tb.sv(13): [PCDPC] - Port size (7) does not match connection size (1) for port 'HEX3'. The port definition is at: ./DE1_SoC_augment.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_augment_tb/dut File: ./DE1_SoC_augment.sv
+# ** Error: Cannot open macro file: DE1_SoC_augment_wave.do
+# Error in macro ./DE1_SoC_augment_runlab.do line 23
+# Cannot open macro file: DE1_SoC_augment_wave.do
+#     while executing
+# "do DE1_SoC_augment_wave.do"
+do DE1_SoC_augment_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:30 on Oct 11,2023
+# vlog -reportprogress 300 ./task2_augment.sv 
+# -- Compiling module task2_augment
+# 
+# Top level modules:
+# 	task2_augment
+# End time: 23:26:30 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:30 on Oct 11,2023
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 23:26:30 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:30 on Oct 11,2023
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 23:26:31 on Oct 11,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:31 on Oct 11,2023
+# vlog -reportprogress 300 ./ram32x3port2.v 
+# -- Compiling module ram32x3port2
+# 
+# Top level modules:
+# 	ram32x3port2
+# End time: 23:26:31 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:31 on Oct 11,2023
+# vlog -reportprogress 300 ./task3.sv 
+# -- Compiling module task3
+# 
+# Top level modules:
+# 	task3
+# End time: 23:26:31 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:31 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_augment.sv 
+# -- Compiling module DE1_SoC_augment
+# 
+# Top level modules:
+# 	DE1_SoC_augment
+# End time: 23:26:31 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:31 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_augment_tb.sv 
+# -- Compiling module DE1_SoC_augment_tb
+# 
+# Top level modules:
+# 	DE1_SoC_augment_tb
+# End time: 23:26:31 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 23:26:31 on Oct 11,2023, Elapsed time: 0:00:24
+# Errors: 3, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_augment_tb -Lf altera_mf_ver 
+# Start time: 23:26:31 on Oct 11,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_augment_tb
+# Loading work.DE1_SoC_augment
+# Loading work.task2_augment
+# Loading work.task3
+# Loading work.ram32x3port2
+# Loading altera_mf_ver.altsyncram
+# Loading work.clock_divider
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Error: Cannot open macro file: DE1_SoC_augment_wave.do
+# Error in macro ./DE1_SoC_augment_runlab.do line 23
+# Cannot open macro file: DE1_SoC_augment_wave.do
+#     while executing
+# "do DE1_SoC_augment_wave.do"
+do DE1_SoC_augment_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:56 on Oct 11,2023
+# vlog -reportprogress 300 ./task2_augment.sv 
+# -- Compiling module task2_augment
+# 
+# Top level modules:
+# 	task2_augment
+# End time: 23:26:56 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:56 on Oct 11,2023
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 23:26:56 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:56 on Oct 11,2023
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 23:26:56 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:56 on Oct 11,2023
+# vlog -reportprogress 300 ./ram32x3port2.v 
+# -- Compiling module ram32x3port2
+# 
+# Top level modules:
+# 	ram32x3port2
+# End time: 23:26:56 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:56 on Oct 11,2023
+# vlog -reportprogress 300 ./task3.sv 
+# -- Compiling module task3
+# 
+# Top level modules:
+# 	task3
+# End time: 23:26:56 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:56 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_augment.sv 
+# -- Compiling module DE1_SoC_augment
+# 
+# Top level modules:
+# 	DE1_SoC_augment
+# End time: 23:26:56 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:56 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_augment_tb.sv 
+# -- Compiling module DE1_SoC_augment_tb
+# 
+# Top level modules:
+# 	DE1_SoC_augment_tb
+# End time: 23:26:56 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 23:26:57 on Oct 11,2023, Elapsed time: 0:00:26
+# Errors: 3, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_augment_tb -Lf altera_mf_ver 
+# Start time: 23:26:57 on Oct 11,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_augment_tb
+# Loading work.DE1_SoC_augment
+# Loading work.task2_augment
+# Loading work.task3
+# Loading work.ram32x3port2
+# Loading altera_mf_ver.altsyncram
+# Loading work.clock_divider
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Error: Cannot open macro file: DE1_SoC_augment_wave.do
+# Error in macro ./DE1_SoC_augment_runlab.do line 23
+# Cannot open macro file: DE1_SoC_augment_wave.do
+#     while executing
+# "do DE1_SoC_augment_wave.do"
+do DE1_SoC_augment_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:28:11 on Oct 11,2023
+# vlog -reportprogress 300 ./task2_augment.sv 
+# -- Compiling module task2_augment
+# 
+# Top level modules:
+# 	task2_augment
+# End time: 23:28:11 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:28:11 on Oct 11,2023
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 23:28:11 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:28:11 on Oct 11,2023
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 23:28:11 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:28:11 on Oct 11,2023
+# vlog -reportprogress 300 ./ram32x3port2.v 
+# -- Compiling module ram32x3port2
+# 
+# Top level modules:
+# 	ram32x3port2
+# End time: 23:28:11 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:28:11 on Oct 11,2023
+# vlog -reportprogress 300 ./task3.sv 
+# -- Compiling module task3
+# 
+# Top level modules:
+# 	task3
+# End time: 23:28:11 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:28:11 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_augment.sv 
+# -- Compiling module DE1_SoC_augment
+# 
+# Top level modules:
+# 	DE1_SoC_augment
+# End time: 23:28:11 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:28:11 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_augment_tb.sv 
+# -- Compiling module DE1_SoC_augment_tb
+# 
+# Top level modules:
+# 	DE1_SoC_augment_tb
+# End time: 23:28:11 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 23:28:12 on Oct 11,2023, Elapsed time: 0:01:15
+# Errors: 3, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_augment_tb -Lf altera_mf_ver 
+# Start time: 23:28:12 on Oct 11,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_augment_tb
+# Loading work.DE1_SoC_augment
+# Loading work.task2_augment
+# Loading work.task3
+# Loading work.ram32x3port2
+# Loading altera_mf_ver.altsyncram
+# Loading work.clock_divider
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Error: Cannot open macro file: DE1_SoC_augment_wave.do
+# Error in macro ./DE1_SoC_augment_runlab.do line 23
+# Cannot open macro file: DE1_SoC_augment_wave.do
+#     while executing
+# "do DE1_SoC_augment_wave.do"
+do DE1_SoC_augment_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:28:50 on Oct 11,2023
+# vlog -reportprogress 300 ./task2_augment.sv 
+# -- Compiling module task2_augment
+# 
+# Top level modules:
+# 	task2_augment
+# End time: 23:28:50 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:28:50 on Oct 11,2023
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 23:28:50 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:28:50 on Oct 11,2023
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 23:28:50 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:28:50 on Oct 11,2023
+# vlog -reportprogress 300 ./ram32x3port2.v 
+# -- Compiling module ram32x3port2
+# 
+# Top level modules:
+# 	ram32x3port2
+# End time: 23:28:50 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:28:50 on Oct 11,2023
+# vlog -reportprogress 300 ./task3.sv 
+# -- Compiling module task3
+# 
+# Top level modules:
+# 	task3
+# End time: 23:28:50 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:28:50 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_augment.sv 
+# -- Compiling module DE1_SoC_augment
+# 
+# Top level modules:
+# 	DE1_SoC_augment
+# End time: 23:28:50 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:28:50 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_augment_tb.sv 
+# -- Compiling module DE1_SoC_augment_tb
+# 
+# Top level modules:
+# 	DE1_SoC_augment_tb
+# End time: 23:28:50 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 23:28:51 on Oct 11,2023, Elapsed time: 0:00:39
+# Errors: 3, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_augment_tb -Lf altera_mf_ver 
+# Start time: 23:28:51 on Oct 11,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_augment_tb
+# Loading work.DE1_SoC_augment
+# Loading work.task2_augment
+# Loading work.task3
+# Loading work.ram32x3port2
+# Loading altera_mf_ver.altsyncram
+# Loading work.clock_divider
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Jason  Hostname: LAPTOP-NVONP9IM  ProcessID: 1484
-#           Attempting to use alternate WLF file "./wlftqhqnmt".
+#           Attempting to use alternate WLF file "./wlftz3rqq1".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftqhqnmt
+#           Using alternate file: ./wlftz3rqq1
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_tb/CLOCK_PERIOD'.
+# Executing ONERROR command at macro ./wave.do line 3
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_tb/KEY'.
+# Executing ONERROR command at macro ./wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_tb/SW'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_tb/HEX0'.
+# Executing ONERROR command at macro ./wave.do line 6
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_tb/HEX1'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_tb/HEX4'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_tb/HEX5'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_tb/clk'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_tb/DataIn'.
+# Executing ONERROR command at macro ./wave.do line 11
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_tb/DataOut'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_tb/h0'.
+# Executing ONERROR command at macro ./wave.do line 13
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_tb/h1'.
+# Executing ONERROR command at macro ./wave.do line 14
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_tb/h4'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_tb/h5'.
+# Executing ONERROR command at macro ./wave.do line 16
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_tb/Address'.
+# Executing ONERROR command at macro ./wave.do line 17
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./DE1_SoC_tb.sv(176)
-#    Time: 2550 ps  Iteration: 1  Instance: /DE1_SoC_tb
-# Break in Module DE1_SoC_tb at ./DE1_SoC_tb.sv line 176
-# End time: 22:22:42 on Oct 11,2023, Elapsed time: 0:00:47
-# Errors: 1, Warnings: 2
+# ** Note: $stop    : ./DE1_SoC_augment_tb.sv(54)
+#    Time: 2250 ps  Iteration: 1  Instance: /DE1_SoC_augment_tb
+# Break in Module DE1_SoC_augment_tb at ./DE1_SoC_augment_tb.sv line 54
+add wave -position end  sim:/DE1_SoC_augment_tb/clk
+add wave -position end  sim:/DE1_SoC_augment_tb/DataIn
+add wave -position end  sim:/DE1_SoC_augment_tb/DataOut
+add wave -position end  sim:/DE1_SoC_augment_tb/rdaddress
+add wave -position end  sim:/DE1_SoC_augment_tb/wraddress
+run -all
+# End time: 23:31:51 on Oct 11,2023, Elapsed time: 0:03:00
+# Errors: 45, Warnings: 2

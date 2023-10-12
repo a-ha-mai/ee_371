@@ -3,7 +3,7 @@ Info (10281): Verilog HDL Declaration information at DE1_SoC.sv(11): object "HEX
 Info (10281): Verilog HDL Declaration information at DE1_SoC.sv(11): object "HEX1" differs only in case from object "hex1" in the same scope File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 11
 Info (10281): Verilog HDL Declaration information at DE1_SoC.sv(11): object "HEX4" differs only in case from object "hex4" in the same scope File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 11
 Info (10281): Verilog HDL Declaration information at DE1_SoC.sv(11): object "HEX5" differs only in case from object "hex5" in the same scope File: D:/Documents/ee_371/lab2/DE1_SoC.sv Line: 11
-Warning (10268): Verilog HDL information at DE1_SoC_augment.sv(119): always construct contains both blocking and non-blocking assignments File: D:/Documents/ee_371/lab2/DE1_SoC_augment.sv Line: 119
+Warning (10268): Verilog HDL information at DE1_SoC_augment.sv(129): always construct contains both blocking and non-blocking assignments File: D:/Documents/ee_371/lab2/DE1_SoC_augment.sv Line: 129
 Info (10281): Verilog HDL Declaration information at DE1_SoC_augment.sv(10): object "HEX0" differs only in case from object "hex0" in the same scope File: D:/Documents/ee_371/lab2/DE1_SoC_augment.sv Line: 10
 Info (10281): Verilog HDL Declaration information at DE1_SoC_augment.sv(10): object "HEX1" differs only in case from object "hex1" in the same scope File: D:/Documents/ee_371/lab2/DE1_SoC_augment.sv Line: 10
 Info (10281): Verilog HDL Declaration information at DE1_SoC_augment.sv(10): object "HEX2" differs only in case from object "hex2" in the same scope File: D:/Documents/ee_371/lab2/DE1_SoC_augment.sv Line: 10
@@ -11,3 +11,7 @@ Info (10281): Verilog HDL Declaration information at DE1_SoC_augment.sv(10): obj
 Info (10281): Verilog HDL Declaration information at DE1_SoC_augment.sv(10): object "HEX4" differs only in case from object "hex4" in the same scope File: D:/Documents/ee_371/lab2/DE1_SoC_augment.sv Line: 10
 Info (10281): Verilog HDL Declaration information at DE1_SoC_augment.sv(10): object "HEX5" differs only in case from object "hex5" in the same scope File: D:/Documents/ee_371/lab2/DE1_SoC_augment.sv Line: 10
 Warning (10268): Verilog HDL information at task2_augment.sv(20): always construct contains both blocking and non-blocking assignments File: D:/Documents/ee_371/lab2/task2_augment.sv Line: 20
+Info (10281): Verilog HDL Declaration information at DE1_SoC_50.sv(11): object "HEX0" differs only in case from object "hex0" in the same scope File: D:/Documents/ee_371/lab2/DE1_SoC_50.sv Line: 11
+Info (10281): Verilog HDL Declaration information at DE1_SoC_50.sv(11): object "HEX1" differs only in case from object "hex1" in the same scope File: D:/Documents/ee_371/lab2/DE1_SoC_50.sv Line: 11
+Info (10281): Verilog HDL Declaration information at DE1_SoC_50.sv(11): object "HEX4" differs only in case from object "hex4" in the same scope File: D:/Documents/ee_371/lab2/DE1_SoC_50.sv Line: 11
+Info (10281): Verilog HDL Declaration information at DE1_SoC_50.sv(11): object "HEX5" differs only in case from object "hex5" in the same scope File: D:/Documents/ee_371/lab2/DE1_SoC_50.sv Line: 11

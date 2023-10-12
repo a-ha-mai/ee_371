@@ -4,11 +4,12 @@
 // then the 3-bit DataIn (SW[3], SW[2], SW[1]) written to the given 5-bit Address
 // (SW[8], SW[7], SW[6], SW[5], SW[4] of task2's memory. The 3-bit DataOut represents the value
 // read and is shown on HEX0. 
-module DE1_SoC (CLOCK_50, KEY, SW, HEX0, HEX1, HEX4, HEX5);
+module DE1_SoC (CLOCK_50, KEY, SW, HEX0, HEX1, HEX4, HEX5, LEDR);
 	input logic CLOCK_50;
 	input logic [3:0] KEY;
 	input logic [9:0] SW;
 	output logic [6:0] HEX0, HEX1, HEX4, HEX5;
+	output logic [9:0] LEDR;
 	
 	logic clk;
 	logic [2:0] DataIn, DataOut, out;
@@ -17,10 +18,11 @@ module DE1_SoC (CLOCK_50, KEY, SW, HEX0, HEX1, HEX4, HEX5);
 	
 	assign DataIn = SW[3:1];
 	assign Address = SW[8:4];
+	assign LEDR[0] = clk;
 	
 	// Connect signals as specified by the header comment.
 	dff_pair dff2 (.clk(CLOCK_50), .d(~KEY[0]), .q(clk));
-	task2 t2 (.address(Address), .clk(CLOCK_50), .reset(KEY[3]), .data(DataIn), .wren(SW[0]), .q(DataOut));
+	task2 t2 (.address(Address), .clk(clk), .reset(KEY[3]), .data(DataIn), .wren(SW[0]), .q(DataOut));
 	
 	// Connect hexadecimal values to 7-segment displays to display them on the board.
 	seg7 hex0 (.hex(h0), .leds(HEX0));
@@ -71,7 +73,7 @@ module DE1_SoC (CLOCK_50, KEY, SW, HEX0, HEX1, HEX4, HEX5);
 		endcase
 		
 		// show DataOut on HEX0
-		case (DataOut)
+		case (DataIn)
 			4'b0000: h0 = 4'h0;
 			4'b0001: h0 = 4'h1;
 			4'b0010: h0 = 4'h2;
