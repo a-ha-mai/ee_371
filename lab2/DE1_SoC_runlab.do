@@ -8,7 +8,7 @@ vlog "./task2.sv"
 vlog "./seg7.sv"
 vlog "./dff_single.sv"
 vlog "./dff_pair.sv"
-vlog "./DE1_SoC.sv"
+vlog "./DE1_SoC_50.sv"
 vlog "./DE1_SoC_tb.sv"
 
 # Call vsim to invoke simulator

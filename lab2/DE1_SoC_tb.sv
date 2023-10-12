@@ -10,7 +10,7 @@ module DE1_SoC_tb ();
 	logic [3:0] h0, h1, h4, h5;
 	logic [4:0] Address;
 	
-	DE1_SoC dut2 (.CLOCK_50(CLOCK_50), .KEY(KEY), .SW(SW), .HEX0(HEX), .HEX1(HEX1), .HEX4(HEX4), .HEX5(HEX5));
+	DE1_SoC_50 dut2 (.CLOCK_50(CLOCK_50), .KEY(KEY), .SW(SW), .HEX0(HEX0), .HEX1(HEX1), .HEX4(HEX4), .HEX5(HEX5));
 	task2 dut3 (.address(SW[8:4]), .clk(CLOCK_50), .reset(SW[9]), .data(SW[3:1]), .wren(SW[0]), .q(DataOut));
 	
 	parameter CLOCK_PERIOD = 100;
