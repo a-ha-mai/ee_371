@@ -32,51 +32,55 @@ module DE1_SoC (CLOCK_50, KEY, SW, HEX0, HEX1, HEX4, HEX5);
 	// 7-segment displays.
 	always_comb begin
 		// show address on HEX5 and 4
-		h5 = Address[4];
+		if (Address[4]) begin
+			h5 = 4'h1;
+		end else begin
+			h5 = 4'h0;
+		end
 		case (Address[3:0])
-			4'b0000: h4 = 1'h0;
-			4'b0001: h4 = 1'h1;
-			4'b0010: h4 = 1'h2;
-			4'b0011: h4 = 1'h3;
-			4'b0100: h4 = 1'h4;
-			4'b0101: h4 = 1'h5;
-			4'b0110: h4 = 1'h6;
-			4'b0111: h4 = 1'h7;
-			4'b1000: h4 = 1'h8;
-			4'b1001: h4 = 1'h9;
-			4'b1010: h4 = 1'hA;
-			4'b1011: h4 = 1'hB;
-			4'b1100: h4 = 1'hC;
-			4'b1101: h4 = 1'hD;
-			4'b1110: h4 = 1'hE;
-			4'b1111: h4 = 1'hF;
-			default: h4 = 1'h0;
+			4'b0000: h4 = 4'h0;
+			4'b0001: h4 = 4'h1;
+			4'b0010: h4 = 4'h2;
+			4'b0011: h4 = 4'h3;
+			4'b0100: h4 = 4'h4;
+			4'b0101: h4 = 4'h5;
+			4'b0110: h4 = 4'h6;
+			4'b0111: h4 = 4'h7;
+			4'b1000: h4 = 4'h8;
+			4'b1001: h4 = 4'h9;
+			4'b1010: h4 = 4'hA;
+			4'b1011: h4 = 4'hB;
+			4'b1100: h4 = 4'hC;
+			4'b1101: h4 = 4'hD;
+			4'b1110: h4 = 4'hE;
+			4'b1111: h4 = 4'hF;
+			default: h4 = 4'h0;
 		endcase
 		
 		// show DataIn on HEX1
 		case (DataIn)
-			4'b0000: h1 = 1'h0;
-			4'b0001: h1 = 1'h1;
-			4'b0010: h1 = 1'h2;
-			4'b0011: h1 = 1'h3;
-			4'b0100: h1 = 1'h1;
-			4'b0101: h1 = 1'h5;
-			4'b0110: h1 = 1'h6;
-			4'b0111: h1 = 1'h7;
-			default: h1 = 1'h0;
+			4'b0000: h1 = 4'h0;
+			4'b0001: h1 = 4'h1;
+			4'b0010: h1 = 4'h2;
+			4'b0011: h1 = 4'h3;
+			4'b0100: h1 = 4'h1;
+			4'b0101: h1 = 4'h5;
+			4'b0110: h1 = 4'h6;
+			4'b0111: h1 = 4'h7;
+			default: h1 = 4'h0;
 		endcase
 		
 		// show DataOut on HEX0
 		case (DataOut)
-			4'b0000: h0 = 1'h0;
-			4'b0001: h0 = 1'h0;
-			4'b0010: h0 = 1'h2;
-			4'b0011: h0 = 1'h3;
-			4'b0100: h0 = 1'h0;
-			4'b0101: h0 = 1'h5;
-			4'b0110: h0 = 1'h6;
-			4'b0111: h0 = 1'h7;
-			default: h0 = 1'h0;
+			4'b0000: h0 = 4'h0;
+			4'b0001: h0 = 4'h1;
+			4'b0010: h0 = 4'h2;
+			4'b0011: h0 = 4'h3;
+			4'b0100: h0 = 4'h0;
+			4'b0101: h0 = 4'h5;
+			4'b0110: h0 = 4'h6;
+			4'b0111: h0 = 4'h7;
+			default: h0 = 4'h0;
 		endcase
 	end
 

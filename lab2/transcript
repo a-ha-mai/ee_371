@@ -1,935 +1,62 @@
-# Reading C:/intelFPGA/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# Reading D:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
 do DE1_SoC_runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:05:39 on Oct 11,2023
+# Start time: 20:19:41 on Oct 11,2023
 # vlog -reportprogress 300 ./task2.sv 
 # -- Compiling module task2
 # 
 # Top level modules:
 # 	task2
-# End time: 15:05:39 on Oct 11,2023, Elapsed time: 0:00:00
+# End time: 20:19:42 on Oct 11,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:05:39 on Oct 11,2023
+# Start time: 20:19:42 on Oct 11,2023
 # vlog -reportprogress 300 ./seg7.sv 
 # -- Compiling module seg7
 # 
 # Top level modules:
 # 	seg7
-# End time: 15:05:39 on Oct 11,2023, Elapsed time: 0:00:00
+# End time: 20:19:42 on Oct 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:05:39 on Oct 11,2023
+# Start time: 20:19:42 on Oct 11,2023
 # vlog -reportprogress 300 ./dff_single.sv 
 # -- Compiling module dff_single
 # 
 # Top level modules:
 # 	dff_single
-# End time: 15:05:39 on Oct 11,2023, Elapsed time: 0:00:00
+# End time: 20:19:42 on Oct 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:05:39 on Oct 11,2023
+# Start time: 20:19:42 on Oct 11,2023
 # vlog -reportprogress 300 ./dff_pair.sv 
 # -- Compiling module dff_pair
 # 
 # Top level modules:
 # 	dff_pair
-# End time: 15:05:39 on Oct 11,2023, Elapsed time: 0:00:00
+# End time: 20:19:42 on Oct 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:05:39 on Oct 11,2023
+# Start time: 20:19:42 on Oct 11,2023
 # vlog -reportprogress 300 ./DE1_SoC.sv 
 # -- Compiling module DE1_SoC
 # 
 # Top level modules:
 # 	DE1_SoC
-# End time: 15:05:39 on Oct 11,2023, Elapsed time: 0:00:00
+# End time: 20:19:42 on Oct 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:05:39 on Oct 11,2023
+# Start time: 20:19:42 on Oct 11,2023
 # vlog -reportprogress 300 ./DE1_SoC_tb.sv 
 # -- Compiling module DE1_SoC_tb
 # 
 # Top level modules:
 # 	DE1_SoC_tb
-# End time: 15:05:39 on Oct 11,2023, Elapsed time: 0:00:00
+# End time: 20:19:42 on Oct 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb 
-# Start time: 15:05:39 on Oct 11,2023
-# Loading sv_std.std
-# Loading work.DE1_SoC_tb
-# Loading work.DE1_SoC
-# Loading work.dff_pair
-# Loading work.dff_single
-# Loading work.task2
-# Loading work.seg7
-# ** Warning: (vsim-3015) ./DE1_SoC_tb.sv(13): [PCDPC] - Port size (7) does not match connection size (1) for port 'HEX0'. The port definition is at: ./DE1_SoC.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/dut2 File: ./DE1_SoC.sv
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Jason  Hostname: LAPTOP-NVONP9IM  ProcessID: 1484
-#           Attempting to use alternate WLF file "./wlftn72eii".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftn72eii
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./DE1_SoC_tb.sv(178)
-#    Time: 2550 ps  Iteration: 1  Instance: /DE1_SoC_tb
-# Break in Module DE1_SoC_tb at ./DE1_SoC_tb.sv line 178
-do DE1_SoC_runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:08:28 on Oct 11,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
-# 
-# Top level modules:
-# 	task2
-# End time: 15:08:28 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:08:28 on Oct 11,2023
-# vlog -reportprogress 300 ./seg7.sv 
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# End time: 15:08:28 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:08:28 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_single.sv 
-# -- Compiling module dff_single
-# 
-# Top level modules:
-# 	dff_single
-# End time: 15:08:29 on Oct 11,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:08:29 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_pair.sv 
-# -- Compiling module dff_pair
-# 
-# Top level modules:
-# 	dff_pair
-# End time: 15:08:29 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:08:29 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC.sv 
-# -- Compiling module DE1_SoC
-# 
-# Top level modules:
-# 	DE1_SoC
-# End time: 15:08:29 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:08:29 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
-# -- Compiling module DE1_SoC_tb
-# 
-# Top level modules:
-# 	DE1_SoC_tb
-# End time: 15:08:29 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 15:08:39 on Oct 11,2023, Elapsed time: 0:03:00
-# Errors: 0, Warnings: 3
-# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb 
-# Start time: 15:08:39 on Oct 11,2023
-# Loading sv_std.std
-# Loading work.DE1_SoC_tb
-# Loading work.DE1_SoC
-# Loading work.dff_pair
-# Loading work.dff_single
-# Loading work.task2
-# Loading work.seg7
-# ** Warning: (vsim-3015) ./DE1_SoC_tb.sv(13): [PCDPC] - Port size (7) does not match connection size (1) for port 'HEX0'. The port definition is at: ./DE1_SoC.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/dut2 File: ./DE1_SoC.sv
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Jason  Hostname: LAPTOP-NVONP9IM  ProcessID: 1484
-#           Attempting to use alternate WLF file "./wlftmvrya3".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftmvrya3
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-do DE1_SoC_runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:10:25 on Oct 11,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
-# 
-# Top level modules:
-# 	task2
-# End time: 15:10:25 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:10:25 on Oct 11,2023
-# vlog -reportprogress 300 ./seg7.sv 
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# End time: 15:10:26 on Oct 11,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:10:26 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_single.sv 
-# -- Compiling module dff_single
-# 
-# Top level modules:
-# 	dff_single
-# End time: 15:10:26 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:10:26 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_pair.sv 
-# -- Compiling module dff_pair
-# 
-# Top level modules:
-# 	dff_pair
-# End time: 15:10:26 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:10:26 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC.sv 
-# -- Compiling module DE1_SoC
-# 
-# Top level modules:
-# 	DE1_SoC
-# End time: 15:10:26 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:10:26 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
-# -- Compiling module DE1_SoC_tb
-# 
-# Top level modules:
-# 	DE1_SoC_tb
-# End time: 15:10:26 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 15:10:28 on Oct 11,2023, Elapsed time: 0:01:49
-# Errors: 0, Warnings: 3
-# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb 
-# Start time: 15:10:28 on Oct 11,2023
-# Loading sv_std.std
-# Loading work.DE1_SoC_tb
-# Loading work.DE1_SoC
-# Loading work.dff_pair
-# Loading work.dff_single
-# Loading work.task2
-# Loading work.seg7
-# ** Warning: (vsim-3015) ./DE1_SoC_tb.sv(13): [PCDPC] - Port size (7) does not match connection size (1) for port 'HEX0'. The port definition is at: ./DE1_SoC.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/dut2 File: ./DE1_SoC.sv
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Jason  Hostname: LAPTOP-NVONP9IM  ProcessID: 1484
-#           Attempting to use alternate WLF file "./wlftzwki24".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftzwki24
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./DE1_SoC_tb.sv(178)
-#    Time: 2550 ps  Iteration: 1  Instance: /DE1_SoC_tb
-# Break in Module DE1_SoC_tb at ./DE1_SoC_tb.sv line 178
-do DE1_SoC_runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:32:20 on Oct 11,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
-# 
-# Top level modules:
-# 	task2
-# End time: 15:32:20 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:32:20 on Oct 11,2023
-# vlog -reportprogress 300 ./seg7.sv 
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# End time: 15:32:20 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:32:20 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_single.sv 
-# -- Compiling module dff_single
-# 
-# Top level modules:
-# 	dff_single
-# End time: 15:32:20 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:32:20 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_pair.sv 
-# -- Compiling module dff_pair
-# 
-# Top level modules:
-# 	dff_pair
-# End time: 15:32:20 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:32:20 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC.sv 
-# -- Compiling module DE1_SoC
-# 
-# Top level modules:
-# 	DE1_SoC
-# End time: 15:32:21 on Oct 11,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:32:21 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
-# -- Compiling module DE1_SoC_tb
-# 
-# Top level modules:
-# 	DE1_SoC_tb
-# End time: 15:32:21 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 15:32:28 on Oct 11,2023, Elapsed time: 0:22:00
-# Errors: 0, Warnings: 3
-# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb 
-# Start time: 15:32:28 on Oct 11,2023
-# Loading sv_std.std
-# Loading work.DE1_SoC_tb
-# Loading work.DE1_SoC
-# Loading work.dff_pair
-# Loading work.dff_single
-# Loading work.task2
-# Loading work.seg7
-# ** Warning: (vsim-3015) ./DE1_SoC_tb.sv(13): [PCDPC] - Port size (7) does not match connection size (1) for port 'HEX0'. The port definition is at: ./DE1_SoC.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/dut2 File: ./DE1_SoC.sv
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Jason  Hostname: LAPTOP-NVONP9IM  ProcessID: 1484
-#           Attempting to use alternate WLF file "./wlftxw12cq".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftxw12cq
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./DE1_SoC_tb.sv(178)
-#    Time: 2550 ps  Iteration: 1  Instance: /DE1_SoC_tb
-# Break in Module DE1_SoC_tb at ./DE1_SoC_tb.sv line 178
-do DE1_SoC_runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:51:53 on Oct 11,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
-# 
-# Top level modules:
-# 	task2
-# End time: 15:51:53 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:51:53 on Oct 11,2023
-# vlog -reportprogress 300 ./seg7.sv 
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# End time: 15:51:53 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:51:53 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_single.sv 
-# -- Compiling module dff_single
-# 
-# Top level modules:
-# 	dff_single
-# End time: 15:51:53 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:51:53 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_pair.sv 
-# -- Compiling module dff_pair
-# 
-# Top level modules:
-# 	dff_pair
-# End time: 15:51:53 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:51:53 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC.sv 
-# -- Compiling module DE1_SoC
-# 
-# Top level modules:
-# 	DE1_SoC
-# End time: 15:51:53 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:51:53 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
-# -- Compiling module DE1_SoC_tb
-# 
-# Top level modules:
-# 	DE1_SoC_tb
-# End time: 15:51:53 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 15:51:58 on Oct 11,2023, Elapsed time: 0:19:30
-# Errors: 0, Warnings: 3
-# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb 
-# Start time: 15:51:58 on Oct 11,2023
-# Loading sv_std.std
-# Loading work.DE1_SoC_tb
-# Loading work.DE1_SoC
-# Loading work.dff_pair
-# Loading work.dff_single
-# Loading work.task2
-# Loading work.seg7
-# ** Warning: (vsim-3015) ./DE1_SoC_tb.sv(13): [PCDPC] - Port size (7) does not match connection size (1) for port 'HEX0'. The port definition is at: ./DE1_SoC.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/dut2 File: ./DE1_SoC.sv
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Jason  Hostname: LAPTOP-NVONP9IM  ProcessID: 1484
-#           Attempting to use alternate WLF file "./wlftvr01gw".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftvr01gw
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./DE1_SoC_tb.sv(178)
-#    Time: 2550 ps  Iteration: 1  Instance: /DE1_SoC_tb
-# Break in Module DE1_SoC_tb at ./DE1_SoC_tb.sv line 178
-do DE1_SoC_runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:53:28 on Oct 11,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
-# 
-# Top level modules:
-# 	task2
-# End time: 15:53:28 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:53:28 on Oct 11,2023
-# vlog -reportprogress 300 ./seg7.sv 
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# End time: 15:53:28 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:53:28 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_single.sv 
-# -- Compiling module dff_single
-# 
-# Top level modules:
-# 	dff_single
-# End time: 15:53:28 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:53:29 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_pair.sv 
-# -- Compiling module dff_pair
-# 
-# Top level modules:
-# 	dff_pair
-# End time: 15:53:29 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:53:29 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC.sv 
-# -- Compiling module DE1_SoC
-# 
-# Top level modules:
-# 	DE1_SoC
-# End time: 15:53:29 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:53:29 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
-# -- Compiling module DE1_SoC_tb
-# 
-# Top level modules:
-# 	DE1_SoC_tb
-# End time: 15:53:29 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 15:53:34 on Oct 11,2023, Elapsed time: 0:01:36
-# Errors: 0, Warnings: 3
-# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb 
-# Start time: 15:53:34 on Oct 11,2023
-# Loading sv_std.std
-# Loading work.DE1_SoC_tb
-# Loading work.DE1_SoC
-# Loading work.dff_pair
-# Loading work.dff_single
-# Loading work.task2
-# Loading work.seg7
-# ** Warning: (vsim-3015) ./DE1_SoC_tb.sv(13): [PCDPC] - Port size (7) does not match connection size (1) for port 'HEX0'. The port definition is at: ./DE1_SoC.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/dut2 File: ./DE1_SoC.sv
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Jason  Hostname: LAPTOP-NVONP9IM  ProcessID: 1484
-#           Attempting to use alternate WLF file "./wlft0kt53e".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft0kt53e
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./DE1_SoC_tb.sv(178)
-#    Time: 2550 ps  Iteration: 1  Instance: /DE1_SoC_tb
-# Break in Module DE1_SoC_tb at ./DE1_SoC_tb.sv line 178
-do DE1_SoC_runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:58:35 on Oct 11,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
-# 
-# Top level modules:
-# 	task2
-# End time: 15:58:35 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:58:35 on Oct 11,2023
-# vlog -reportprogress 300 ./seg7.sv 
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# End time: 15:58:35 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:58:35 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_single.sv 
-# -- Compiling module dff_single
-# 
-# Top level modules:
-# 	dff_single
-# End time: 15:58:35 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:58:35 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_pair.sv 
-# -- Compiling module dff_pair
-# 
-# Top level modules:
-# 	dff_pair
-# End time: 15:58:35 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:58:35 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC.sv 
-# -- Compiling module DE1_SoC
-# 
-# Top level modules:
-# 	DE1_SoC
-# End time: 15:58:36 on Oct 11,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:58:36 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
-# -- Compiling module DE1_SoC_tb
-# 
-# Top level modules:
-# 	DE1_SoC_tb
-# End time: 15:58:36 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 15:58:40 on Oct 11,2023, Elapsed time: 0:05:06
-# Errors: 0, Warnings: 3
-# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb 
-# Start time: 15:58:40 on Oct 11,2023
-# Loading sv_std.std
-# Loading work.DE1_SoC_tb
-# Loading work.DE1_SoC
-# Loading work.dff_pair
-# Loading work.dff_single
-# Loading work.task2
-# Loading work.seg7
-# ** Warning: (vsim-3015) ./DE1_SoC_tb.sv(13): [PCDPC] - Port size (7) does not match connection size (1) for port 'HEX0'. The port definition is at: ./DE1_SoC.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/dut2 File: ./DE1_SoC.sv
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Jason  Hostname: LAPTOP-NVONP9IM  ProcessID: 1484
-#           Attempting to use alternate WLF file "./wlftv2vmxf".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftv2vmxf
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./DE1_SoC_tb.sv(178)
-#    Time: 2550 ps  Iteration: 1  Instance: /DE1_SoC_tb
-# Break in Module DE1_SoC_tb at ./DE1_SoC_tb.sv line 178
-do DE1_SoC_runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:00:18 on Oct 11,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
-# 
-# Top level modules:
-# 	task2
-# End time: 16:00:18 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:00:18 on Oct 11,2023
-# vlog -reportprogress 300 ./seg7.sv 
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# End time: 16:00:18 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:00:18 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_single.sv 
-# -- Compiling module dff_single
-# 
-# Top level modules:
-# 	dff_single
-# End time: 16:00:18 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:00:18 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_pair.sv 
-# -- Compiling module dff_pair
-# 
-# Top level modules:
-# 	dff_pair
-# End time: 16:00:18 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:00:18 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC.sv 
-# -- Compiling module DE1_SoC
-# 
-# Top level modules:
-# 	DE1_SoC
-# End time: 16:00:18 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:00:18 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
-# -- Compiling module DE1_SoC_tb
-# ** Error (suppressible): (vlog-12003) ./DE1_SoC_tb.sv(107): Variable 'DataIn' written by continuous and procedural assignments. See ./DE1_SoC_tb.sv(13). 
-# End time: 16:00:18 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./DE1_SoC_runlab.do line 12
-# C:/intelFPGA/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./DE1_SoC_tb.sv""
-do DE1_SoC_runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:02:32 on Oct 11,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
-# 
-# Top level modules:
-# 	task2
-# End time: 16:02:32 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:02:32 on Oct 11,2023
-# vlog -reportprogress 300 ./seg7.sv 
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# End time: 16:02:32 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:02:32 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_single.sv 
-# -- Compiling module dff_single
-# 
-# Top level modules:
-# 	dff_single
-# End time: 16:02:32 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:02:32 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_pair.sv 
-# -- Compiling module dff_pair
-# 
-# Top level modules:
-# 	dff_pair
-# End time: 16:02:32 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:02:32 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC.sv 
-# -- Compiling module DE1_SoC
-# 
-# Top level modules:
-# 	DE1_SoC
-# End time: 16:02:32 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:02:32 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
-# -- Compiling module DE1_SoC_tb
-# ** Error (suppressible): (vlog-12003) ./DE1_SoC_tb.sv(107): Variable 'DataIn' written by continuous and procedural assignments. See ./DE1_SoC_tb.sv(13). 
-# End time: 16:02:33 on Oct 11,2023, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./DE1_SoC_runlab.do line 12
-# C:/intelFPGA/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./DE1_SoC_tb.sv""
-do DE1_SoC_runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:03:52 on Oct 11,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
-# 
-# Top level modules:
-# 	task2
-# End time: 16:03:52 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:03:52 on Oct 11,2023
-# vlog -reportprogress 300 ./seg7.sv 
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# End time: 16:03:52 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:03:52 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_single.sv 
-# -- Compiling module dff_single
-# 
-# Top level modules:
-# 	dff_single
-# End time: 16:03:52 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:03:53 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_pair.sv 
-# -- Compiling module dff_pair
-# 
-# Top level modules:
-# 	dff_pair
-# End time: 16:03:53 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:03:53 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC.sv 
-# -- Compiling module DE1_SoC
-# 
-# Top level modules:
-# 	DE1_SoC
-# End time: 16:03:53 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:03:53 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
-# -- Compiling module DE1_SoC_tb
-# ** Error (suppressible): (vlog-12003) ./DE1_SoC_tb.sv(107): Variable 'DataIn' written by continuous and procedural assignments. See ./DE1_SoC_tb.sv(13). 
-# End time: 16:03:53 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./DE1_SoC_runlab.do line 12
-# C:/intelFPGA/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./DE1_SoC_tb.sv""
-do DE1_SoC_runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:06:40 on Oct 11,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
-# 
-# Top level modules:
-# 	task2
-# End time: 16:06:40 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:06:40 on Oct 11,2023
-# vlog -reportprogress 300 ./seg7.sv 
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# End time: 16:06:40 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:06:40 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_single.sv 
-# -- Compiling module dff_single
-# 
-# Top level modules:
-# 	dff_single
-# End time: 16:06:40 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:06:40 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_pair.sv 
-# -- Compiling module dff_pair
-# 
-# Top level modules:
-# 	dff_pair
-# End time: 16:06:40 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:06:40 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC.sv 
-# -- Compiling module DE1_SoC
-# 
-# Top level modules:
-# 	DE1_SoC
-# End time: 16:06:40 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:06:40 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
-# -- Compiling module DE1_SoC_tb
-# 
-# Top level modules:
-# 	DE1_SoC_tb
-# End time: 16:06:41 on Oct 11,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# End time: 16:06:45 on Oct 11,2023, Elapsed time: 0:08:05
-# Errors: 9, Warnings: 3
-# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb 
-# Start time: 16:06:45 on Oct 11,2023
-# Loading sv_std.std
-# Loading work.DE1_SoC_tb
-# Loading work.DE1_SoC
-# Loading work.dff_pair
-# Loading work.dff_single
-# Loading work.task2
-# Loading work.seg7
-# ** Warning: (vsim-3015) ./DE1_SoC_tb.sv(13): [PCDPC] - Port size (7) does not match connection size (1) for port 'HEX0'. The port definition is at: ./DE1_SoC.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/dut2 File: ./DE1_SoC.sv
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Jason  Hostname: LAPTOP-NVONP9IM  ProcessID: 1484
-#           Attempting to use alternate WLF file "./wlftjzj72s".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftjzj72s
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./DE1_SoC_tb.sv(178)
-#    Time: 2550 ps  Iteration: 1  Instance: /DE1_SoC_tb
-# Break in Module DE1_SoC_tb at ./DE1_SoC_tb.sv line 178
-do DE1_SoC_runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:09:13 on Oct 11,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
-# 
-# Top level modules:
-# 	task2
-# End time: 16:09:13 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:09:13 on Oct 11,2023
-# vlog -reportprogress 300 ./seg7.sv 
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# End time: 16:09:13 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:09:13 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_single.sv 
-# -- Compiling module dff_single
-# 
-# Top level modules:
-# 	dff_single
-# End time: 16:09:13 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:09:13 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_pair.sv 
-# -- Compiling module dff_pair
-# 
-# Top level modules:
-# 	dff_pair
-# End time: 16:09:13 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:09:13 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC.sv 
-# -- Compiling module DE1_SoC
-# 
-# Top level modules:
-# 	DE1_SoC
-# End time: 16:09:13 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:09:14 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
-# -- Compiling module DE1_SoC_tb
-# ** Error (suppressible): (vlog-12003) ./DE1_SoC_tb.sv(107): Variable 'DataIn' written by continuous and procedural assignments. See ./DE1_SoC_tb.sv(13). 
-# End time: 16:09:14 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./DE1_SoC_runlab.do line 12
-# C:/intelFPGA/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./DE1_SoC_tb.sv""
-do DE1_SoC_runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:10:12 on Oct 11,2023
-# vlog -reportprogress 300 ./task2.sv 
-# -- Compiling module task2
-# 
-# Top level modules:
-# 	task2
-# End time: 16:10:13 on Oct 11,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:10:13 on Oct 11,2023
-# vlog -reportprogress 300 ./seg7.sv 
-# -- Compiling module seg7
-# 
-# Top level modules:
-# 	seg7
-# End time: 16:10:13 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:10:13 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_single.sv 
-# -- Compiling module dff_single
-# 
-# Top level modules:
-# 	dff_single
-# End time: 16:10:13 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:10:13 on Oct 11,2023
-# vlog -reportprogress 300 ./dff_pair.sv 
-# -- Compiling module dff_pair
-# 
-# Top level modules:
-# 	dff_pair
-# End time: 16:10:13 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:10:13 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC.sv 
-# -- Compiling module DE1_SoC
-# 
-# Top level modules:
-# 	DE1_SoC
-# End time: 16:10:13 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:10:13 on Oct 11,2023
-# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
-# -- Compiling module DE1_SoC_tb
-# 
-# Top level modules:
-# 	DE1_SoC_tb
-# End time: 16:10:13 on Oct 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 16:10:18 on Oct 11,2023, Elapsed time: 0:03:33
-# Errors: 3, Warnings: 3
-# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb 
-# Start time: 16:10:18 on Oct 11,2023
+# Start time: 20:19:43 on Oct 11,2023
 # Loading sv_std.std
 # Loading work.DE1_SoC_tb
 # Loading work.DE1_SoC
@@ -941,12 +68,881 @@ do DE1_SoC_runlab.do
 #    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/dut2 File: ./DE1_SoC.sv
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Jason  Hostname: LAPTOP-NVONP9IM  ProcessID: 1484
-#           Attempting to use alternate WLF file "./wlftyhdt0s".
+#           Attempting to use alternate WLF file "./wlftkd4cgh".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftyhdt0s
+#           Using alternate file: ./wlftkd4cgh
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # ** Note: $stop    : ./DE1_SoC_tb.sv(180)
 #    Time: 2550 ps  Iteration: 1  Instance: /DE1_SoC_tb
 # Break in Module DE1_SoC_tb at ./DE1_SoC_tb.sv line 180
+add wave -position 1  sim:/DE1_SoC_tb/CLOCK_50
+restart -f
+# ** Warning: (vsim-3015) ./DE1_SoC_tb.sv(15): [PCDPC] - Port size (7) does not match connection size (1) for port 'HEX0'. The port definition is at: ./DE1_SoC.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/dut2 File: ./DE1_SoC.sv
+run -all
+# ** Note: $stop    : ./DE1_SoC_tb.sv(180)
+#    Time: 2550 ps  Iteration: 1  Instance: /DE1_SoC_tb
+# Break in Module DE1_SoC_tb at ./DE1_SoC_tb.sv line 180
+do DE1_SoC_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:37:20 on Oct 11,2023
+# vlog -reportprogress 300 ./task2.sv 
+# -- Compiling module task2
+# 
+# Top level modules:
+# 	task2
+# End time: 20:37:20 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:37:20 on Oct 11,2023
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 20:37:20 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:37:20 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 20:37:20 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:37:20 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 20:37:20 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:37:20 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 20:37:20 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:37:20 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# -- Compiling module DE1_SoC_tb
+# ** Error (suppressible): (vlog-12003) ./DE1_SoC_tb.sv(23): Variable 'Address' written by continuous and procedural assignments. See ./DE1_SoC_tb.sv(14). 
+# ** Error (suppressible): (vlog-12003) ./DE1_SoC_tb.sv(107): Variable 'Address' written by continuous and procedural assignments. See ./DE1_SoC_tb.sv(14). 
+# End time: 20:37:20 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./DE1_SoC_runlab.do line 12
+# D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./DE1_SoC_tb.sv""
+do DE1_SoC_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:44:33 on Oct 11,2023
+# vlog -reportprogress 300 ./task2.sv 
+# -- Compiling module task2
+# 
+# Top level modules:
+# 	task2
+# End time: 20:44:33 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:44:33 on Oct 11,2023
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 20:44:33 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:44:33 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 20:44:33 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:44:33 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 20:44:33 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:44:33 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 20:44:33 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:44:33 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# -- Compiling module DE1_SoC_tb
+# ** Error (suppressible): (vlog-12003) ./DE1_SoC_tb.sv(105): Variable 'Address' written by continuous and procedural assignments. See ./DE1_SoC_tb.sv(14). 
+# End time: 20:44:33 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./DE1_SoC_runlab.do line 12
+# D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./DE1_SoC_tb.sv""
+do DE1_SoC_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:45:33 on Oct 11,2023
+# vlog -reportprogress 300 ./task2.sv 
+# -- Compiling module task2
+# 
+# Top level modules:
+# 	task2
+# End time: 20:45:33 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:45:33 on Oct 11,2023
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 20:45:33 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:45:33 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 20:45:33 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:45:33 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 20:45:33 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:45:33 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 20:45:33 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:45:33 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# -- Compiling module DE1_SoC_tb
+# ** Error (suppressible): (vlog-12003) ./DE1_SoC_tb.sv(105): Variable 'Address' written by continuous and procedural assignments. See ./DE1_SoC_tb.sv(14). 
+# End time: 20:45:33 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./DE1_SoC_runlab.do line 12
+# D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./DE1_SoC_tb.sv""
+do DE1_SoC_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:45:35 on Oct 11,2023
+# vlog -reportprogress 300 ./task2.sv 
+# -- Compiling module task2
+# 
+# Top level modules:
+# 	task2
+# End time: 20:45:35 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:45:35 on Oct 11,2023
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 20:45:35 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:45:35 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 20:45:35 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:45:35 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 20:45:35 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:45:35 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 20:45:35 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:45:35 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# -- Compiling module DE1_SoC_tb
+# ** Error (suppressible): (vlog-12003) ./DE1_SoC_tb.sv(105): Variable 'Address' written by continuous and procedural assignments. See ./DE1_SoC_tb.sv(14). 
+# End time: 20:45:35 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./DE1_SoC_runlab.do line 12
+# D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./DE1_SoC_tb.sv""
+do DE1_SoC_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:48:07 on Oct 11,2023
+# vlog -reportprogress 300 ./task2.sv 
+# -- Compiling module task2
+# 
+# Top level modules:
+# 	task2
+# End time: 20:48:08 on Oct 11,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:48:08 on Oct 11,2023
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 20:48:08 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:48:08 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 20:48:08 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:48:08 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 20:48:08 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:48:08 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 20:48:08 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:48:08 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# -- Compiling module DE1_SoC_tb
+# ** Error (suppressible): (vlog-12003) ./DE1_SoC_tb.sv(105): Variable 'Address' written by continuous and procedural assignments. See ./DE1_SoC_tb.sv(14). 
+# End time: 20:48:08 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./DE1_SoC_runlab.do line 12
+# D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./DE1_SoC_tb.sv""
+do DE1_SoC_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:50:13 on Oct 11,2023
+# vlog -reportprogress 300 ./task2.sv 
+# -- Compiling module task2
+# 
+# Top level modules:
+# 	task2
+# End time: 20:50:13 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:50:13 on Oct 11,2023
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 20:50:13 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:50:13 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 20:50:13 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:50:13 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 20:50:13 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:50:13 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 20:50:13 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:50:13 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# -- Compiling module DE1_SoC_tb
+# 
+# Top level modules:
+# 	DE1_SoC_tb
+# End time: 20:50:13 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:50:14 on Oct 11,2023, Elapsed time: 0:30:31
+# Errors: 15, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb 
+# Start time: 20:50:14 on Oct 11,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_tb
+# Loading work.DE1_SoC
+# Loading work.dff_pair
+# Loading work.dff_single
+# Loading work.task2
+# Loading work.seg7
+# ** Warning: (vsim-3015) ./DE1_SoC_tb.sv(13): [PCDPC] - Port size (7) does not match connection size (1) for port 'HEX0'. The port definition is at: ./DE1_SoC.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/dut2 File: ./DE1_SoC.sv
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Jason  Hostname: LAPTOP-NVONP9IM  ProcessID: 1484
+#           Attempting to use alternate WLF file "./wlftjvvmf0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftjvvmf0
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC_tb.sv(176)
+#    Time: 2550 ps  Iteration: 1  Instance: /DE1_SoC_tb
+# Break in Module DE1_SoC_tb at ./DE1_SoC_tb.sv line 176
+do DE1_SoC_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:51:27 on Oct 11,2023
+# vlog -reportprogress 300 ./task2.sv 
+# -- Compiling module task2
+# 
+# Top level modules:
+# 	task2
+# End time: 20:51:27 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:51:27 on Oct 11,2023
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 20:51:27 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:51:27 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 20:51:27 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:51:27 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 20:51:27 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:51:27 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 20:51:27 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:51:27 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# -- Compiling module DE1_SoC_tb
+# ** Error (suppressible): (vlog-12003) ./DE1_SoC_tb.sv(105): Variable 'Address' written by continuous and procedural assignments. See ./DE1_SoC_tb.sv(14). 
+# End time: 20:51:27 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./DE1_SoC_runlab.do line 12
+# D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./DE1_SoC_tb.sv""
+do DE1_SoC_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:52:09 on Oct 11,2023
+# vlog -reportprogress 300 ./task2.sv 
+# -- Compiling module task2
+# 
+# Top level modules:
+# 	task2
+# End time: 20:52:09 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:52:09 on Oct 11,2023
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 20:52:09 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:52:09 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 20:52:09 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:52:09 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 20:52:09 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:52:09 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 20:52:09 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:52:09 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# -- Compiling module DE1_SoC_tb
+# 
+# Top level modules:
+# 	DE1_SoC_tb
+# End time: 20:52:09 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:52:10 on Oct 11,2023, Elapsed time: 0:01:56
+# Errors: 3, Warnings: 3
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb 
+# Start time: 20:52:10 on Oct 11,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_tb
+# Loading work.DE1_SoC
+# Loading work.dff_pair
+# Loading work.dff_single
+# Loading work.task2
+# Loading work.seg7
+# ** Warning: (vsim-3015) ./DE1_SoC_tb.sv(13): [PCDPC] - Port size (7) does not match connection size (1) for port 'HEX0'. The port definition is at: ./DE1_SoC.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/dut2 File: ./DE1_SoC.sv
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Jason  Hostname: LAPTOP-NVONP9IM  ProcessID: 1484
+#           Attempting to use alternate WLF file "./wlftj0i593".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftj0i593
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC_tb.sv(176)
+#    Time: 2550 ps  Iteration: 1  Instance: /DE1_SoC_tb
+# Break in Module DE1_SoC_tb at ./DE1_SoC_tb.sv line 176
+add wave -position 3  sim:/DE1_SoC_tb/dut3/address
+add wave -position 12  sim:/DE1_SoC_tb/dut3/data
+add wave -position 18  sim:/DE1_SoC_tb/dut3/q
+add wave -position end  sim:/DE1_SoC_tb/dut2/h0
+add wave -position end  sim:/DE1_SoC_tb/dut2/h1
+add wave -position end  sim:/DE1_SoC_tb/dut2/h4
+add wave -position end  sim:/DE1_SoC_tb/dut2/h5
+restart -f
+# ** Warning: (vsim-3015) ./DE1_SoC_tb.sv(13): [PCDPC] - Port size (7) does not match connection size (1) for port 'HEX0'. The port definition is at: ./DE1_SoC.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/dut2 File: ./DE1_SoC.sv
+run -all
+# ** Note: $stop    : ./DE1_SoC_tb.sv(176)
+#    Time: 2550 ps  Iteration: 1  Instance: /DE1_SoC_tb
+# Break in Module DE1_SoC_tb at ./DE1_SoC_tb.sv line 176
+add wave -position 0  sim:/DE1_SoC_tb/CLOCK_50
+restart -f
+# ** Warning: (vsim-3015) ./DE1_SoC_tb.sv(13): [PCDPC] - Port size (7) does not match connection size (1) for port 'HEX0'. The port definition is at: ./DE1_SoC.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/dut2 File: ./DE1_SoC.sv
+# Load canceled
+run -all
+# ** Note: $stop    : ./DE1_SoC_tb.sv(176)
+#    Time: 2550 ps  Iteration: 1  Instance: /DE1_SoC_tb
+# Break in Module DE1_SoC_tb at ./DE1_SoC_tb.sv line 176
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/Documents/ee_371/lab2/DE1_SoC_wave.do
+do DE1_SoC_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:06:01 on Oct 11,2023
+# vlog -reportprogress 300 ./task2.sv 
+# -- Compiling module task2
+# 
+# Top level modules:
+# 	task2
+# End time: 21:06:01 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:06:01 on Oct 11,2023
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 21:06:01 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:06:01 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 21:06:01 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:06:01 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 21:06:01 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:06:01 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 21:06:01 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:06:01 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# -- Compiling module DE1_SoC_tb
+# 
+# Top level modules:
+# 	DE1_SoC_tb
+# End time: 21:06:01 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:06:02 on Oct 11,2023, Elapsed time: 0:13:52
+# Errors: 1, Warnings: 5
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb 
+# Start time: 21:06:02 on Oct 11,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_tb
+# Loading work.DE1_SoC
+# Loading work.dff_pair
+# Loading work.dff_single
+# Loading work.task2
+# Loading work.seg7
+# ** Warning: (vsim-3015) ./DE1_SoC_tb.sv(13): [PCDPC] - Port size (7) does not match connection size (1) for port 'HEX0'. The port definition is at: ./DE1_SoC.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/dut2 File: ./DE1_SoC.sv
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Jason  Hostname: LAPTOP-NVONP9IM  ProcessID: 1484
+#           Attempting to use alternate WLF file "./wlft2ccckx".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft2ccckx
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC_tb.sv(176)
+#    Time: 2550 ps  Iteration: 1  Instance: /DE1_SoC_tb
+# Break in Module DE1_SoC_tb at ./DE1_SoC_tb.sv line 176
+do DE1_SoC_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:07:54 on Oct 11,2023
+# vlog -reportprogress 300 ./task2.sv 
+# -- Compiling module task2
+# 
+# Top level modules:
+# 	task2
+# End time: 21:07:54 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:07:54 on Oct 11,2023
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 21:07:54 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:07:54 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 21:07:54 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:07:54 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 21:07:54 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:07:54 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 21:07:54 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:07:54 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# -- Compiling module DE1_SoC_tb
+# 
+# Top level modules:
+# 	DE1_SoC_tb
+# End time: 21:07:54 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:07:55 on Oct 11,2023, Elapsed time: 0:01:53
+# Errors: 0, Warnings: 3
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb 
+# Start time: 21:07:55 on Oct 11,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_tb
+# Loading work.DE1_SoC
+# Loading work.dff_pair
+# Loading work.dff_single
+# Loading work.task2
+# Loading work.seg7
+# ** Warning: (vsim-3015) ./DE1_SoC_tb.sv(13): [PCDPC] - Port size (7) does not match connection size (1) for port 'HEX0'. The port definition is at: ./DE1_SoC.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/dut2 File: ./DE1_SoC.sv
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Jason  Hostname: LAPTOP-NVONP9IM  ProcessID: 1484
+#           Attempting to use alternate WLF file "./wlftmijfw5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftmijfw5
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC_tb.sv(176)
+#    Time: 2550 ps  Iteration: 1  Instance: /DE1_SoC_tb
+# Break in Module DE1_SoC_tb at ./DE1_SoC_tb.sv line 176
+do DE1_SoC_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:08:49 on Oct 11,2023
+# vlog -reportprogress 300 ./task2.sv 
+# -- Compiling module task2
+# 
+# Top level modules:
+# 	task2
+# End time: 21:08:49 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:08:49 on Oct 11,2023
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 21:08:49 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:08:49 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 21:08:49 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:08:49 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 21:08:50 on Oct 11,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:08:50 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 21:08:50 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:08:50 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# -- Compiling module DE1_SoC_tb
+# 
+# Top level modules:
+# 	DE1_SoC_tb
+# End time: 21:08:50 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:08:50 on Oct 11,2023, Elapsed time: 0:00:55
+# Errors: 0, Warnings: 3
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb 
+# Start time: 21:08:50 on Oct 11,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_tb
+# Loading work.DE1_SoC
+# Loading work.dff_pair
+# Loading work.dff_single
+# Loading work.task2
+# Loading work.seg7
+# ** Warning: (vsim-3015) ./DE1_SoC_tb.sv(13): [PCDPC] - Port size (7) does not match connection size (1) for port 'HEX0'. The port definition is at: ./DE1_SoC.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/dut2 File: ./DE1_SoC.sv
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Jason  Hostname: LAPTOP-NVONP9IM  ProcessID: 1484
+#           Attempting to use alternate WLF file "./wlft2a0258".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft2a0258
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC_tb.sv(176)
+#    Time: 2550 ps  Iteration: 1  Instance: /DE1_SoC_tb
+# Break in Module DE1_SoC_tb at ./DE1_SoC_tb.sv line 176
+do DE1_SoC_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:10:45 on Oct 11,2023
+# vlog -reportprogress 300 ./task2.sv 
+# -- Compiling module task2
+# 
+# Top level modules:
+# 	task2
+# End time: 21:10:45 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:10:45 on Oct 11,2023
+# vlog -reportprogress 300 ./seg7.sv 
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	seg7
+# End time: 21:10:45 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:10:45 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_single.sv 
+# -- Compiling module dff_single
+# 
+# Top level modules:
+# 	dff_single
+# End time: 21:10:45 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:10:45 on Oct 11,2023
+# vlog -reportprogress 300 ./dff_pair.sv 
+# -- Compiling module dff_pair
+# 
+# Top level modules:
+# 	dff_pair
+# End time: 21:10:46 on Oct 11,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:10:46 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 21:10:46 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:10:46 on Oct 11,2023
+# vlog -reportprogress 300 ./DE1_SoC_tb.sv 
+# -- Compiling module DE1_SoC_tb
+# 
+# Top level modules:
+# 	DE1_SoC_tb
+# End time: 21:10:46 on Oct 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:10:46 on Oct 11,2023, Elapsed time: 0:01:56
+# Errors: 0, Warnings: 3
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb 
+# Start time: 21:10:46 on Oct 11,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_tb
+# Loading work.DE1_SoC
+# Loading work.dff_pair
+# Loading work.dff_single
+# Loading work.task2
+# Loading work.seg7
+# ** Warning: (vsim-3015) ./DE1_SoC_tb.sv(13): [PCDPC] - Port size (7) does not match connection size (1) for port 'HEX0'. The port definition is at: ./DE1_SoC.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/dut2 File: ./DE1_SoC.sv
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Jason  Hostname: LAPTOP-NVONP9IM  ProcessID: 1484
+#           Attempting to use alternate WLF file "./wlft1nn1dk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft1nn1dk
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC_tb.sv(176)
+#    Time: 2550 ps  Iteration: 1  Instance: /DE1_SoC_tb
+# Break in Module DE1_SoC_tb at ./DE1_SoC_tb.sv line 176
+# End time: 21:11:37 on Oct 11,2023, Elapsed time: 0:00:51
+# Errors: 0, Warnings: 3
