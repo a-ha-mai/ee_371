@@ -1,27 +1,44 @@
+`timescale 1 ps / 1 ps
+
 module DE1_SoC_tb ();
+	logic CLOCK_50, clk;
 	logic [3:0] KEY;
 	logic [9:0] SW;
 	logic [6:0] HEX0, HEX1, HEX4, HEX5;
 	
-	logic clk;
 	logic [2:0] DataIn, DataOut;
 	logic [3:0] h0, h1, h4, h5;
 	logic [4:0] Address;
 	
-	DE1_SoC dut (.KEY, .SW, .HEX0, .HEX1, .HEX4, .HEX5);
-	task2 dut (.address(Address), .clk(KEY[0]), .reset(SW[9]), .data(DataIn), .wren(SW[0]), .q(DataOut));
+	DE1_SoC dut2 (.CLOCK_50(clk), .KEY(KEY), .SW(SW), .HEX0(HEX), .HEX1(HEX1), .HEX4(HEX4), .HEX5(HEX5));
+	task2 dut3 (.address(Address), .clk(clk), .reset(SW[9]), .data(DataIn), .wren(SW[0]), .q(DataOut));
 	
 	parameter CLOCK_PERIOD = 100;
 	
 	// initialize signals
 	initial begin
-		forever #(CLOCK_PERIOD/2) clk <= ~clk;
+		Address <= 0;
+		DataIn <= 0;
+		SW[0] <= 0;
+		CLOCK_50 <= 0;
+		forever #(CLOCK_PERIOD/2) CLOCK_50 <= ~CLOCK_50;
 	end
 	
 	initial begin
 		@(posedge clk);
-		
+		KEY[0] <= 1;
+		@(posedge clk);
+		KEY[0] <= 0;
 		SW[9] <= 1;
+		SW[8] <= 0;
+		SW[7] <= 0;
+		SW[6] <= 0;
+		SW[5] <= 0;
+		SW[4] <= 0;
+		SW[3] <= 0;
+		SW[2] <= 0;
+		SW[1] <= 0;
+		SW[0] <= 0;
 		@(posedge clk);
 		SW[9] <= 0;
 		@(posedge clk);
@@ -158,6 +175,6 @@ module DE1_SoC_tb ();
 		SW[1] <= 0;
 		SW[0] <= 0;
 		repeat (2) @(posedge clk);
-	$stop;
+		$stop;
 	end
 endmodule

@@ -10,15 +10,17 @@ module DE1_SoC_tb ();
 	logic [3:0] h0, h1, h4, h5;
 	logic [4:0] Address;
 	
-	DE1_SoC dut2 (.CLOCK_50(clk), .KEY(KEY), .SW(SW), .HEX0(HEX), .HEX1(HEX1), .HEX4(HEX4), .HEX5(HEX5));
-	task2 dut3 (.address(Address), .clk(clk), .reset(SW[9]), .data(DataIn), .wren(SW[0]), .q(DataOut));
+	assign DataIn = SW[3:1];
+	
+	DE1_SoC dut2 (.CLOCK_50(CLOCK_50), .KEY(KEY), .SW(SW), .HEX0(HEX), .HEX1(HEX1), .HEX4(HEX4), .HEX5(HEX5));
+	task2 dut3 (.address(Address), .clk(CLOCK_50), .reset(SW[9]), .data(DataIn), .wren(SW[0]), .q(DataOut));
 	
 	parameter CLOCK_PERIOD = 100;
 	
 	// initialize signals
 	initial begin
 		Address <= 0;
-		DataIn <= 0;
+		//DataIn <= SW[3:1];
 		SW[0] <= 0;
 		CLOCK_50 <= 0;
 		forever #(CLOCK_PERIOD/2) CLOCK_50 <= ~CLOCK_50;
@@ -102,7 +104,7 @@ module DE1_SoC_tb ();
 		SW[1] <= 1;
 		SW[0] <= 0;
 		Address <= 2; 
-		DataIn <= 1;
+		//DataIn <= 3'b001;
 		repeat (2) @(posedge CLOCK_50);
 		
 		// changing Address test
