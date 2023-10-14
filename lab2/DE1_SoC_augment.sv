@@ -15,7 +15,7 @@ module DE1_SoC_augment (CLOCK_50, KEY, SW, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
 	logic [31:0] div_clk;
 	
 	assign DataIn = SW[3:1];
-	assign Address = SW[8:4];
+	assign wraddress = SW[8:4];
 	
 	// Connect signals as specified by the header comment.
 	task2_augment t2 (.rdaddress(rdaddress), .wraddress(wraddress), .clk(CLOCK_50), .reset(KEY[3]), .data(DataIn), .wren(SW[0]), .select(SW[9]), .q(DataOut2));
@@ -37,12 +37,17 @@ module DE1_SoC_augment (CLOCK_50, KEY, SW, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
 	// 7-segment displays.
 	always_comb begin
 		
-		// show write address (wraddress) on HEX 5 & 4
-		if (wraddress[4]) begin
-			h5 = 4'h1;
-		end else begin
-			h5 = 4'h0;
-		end
+		case (wraddress[4])
+			1: h5 = 4'h1;
+			default: h5 = 4'h0;
+		endcase
+		
+//		// show write address (wraddress) on HEX 5 & 4
+//		if (wraddress[4]) begin
+//			h5 = 4'h1;
+//		end else begin
+//			h4 = 4'h0;
+//		end
 		
 		case (wraddress[3:0])
 			4'b0000: h4 = 4'h0;
@@ -70,25 +75,30 @@ module DE1_SoC_augment (CLOCK_50, KEY, SW, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
 			4'b0001: h1 = 4'h1;
 			4'b0010: h1 = 4'h2;
 			4'b0011: h1 = 4'h3;
-			4'b0100: h1 = 4'h1;
+			4'b0100: h1 = 4'h4;
 			4'b0101: h1 = 4'h5;
 			4'b0110: h1 = 4'h6;
 			4'b0111: h1 = 4'h7;
 			default: h1 = 4'h0;
 		endcase
 		
+		case (rdaddress[4])
+			1: h3 = 4'h1;
+			default: h3 = 4'h0;
+		endcase
+		
 		// show read address (rdaddress) value on HEX 3 & 2
-		if (rdaddress[4]) begin
-			h3 = 4'h1;
-		end else begin
-			h3 = 4'h0;
-		end
+// 		if (rdaddress[4]) begin
+// 			h3 = 4'h1;
+// 		end else begin
+// 			h3 = 4'h0;
+// 		end
 		case (rdaddress[3:0])
 			4'b0000: h2 = 4'h0;
 			4'b0001: h2 = 4'h1;
 			4'b0010: h2 = 4'h2;
 			4'b0011: h2 = 4'h3;
-			4'b0100: h2 = 4'h2;
+			4'b0100: h2 = 4'h4;
 			4'b0101: h2 = 4'h5;
 			4'b0110: h2 = 4'h6;
 			4'b0111: h2 = 4'h7;
@@ -106,8 +116,12 @@ module DE1_SoC_augment (CLOCK_50, KEY, SW, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
 		// pick which memory to read data from
 		if (SW[9]) begin
 			DataOut = DataOut3;
+// 			HEX3 = h3;
+// 			HEX2 = h2;
 		end else begin
 			DataOut = DataOut2;
+// 			HEX3 = 7'b1111111;
+// 			HEX2 = 7'b1111111;
 		end
 		
 		// show read data (DataOut) value on HEX0
@@ -116,7 +130,7 @@ module DE1_SoC_augment (CLOCK_50, KEY, SW, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
 			4'b0001: h0 = 4'h1;
 			4'b0010: h0 = 4'h2;
 			4'b0011: h0 = 4'h3;
-			4'b0100: h0 = 4'h1;
+			4'b0100: h0 = 4'h4;
 			4'b0101: h0 = 4'h5;
 			4'b0110: h0 = 4'h6;
 			4'b0111: h0 = 4'h7;
@@ -127,8 +141,8 @@ module DE1_SoC_augment (CLOCK_50, KEY, SW, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
 	// Increments rdaddress by 1 every clock cycle and loops back to 0 after hitting 31.
 	// Gets set to 0 if system is reset.
 	always_ff @(posedge CLOCK_50) begin
-		if (KEY[3]) rdaddress <= 0;
-		else if (rdaddress == 5'b11111) rdaddress = rdaddress + 1;
+		if (~KEY[3]) rdaddress <= 0;
+		else if (rdaddress < 5'b11111) rdaddress = rdaddress + 1;
 		else rdaddress <= 5'b0;
 	end
 endmodule

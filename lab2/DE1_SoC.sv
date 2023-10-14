@@ -22,7 +22,7 @@ module DE1_SoC (CLOCK_50, KEY, SW, HEX0, HEX1, HEX4, HEX5, LEDR);
 	
 	// Connect signals as specified by the header comment.
 	dff_pair dff2 (.clk(CLOCK_50), .d(~KEY[0]), .q(clk));
-	task2 t2 (.address(Address), .clk(clk), .reset(KEY[3]), .data(DataIn), .wren(SW[0]), .q(DataOut));
+	task2 t2 (.address(Address), .clk(clk), .reset(~KEY[0]), .data(DataIn), .wren(SW[0]), .q(DataOut));
 	
 	// Connect hexadecimal values to 7-segment displays to display them on the board.
 	seg7 hex0 (.hex(h0), .leds(HEX0));
@@ -73,7 +73,7 @@ module DE1_SoC (CLOCK_50, KEY, SW, HEX0, HEX1, HEX4, HEX5, LEDR);
 		endcase
 		
 		// show DataOut on HEX0
-		case (DataIn)
+		case (DataOut)
 			4'b0000: h0 = 4'h0;
 			4'b0001: h0 = 4'h1;
 			4'b0010: h0 = 4'h2;
