@@ -16,16 +16,15 @@ module task2 (address, clk, reset, data, wren, q);
 	always_ff @(posedge clk) begin
 		if (reset) begin
 			integer i;
+//			memory_array[31:0] = 3'b000;
 			for (i = 0; i < 32; i = i + 1) begin
 				memory_array[i] = 3'b000; // Set your desired initial value here
 			end
 		end else begin
 			if (wren) begin
 				memory_array[address] <= data;
-				q <= memory_array[address];
-			end else begin
-				q <= memory_array[address];
 			end
+			q <= memory_array[address];
 		end
 	end
 endmodule

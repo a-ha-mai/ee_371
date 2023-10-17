@@ -11,7 +11,7 @@ module DE1_SoC_tb ();
 	logic [4:0] Address;
 	
 	DE1_SoC_50 dut2 (.CLOCK_50(CLOCK_50), .KEY(KEY), .SW(SW), .HEX0(HEX0), .HEX1(HEX1), .HEX4(HEX4), .HEX5(HEX5));
-	task2 dut3 (.address(SW[8:4]), .clk(CLOCK_50), .reset(SW[9]), .data(SW[3:1]), .wren(SW[0]), .q(DataOut));
+	task2 dut3 (.address(SW[8:4]), .clk(CLOCK_50), .reset(~KEY[0]), .data(SW[3:1]), .wren(SW[0]), .q(DataOut));
 	
 	parameter CLOCK_PERIOD = 100;
 	
@@ -24,10 +24,10 @@ module DE1_SoC_tb ();
 	
 	initial begin
 		@(posedge CLOCK_50);
-		KEY[0] <= 1;
-		@(posedge CLOCK_50);
 		KEY[0] <= 0;
-		SW[9] <= 1;
+		@(posedge CLOCK_50);
+		KEY[0] <= 1;
+		//SW[9] <= 1;
 		SW[8] <= 0;
 		SW[7] <= 0;
 		SW[6] <= 0;
@@ -38,7 +38,7 @@ module DE1_SoC_tb ();
 		SW[1] <= 0;
 		SW[0] <= 0;
 		@(posedge CLOCK_50);
-		SW[9] <= 0;
+		//SW[9] <= 0;
 		@(posedge CLOCK_50);
 		
 		// write operation test
