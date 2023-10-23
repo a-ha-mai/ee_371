@@ -1,0 +1,19 @@
+/* adds the value of d to the stored accumulator value and outputs the sum */
+module accumulator #(parameter DATA_WIDTH=24)
+						  (clk, reset, d, q)
+	input  logic clk, reset;
+	input  logic [DATA_WIDTH:0] d;
+	output logic [DATA_WIDTH:0] q;
+	
+	logic [DATA_WIDTH:0] accumulator;
+	
+	always_ff @(posedge clk) begin
+		if (reset) begin
+			accumulator <= 0;
+		end else if begin
+			accumulator <= d + accumulator;
+		end
+	end
+	
+	assign q = accumulator;
+endmodule // accumulator

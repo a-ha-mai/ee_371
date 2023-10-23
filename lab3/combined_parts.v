@@ -17,6 +17,7 @@ module combined_parts (CLOCK_50, CLOCK2_50, KEY, SW, FPGA_I2C_SCLK, FPGA_I2C_SDA
 	wire read_ready, write_ready, read, write;
 	wire [23:0] readdata_left, readdata_right, readdata;
 	wire [23:0] writedata_left, writedata_right;
+	wire [23:0] intermediate_writedata_left, intermediate_writedata_right;
 	wire reset = ~KEY[0];
 	
 	
@@ -30,8 +31,11 @@ module combined_parts (CLOCK_50, CLOCK2_50, KEY, SW, FPGA_I2C_SCLK, FPGA_I2C_SDA
 	
 	part2 p2 (.CLOCK_50(CLOCK_50), .reset(reset), .write(write), .readdata(readdata));
 	
-	assign writedata_left = SW[9] ? readdata : readdata_left;
-	assign writedata_right = SW[9] ? readdata : readdata_right;
+	assign intermediate_writedata_left = SW[9] ? readdata : readdata_left;
+	assign intermediate_writedata_right = SW[9] ? readdata : readdata_right;
+	
+	part3 p3_left (.clk(CLOCK_50), .reset(~KEY[0]), .write(write), .r_data(intermediate_writedata_left), .f_data(writedata_left)); 
+	part3 p3_right (.clk(CLOCK_50), .reset(~KEY[0]), .write(write), .r_data(intermediate_writedata_right), .f_data(writedata_right)); 
 		
 /////////////////////////////////////////////////////////////////////////////////
 // Audio CODEC interface. 
