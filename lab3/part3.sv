@@ -17,5 +17,5 @@ module part3 (clk, reset, write, r_data, f_data);
 	fifo #(DATA_WIDTH, ADDR_WIDTH) fifo1 (.clk(clk), .reset(reset), .rd(write), .wr(write), .empty(empty), .full(full), .w_data(in), .r_data(fifo_data));
 	adder #(DATA_WIDTH) adder1 (.a(fifo_data), .b(in), .sum(add1_data));
 	adder #(DATA_WIDTH) adder2 (.a(add1_data), .b(accumulator_data), .sum(f_data));
-	accumulator #(DATA_WIDTH) accumulator1 (.clk(clk), .reset(reset), .d(f_data), .q(accumulator_data));
+	accumulator #(DATA_WIDTH) accumulator1 (.clk(clk), .reset(reset), .enable(write), .d(f_data), .q(accumulator_data));
 endmodule
