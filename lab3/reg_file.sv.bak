@@ -14,8 +14,8 @@ module reg_file #(parameter DATA_WIDTH=24, ADDR_WIDTH=3)
 	logic [DATA_WIDTH-1:0] array_reg [0:2**ADDR_WIDTH-1];
 	
 	// write operation (synchronous)
-	always_ff @(posedge clk) begin
+	always_ff @(posedge clk)
 		if (w_en) array_reg[w_addr] <= w_data;
-		if (r_en) r_data <= array_reg[r_addr];
-	end
+		if (r_en) r_data <= array_red[r_addr];
+	
 endmodule  // reg_file

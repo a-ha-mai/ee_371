@@ -1,40 +1,26 @@
-# Reading D:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
 do runlab_fifo.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:58:17 on Oct 23,2023
-# vlog -reportprogress 300 ./reg_file.sv 
-# -- Compiling module reg_file
-# ** Error: ./reg_file.sv(22): (vlog-2730) Undefined variable: 'r_en'.
-# End time: 19:58:17 on Oct 23,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab_fifo.do line 7
-# D:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./reg_file.sv""
-do runlab_fifo.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:58:35 on Oct 23,2023
+# Start time: 11:24:22 on Oct 24,2023
 # vlog -reportprogress 300 ./reg_file.sv 
 # -- Compiling module reg_file
 # 
 # Top level modules:
 # 	reg_file
-# End time: 19:58:35 on Oct 23,2023, Elapsed time: 0:00:00
+# End time: 11:24:22 on Oct 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:58:35 on Oct 23,2023
+# Start time: 11:24:22 on Oct 24,2023
 # vlog -reportprogress 300 ./fifo_ctrl.sv 
 # -- Compiling module fifo_ctrl
 # 
 # Top level modules:
 # 	fifo_ctrl
-# End time: 19:58:35 on Oct 23,2023, Elapsed time: 0:00:00
+# End time: 11:24:22 on Oct 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:58:35 on Oct 23,2023
+# Start time: 11:24:23 on Oct 24,2023
 # vlog -reportprogress 300 ./fifo.sv 
 # -- Compiling module fifo
 # -- Compiling module fifo_tb
@@ -42,102 +28,10 @@ do runlab_fifo.do
 # Top level modules:
 # 	fifo
 # 	fifo_tb
-# End time: 19:58:35 on Oct 23,2023, Elapsed time: 0:00:00
+# End time: 11:24:23 on Oct 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work fifo_tb 
-# Start time: 19:58:35 on Oct 23,2023
-# Loading sv_std.std
-# Loading work.fifo_tb
-# Loading work.fifo_ctrl
-# Loading work.reg_file
-# ** Error: (vsim-3694) The implicit port connection (.*) did not find a matching port, net, variable or interface instance in fifo_tb for port 'r_en'.
-#    Time: 0 ps  Iteration: 0  Instance: /fifo_tb/r_unit File: ./reg_file.sv
-# ** Warning: (vsim-3017) ./fifo.sv(40): [TFMPC] - Too few port connections. Expected 7, found 6.
-#    Time: 0 ps  Iteration: 0  Instance: /fifo_tb/r_unit File: ./reg_file.sv
-# ** Warning: (vsim-3722) ./fifo.sv(40): [TFMPC] - Missing connection for port 'r_en'.
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./runlab_fifo.do PAUSED at line 14
-do runlab_fifo.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:58:54 on Oct 23,2023
-# vlog -reportprogress 300 ./reg_file.sv 
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# End time: 19:58:54 on Oct 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:58:54 on Oct 23,2023
-# vlog -reportprogress 300 ./fifo_ctrl.sv 
-# -- Compiling module fifo_ctrl
-# 
-# Top level modules:
-# 	fifo_ctrl
-# End time: 19:58:54 on Oct 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:58:54 on Oct 23,2023
-# vlog -reportprogress 300 ./fifo.sv 
-# -- Compiling module fifo
-# -- Compiling module fifo_tb
-# 
-# Top level modules:
-# 	fifo
-# 	fifo_tb
-# End time: 19:58:54 on Oct 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work fifo_tb 
-# Start time: 19:58:35 on Oct 23,2023
-# Loading sv_std.std
-# Loading work.fifo_tb
-# Loading work.fifo_ctrl
-# Loading work.reg_file
-# ** Error: (vsim-3694) The implicit port connection (.*) did not find a matching port, net, variable or interface instance in fifo_tb for port 'r_en'.
-#    Time: 0 ps  Iteration: 0  Instance: /fifo_tb/r_unit File: ./reg_file.sv
-# ** Warning: (vsim-3017) ./fifo.sv(40): [TFMPC] - Too few port connections. Expected 7, found 6.
-#    Time: 0 ps  Iteration: 0  Instance: /fifo_tb/r_unit File: ./reg_file.sv
-# ** Warning: (vsim-3722) ./fifo.sv(40): [TFMPC] - Missing connection for port 'r_en'.
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./runlab_fifo.do PAUSED at line 14
-do runlab_fifo.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:59:46 on Oct 23,2023
-# vlog -reportprogress 300 ./reg_file.sv 
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# End time: 19:59:46 on Oct 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:59:46 on Oct 23,2023
-# vlog -reportprogress 300 ./fifo_ctrl.sv 
-# -- Compiling module fifo_ctrl
-# 
-# Top level modules:
-# 	fifo_ctrl
-# End time: 19:59:46 on Oct 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:59:46 on Oct 23,2023
-# vlog -reportprogress 300 ./fifo.sv 
-# -- Compiling module fifo
-# -- Compiling module fifo_tb
-# 
-# Top level modules:
-# 	fifo
-# 	fifo_tb
-# End time: 19:59:46 on Oct 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work fifo_tb 
-# Start time: 19:58:35 on Oct 23,2023
+# Start time: 11:24:23 on Oct 24,2023
 # Loading sv_std.std
 # Loading work.fifo_tb
 # Loading work.fifo_ctrl
@@ -160,8 +54,8 @@ add wave -position end  sim:/fifo_tb/r_data
 add wave -position end  sim:/fifo_tb/w_addr
 add wave -position end  sim:/fifo_tb/r_addr
 run -all
-# ** Note: $stop    : ./fifo.sv(54)
+# ** Note: $stop    : ./fifo.sv(55)
 #    Time: 1750 ps  Iteration: 1  Instance: /fifo_tb
-# Break in Module fifo_tb at ./fifo.sv line 54
-# End time: 20:41:53 on Oct 23,2023, Elapsed time: 0:43:18
-# Errors: 5, Warnings: 4
+# Break in Module fifo_tb at ./fifo.sv line 55
+# End time: 12:10:43 on Oct 24,2023, Elapsed time: 0:46:20
+# Errors: 3, Warnings: 0
