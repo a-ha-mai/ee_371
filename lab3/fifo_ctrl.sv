@@ -47,7 +47,7 @@ module fifo_ctrl #(parameter ADDR_WIDTH=3)
 		case ({rd, wr})
 			2'b11:  // read and write
 				begin
-					if (full) begin
+					if (~full) begin
 						rd_ptr_next = rd_ptr + 1'b1;
 						wr_ptr_next = wr_ptr + 1'b1;
 					end else begin
