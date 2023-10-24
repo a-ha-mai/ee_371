@@ -1,26 +1,26 @@
-# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# Reading C:/intelFPGA/17.0/modelsim_ase/tcl/vsim/pref.tcl
 do runlab_fifo.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:24:22 on Oct 24,2023
+# Start time: 13:57:29 on Oct 24,2023
 # vlog -reportprogress 300 ./reg_file.sv 
 # -- Compiling module reg_file
 # 
 # Top level modules:
 # 	reg_file
-# End time: 11:24:22 on Oct 24,2023, Elapsed time: 0:00:00
+# End time: 13:57:29 on Oct 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:24:22 on Oct 24,2023
+# Start time: 13:57:29 on Oct 24,2023
 # vlog -reportprogress 300 ./fifo_ctrl.sv 
 # -- Compiling module fifo_ctrl
 # 
 # Top level modules:
 # 	fifo_ctrl
-# End time: 11:24:22 on Oct 24,2023, Elapsed time: 0:00:00
+# End time: 13:57:30 on Oct 24,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:24:23 on Oct 24,2023
+# Start time: 13:57:30 on Oct 24,2023
 # vlog -reportprogress 300 ./fifo.sv 
 # -- Compiling module fifo
 # -- Compiling module fifo_tb
@@ -28,10 +28,10 @@ do runlab_fifo.do
 # Top level modules:
 # 	fifo
 # 	fifo_tb
-# End time: 11:24:23 on Oct 24,2023, Elapsed time: 0:00:00
+# End time: 13:57:30 on Oct 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work fifo_tb 
-# Start time: 11:24:23 on Oct 24,2023
+# Start time: 13:57:31 on Oct 24,2023
 # Loading sv_std.std
 # Loading work.fifo_tb
 # Loading work.fifo_ctrl
@@ -41,21 +41,417 @@ do runlab_fifo.do
 # Cannot open macro file: fifo_wave.do
 #     while executing
 # "do fifo_wave.do"
-add wave -position end  sim:/fifo_tb/clk
-add wave -position end  sim:/fifo_tb/reset
-add wave -position end  sim:/fifo_tb/rd
-add wave -position end  sim:/fifo_tb/wr
-add wave -position end  sim:/fifo_tb/empty
-add wave -position end  sim:/fifo_tb/full
-add wave -position end  sim:/fifo_tb/w_en
-add wave -position end  sim:/fifo_tb/r_en
-add wave -position end  sim:/fifo_tb/w_data
-add wave -position end  sim:/fifo_tb/r_data
-add wave -position end  sim:/fifo_tb/w_addr
-add wave -position end  sim:/fifo_tb/r_addr
-run -all
+add wave -position end sim:/fifo_tb/*
+do runlab_fifo.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:59:52 on Oct 24,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 13:59:52 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:59:52 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 13:59:52 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:59:52 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# -- Compiling module fifo_tb
+# 
+# Top level modules:
+# 	fifo
+# 	fifo_tb
+# End time: 13:59:52 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:59:53 on Oct 24,2023, Elapsed time: 0:02:22
+# Errors: 3, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work fifo_tb 
+# Start time: 13:59:53 on Oct 24,2023
+# Loading sv_std.std
+# Loading work.fifo_tb
+# Loading work.fifo_ctrl
+# Loading work.reg_file
+# ** Error: Cannot open macro file: fifo_wave.do
+# Error in macro ./runlab_fifo.do line 19
+# Cannot open macro file: fifo_wave.do
+#     while executing
+# "do fifo_wave.do"
+add wave -position end sim:/fifo_tb/*
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/fifo_wave.do
+do runlab_fifo.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:00:17 on Oct 24,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 14:00:17 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:00:18 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 14:00:18 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:00:18 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# -- Compiling module fifo_tb
+# 
+# Top level modules:
+# 	fifo
+# 	fifo_tb
+# End time: 14:00:18 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:00:18 on Oct 24,2023, Elapsed time: 0:00:25
+# Errors: 3, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work fifo_tb 
+# Start time: 14:00:18 on Oct 24,2023
+# Loading sv_std.std
+# Loading work.fifo_tb
+# Loading work.fifo_ctrl
+# Loading work.reg_file
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
 # ** Note: $stop    : ./fifo.sv(55)
 #    Time: 1750 ps  Iteration: 1  Instance: /fifo_tb
 # Break in Module fifo_tb at ./fifo.sv line 55
-# End time: 12:10:43 on Oct 24,2023, Elapsed time: 0:46:20
-# Errors: 3, Warnings: 0
+do runlab_fifo.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:04:44 on Oct 24,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 14:04:44 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:04:44 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 14:04:44 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:04:44 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# -- Compiling module fifo_tb
+# 
+# Top level modules:
+# 	fifo_tb
+# End time: 14:04:44 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:04:52 on Oct 24,2023, Elapsed time: 0:04:34
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work fifo_tb 
+# Start time: 14:04:52 on Oct 24,2023
+# Loading sv_std.std
+# Loading work.fifo_tb
+# Loading work.fifo
+# Loading work.fifo_ctrl
+# Loading work.reg_file
+# ** Error: (vsim-8378) ./fifo.sv(40): Port size (3) does not match connection size (24) for implicit .name connection port 'w_data'. The port definition is at: ./fifo.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /fifo_tb/c_unit File: ./fifo.sv
+# ** Error: (vsim-8378) ./fifo.sv(40): Port size (3) does not match connection size (24) for implicit .name connection port 'r_data'. The port definition is at: ./fifo.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /fifo_tb/c_unit File: ./fifo.sv
+# ** Warning: (vsim-3839) ./fifo.sv(41): Variable '/fifo_tb/r_data', driven via a port connection, is multiply driven. See ./fifo.sv(40).
+#    Time: 0 ps  Iteration: 0  Instance: /fifo_tb/r_unit File: ./reg_file.sv
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab_fifo.do PAUSED at line 14
+do runlab_fifo.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:05:27 on Oct 24,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 14:05:27 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:05:27 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 14:05:27 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:05:27 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# -- Compiling module fifo_tb
+# 
+# Top level modules:
+# 	fifo_tb
+# End time: 14:05:27 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work fifo_tb 
+# Start time: 14:04:52 on Oct 24,2023
+# Loading sv_std.std
+# Loading work.fifo_tb
+# Loading work.fifo
+# Loading work.fifo_ctrl
+# Loading work.reg_file
+# ** Error: (vsim-8378) ./fifo.sv(40): Port size (3) does not match connection size (24) for implicit .name connection port 'w_data'. The port definition is at: ./fifo.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /fifo_tb/c_unit File: ./fifo.sv
+# ** Error: (vsim-8378) ./fifo.sv(40): Port size (3) does not match connection size (24) for implicit .name connection port 'r_data'. The port definition is at: ./fifo.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /fifo_tb/c_unit File: ./fifo.sv
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab_fifo.do PAUSED at line 14
+do runlab_fifo.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:07:15 on Oct 24,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 14:07:15 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:07:15 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 14:07:15 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:07:15 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# -- Compiling module fifo_tb
+# 
+# Top level modules:
+# 	fifo_tb
+# End time: 14:07:15 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work fifo_tb 
+# Start time: 14:04:52 on Oct 24,2023
+# Loading sv_std.std
+# Loading work.fifo_tb
+# Loading work.fifo
+# Loading work.fifo_ctrl
+# Loading work.reg_file
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./fifo.sv(55)
+#    Time: 1750 ps  Iteration: 1  Instance: /fifo_tb
+# Break in Module fifo_tb at ./fifo.sv line 55
+do runlab_fifo.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:07:43 on Oct 24,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 14:07:43 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:07:44 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 14:07:44 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:07:44 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# -- Compiling module fifo_tb
+# 
+# Top level modules:
+# 	fifo
+# 	fifo_tb
+# End time: 14:07:44 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:07:48 on Oct 24,2023, Elapsed time: 0:02:56
+# Errors: 4, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work fifo_tb 
+# Start time: 14:07:48 on Oct 24,2023
+# Loading sv_std.std
+# Loading work.fifo_tb
+# Loading work.fifo_ctrl
+# Loading work.reg_file
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./fifo.sv(55)
+#    Time: 1750 ps  Iteration: 1  Instance: /fifo_tb
+# Break in Module fifo_tb at ./fifo.sv line 55
+do runlab_fifo.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:09:10 on Oct 24,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 14:09:10 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:09:10 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 14:09:11 on Oct 24,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:09:11 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# -- Compiling module fifo_tb
+# 
+# Top level modules:
+# 	fifo
+# 	fifo_tb
+# End time: 14:09:11 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:09:13 on Oct 24,2023, Elapsed time: 0:01:25
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work fifo_tb 
+# Start time: 14:09:13 on Oct 24,2023
+# Loading sv_std.std
+# Loading work.fifo_tb
+# Loading work.fifo_ctrl
+# Loading work.reg_file
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./fifo.sv(55)
+#    Time: 1750 ps  Iteration: 1  Instance: /fifo_tb
+# Break in Module fifo_tb at ./fifo.sv line 55
+do runlab_fifo.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:09:26 on Oct 24,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 14:09:26 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:09:26 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 14:09:26 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:09:26 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# -- Compiling module fifo_tb
+# 
+# Top level modules:
+# 	fifo_tb
+# End time: 14:09:27 on Oct 24,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 14:09:31 on Oct 24,2023, Elapsed time: 0:00:18
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work fifo_tb 
+# Start time: 14:09:31 on Oct 24,2023
+# Loading sv_std.std
+# Loading work.fifo_tb
+# Loading work.fifo
+# Loading work.fifo_ctrl
+# Loading work.reg_file
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./fifo.sv(55)
+#    Time: 1750 ps  Iteration: 1  Instance: /fifo_tb
+# Break in Module fifo_tb at ./fifo.sv line 55
+add wave -position end  sim:/fifo_tb/c_unit/r_addr
+add wave -position 7  sim:/fifo_tb/c_unit/w_en
+add wave -position 9  sim:/fifo_tb/c_unit/r_en
+add wave -position 10  sim:/fifo_tb/c_unit/r_data
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/fifo_wave.do
+do runlab_fifo.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:14:14 on Oct 24,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 14:14:14 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:14:14 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 14:14:14 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:14:14 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# -- Compiling module fifo_tb
+# 
+# Top level modules:
+# 	fifo_tb
+# End time: 14:14:14 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:14:16 on Oct 24,2023, Elapsed time: 0:04:45
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work fifo_tb 
+# Start time: 14:14:16 on Oct 24,2023
+# Loading sv_std.std
+# Loading work.fifo_tb
+# Loading work.fifo
+# Loading work.fifo_ctrl
+# Loading work.reg_file
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./fifo.sv(55)
+#    Time: 1750 ps  Iteration: 1  Instance: /fifo_tb
+# Break in Module fifo_tb at ./fifo.sv line 55

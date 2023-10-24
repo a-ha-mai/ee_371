@@ -37,8 +37,7 @@ module fifo_tb ();
 	logic [DATA_WIDTH-1:0] w_data, r_data;
 	logic [ADDR_WIDTH-1:0] w_addr, r_addr;
 	
-	fifo_ctrl #(ADDR_WIDTH) c_unit (.*);
-	reg_file #(DATA_WIDTH, ADDR_WIDTH) r_unit (.*);
+	fifo #(DATA_WIDTH, ADDR_WIDTH) c_unit (.*);
 	
 	parameter CLOCK_PERIOD = 100;
 	initial begin
