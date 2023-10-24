@@ -34,9 +34,11 @@ module combined_parts (CLOCK_50, CLOCK2_50, KEY, SW, FPGA_I2C_SCLK, FPGA_I2C_SDA
 	assign intermediate_writedata_left = SW[9] ? readdata : readdata_left;
 	assign intermediate_writedata_right = SW[9] ? readdata : readdata_right;
 	
-	part3 p3_left (.clk(CLOCK_50), .reset(~KEY[0]), .write(write), .r_data(intermediate_writedata_left), .f_data(writedata_left)); 
-	part3 p3_right (.clk(CLOCK_50), .reset(~KEY[0]), .write(write), .r_data(intermediate_writedata_right), .f_data(writedata_right)); 
-		
+	part3 p3_left (.clk(CLOCK_50), .reset(~KEY[0]), .write(write), .r_data(intermediate_writedata_left), .f_data(filtered_writedata_left));
+	part3 p3_right (.clk(CLOCK_50), .reset(~KEY[0]), .write(write), .r_data(intermediate_writedata_right), .f_data(filtered_writedata_right));
+	
+	assign writedata_left = SW[8] ? filtered_writedata_left : intermediate_writedata_left;
+	assign writedata_right = SW[8] ? filtered_writedata_right : intermediate_writedata_right;
 /////////////////////////////////////////////////////////////////////////////////
 // Audio CODEC interface. 
 //

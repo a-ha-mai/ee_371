@@ -1,0 +1,505 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Documents/ee_371/lab3/simulation/modelsim
+vaccumulator
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1698115299
+!i10b 1
+!s100 dVoKdRg12YGDj5SXXf`O^2
+I9Z6fNCK=1cH2nEH_23<iK1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 accumulator_sv_unit
+S1
+R0
+w1698095927
+8D:/Documents/ee_371/lab3/accumulator.sv
+FD:/Documents/ee_371/lab3/accumulator.sv
+L0 2
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1698115299.000000
+!s107 D:/Documents/ee_371/lab3/accumulator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371/lab3|D:/Documents/ee_371/lab3/accumulator.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+D:/Documents/ee_371/lab3
+Z8 tCvgOpt 0
+vadder
+R1
+R2
+!i10b 1
+!s100 M78iA?<Mc:eMR3=Uf9@7=1
+IbP11:`?V>0im3>aWl[FQI2
+R3
+!s105 adder_sv_unit
+S1
+R0
+w1698093354
+8D:/Documents/ee_371/lab3/adder.sv
+FD:/Documents/ee_371/lab3/adder.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/Documents/ee_371/lab3/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371/lab3|D:/Documents/ee_371/lab3/adder.sv|
+!i113 1
+R6
+R7
+R8
+vAltera_UP_Audio_Bit_Counter
+Z9 !s110 1698115298
+!i10b 1
+!s100 J2Tb5SPZN>>^6S@MM9o:c1
+IPBZ[a]cLnm`2aK_<_fRP^2
+R3
+R0
+Z10 w1698077694
+8D:/Documents/ee_371/lab3/altera_up_audio_bit_counter.v
+FD:/Documents/ee_371/lab3/altera_up_audio_bit_counter.v
+Z11 L0 49
+R4
+r1
+!s85 0
+31
+Z12 !s108 1698115298.000000
+!s107 D:/Documents/ee_371/lab3/altera_up_audio_bit_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents/ee_371/lab3|D:/Documents/ee_371/lab3/altera_up_audio_bit_counter.v|
+!i113 1
+Z13 o-vlog01compat -work work
+Z14 !s92 -vlog01compat -work work +incdir+D:/Documents/ee_371/lab3
+R8
+n@altera_@u@p_@audio_@bit_@counter
+vAltera_UP_Audio_In_Deserializer
+R9
+!i10b 1
+!s100 MnK8@IQLcda;1gGBW7@Tz0
+ICB8adNnlK@68:@f[TTXP`1
+R3
+R0
+R10
+8D:/Documents/ee_371/lab3/altera_up_audio_in_deserializer.v
+FD:/Documents/ee_371/lab3/altera_up_audio_in_deserializer.v
+Z15 L0 47
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/Documents/ee_371/lab3/altera_up_audio_in_deserializer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents/ee_371/lab3|D:/Documents/ee_371/lab3/altera_up_audio_in_deserializer.v|
+!i113 1
+R13
+R14
+R8
+n@altera_@u@p_@audio_@in_@deserializer
+vAltera_UP_Audio_Out_Serializer
+R9
+!i10b 1
+!s100 BllhdjOFFm6Rj]o@Xid882
+IeoPG:MlTUTe>ozRga7SL13
+R3
+R0
+R10
+8D:/Documents/ee_371/lab3/altera_up_audio_out_serializer.v
+FD:/Documents/ee_371/lab3/altera_up_audio_out_serializer.v
+R15
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/Documents/ee_371/lab3/altera_up_audio_out_serializer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents/ee_371/lab3|D:/Documents/ee_371/lab3/altera_up_audio_out_serializer.v|
+!i113 1
+R13
+R14
+R8
+n@altera_@u@p_@audio_@out_@serializer
+vAltera_UP_Clock_Edge
+R9
+!i10b 1
+!s100 XaX6^HY04T3X?D32?HdN>2
+IMe2E1cQ[aY_gKHM98E>[83
+R3
+R0
+R10
+8D:/Documents/ee_371/lab3/altera_up_clock_edge.v
+FD:/Documents/ee_371/lab3/altera_up_clock_edge.v
+Z16 L0 48
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/Documents/ee_371/lab3/altera_up_clock_edge.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents/ee_371/lab3|D:/Documents/ee_371/lab3/altera_up_clock_edge.v|
+!i113 1
+R13
+R14
+R8
+n@altera_@u@p_@clock_@edge
+vAltera_UP_I2C
+R9
+!i10b 1
+!s100 JU94J3RToJ0DChmlIi^B43
+InKzPS97:N:?8XM_8m3VDS0
+R3
+R0
+R10
+8D:/Documents/ee_371/lab3/altera_up_i2c.v
+FD:/Documents/ee_371/lab3/altera_up_i2c.v
+R16
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/Documents/ee_371/lab3/altera_up_i2c.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents/ee_371/lab3|D:/Documents/ee_371/lab3/altera_up_i2c.v|
+!i113 1
+R13
+R14
+R8
+n@altera_@u@p_@i2@c
+vAltera_UP_I2C_AV_Auto_Initialize
+R9
+!i10b 1
+!s100 TbIA;9787GSRoV9be_N2^2
+I9?B_Skc[k[1kVW9cnGA343
+R3
+R0
+R10
+8D:/Documents/ee_371/lab3/altera_up_i2c_av_auto_initialize.v
+FD:/Documents/ee_371/lab3/altera_up_i2c_av_auto_initialize.v
+R16
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/Documents/ee_371/lab3/altera_up_i2c_av_auto_initialize.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents/ee_371/lab3|D:/Documents/ee_371/lab3/altera_up_i2c_av_auto_initialize.v|
+!i113 1
+R13
+R14
+R8
+n@altera_@u@p_@i2@c_@a@v_@auto_@initialize
+vAltera_UP_Slow_Clock_Generator
+R9
+!i10b 1
+!s100 U@B3NehPQRXcdeI<e=@I53
+IAo4kdDJ7:lFQX2n4c13Wn2
+R3
+R0
+R10
+8D:/Documents/ee_371/lab3/altera_up_slow_clock_generator.v
+FD:/Documents/ee_371/lab3/altera_up_slow_clock_generator.v
+L0 53
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/Documents/ee_371/lab3/altera_up_slow_clock_generator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents/ee_371/lab3|D:/Documents/ee_371/lab3/altera_up_slow_clock_generator.v|
+!i113 1
+R13
+R14
+R8
+n@altera_@u@p_@slow_@clock_@generator
+vAltera_UP_SYNC_FIFO
+R9
+!i10b 1
+!s100 jDg=^5VOBFbFho_;gZbiA1
+IJZc:9Ra8WkCXHXU7@;k5M2
+R3
+R0
+R10
+8D:/Documents/ee_371/lab3/altera_up_sync_fifo.v
+FD:/Documents/ee_371/lab3/altera_up_sync_fifo.v
+R15
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/Documents/ee_371/lab3/altera_up_sync_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents/ee_371/lab3|D:/Documents/ee_371/lab3/altera_up_sync_fifo.v|
+!i113 1
+R13
+R14
+R8
+n@altera_@u@p_@s@y@n@c_@f@i@f@o
+vaudio_and_video_config
+R9
+!i10b 1
+!s100 z3>_mDg4hMjn4VjXHn00U3
+I3nMWEHCoZXWzP[Ldca=UD0
+R3
+R0
+R10
+8D:/Documents/ee_371/lab3/audio_and_video_config.v
+FD:/Documents/ee_371/lab3/audio_and_video_config.v
+R11
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/Documents/ee_371/lab3/audio_and_video_config.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents/ee_371/lab3|D:/Documents/ee_371/lab3/audio_and_video_config.v|
+!i113 1
+R13
+R14
+R8
+vaudio_codec
+R9
+!i10b 1
+!s100 43h1ad@K@aG98IRVc4i1M1
+I3TiSzb3U:1JA]Zl]@mQnE2
+R3
+R0
+R10
+8D:/Documents/ee_371/lab3/audio_codec.v
+FD:/Documents/ee_371/lab3/audio_codec.v
+R11
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/Documents/ee_371/lab3/audio_codec.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents/ee_371/lab3|D:/Documents/ee_371/lab3/audio_codec.v|
+!i113 1
+R13
+R14
+R8
+vC4
+R9
+!i10b 1
+!s100 ET_P>gbJ1MBZkBS2l=>Al0
+I;QZjfn<<e0aTjGC]z3FgW3
+R3
+R0
+R10
+8D:/Documents/ee_371/lab3/c4.v
+FD:/Documents/ee_371/lab3/c4.v
+L0 40
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/Documents/ee_371/lab3/c4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents/ee_371/lab3|D:/Documents/ee_371/lab3/c4.v|
+!i113 1
+R13
+R14
+R8
+n@c4
+vclock_generator
+R9
+!i10b 1
+!s100 39OA<gKn`aijkLgT:8]8i2
+I]4n[PRXnc:>fTPl`dPXEU3
+R3
+R0
+R10
+8D:/Documents/ee_371/lab3/clock_generator.v
+FD:/Documents/ee_371/lab3/clock_generator.v
+R16
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/Documents/ee_371/lab3/clock_generator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents/ee_371/lab3|D:/Documents/ee_371/lab3/clock_generator.v|
+!i113 1
+R13
+R14
+R8
+vcombined_parts
+R9
+!i10b 1
+!s100 VM2L9D<jb2LP=c0nQ9J7>0
+I^gMnFMV9bA^H5<NgY:VE72
+R3
+R0
+w1698113295
+8D:/Documents/ee_371/lab3/combined_parts.v
+FD:/Documents/ee_371/lab3/combined_parts.v
+L0 1
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/Documents/ee_371/lab3/combined_parts.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Documents/ee_371/lab3|D:/Documents/ee_371/lab3/combined_parts.v|
+!i113 1
+R13
+R14
+R8
+vfifo
+R1
+R2
+!i10b 1
+!s100 GKEcFB38TJ1jnP7oigKT41
+I2daPi@BiTlGOm4lP:J@h20
+R3
+Z17 !s105 fifo_sv_unit
+S1
+R0
+Z18 w1698115275
+Z19 8D:/Documents/ee_371/lab3/fifo.sv
+Z20 FD:/Documents/ee_371/lab3/fifo.sv
+L0 8
+R4
+r1
+!s85 0
+31
+R5
+Z21 !s107 D:/Documents/ee_371/lab3/fifo.sv|
+Z22 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371/lab3|D:/Documents/ee_371/lab3/fifo.sv|
+!i113 1
+R6
+R7
+R8
+vfifo_ctrl
+R1
+R2
+!i10b 1
+!s100 JfdmdQWa`[ReeU1QlVEL?0
+I;AUR[g6llY83E7>Q2oW[o2
+R3
+!s105 fifo_ctrl_sv_unit
+S1
+R0
+w1698114856
+8D:/Documents/ee_371/lab3/fifo_ctrl.sv
+FD:/Documents/ee_371/lab3/fifo_ctrl.sv
+L0 6
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/Documents/ee_371/lab3/fifo_ctrl.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371/lab3|D:/Documents/ee_371/lab3/fifo_ctrl.sv|
+!i113 1
+R6
+R7
+R8
+vfifo_tb
+R1
+R2
+!i10b 1
+!s100 9BOTImN^K]12TK?D@C45@0
+I6B?fL62c`O93doB>G7i>A2
+R3
+R17
+S1
+R0
+R18
+R19
+R20
+L0 31
+R4
+r1
+!s85 0
+31
+R5
+R21
+R22
+!i113 1
+R6
+R7
+R8
+vpart2
+R1
+R9
+!i10b 1
+!s100 H[dG>]SkZe]h4n>0;eNb`0
+Iio`MIZnaOSJ1BQ:l6:lbU3
+R3
+!s105 part2_sv_unit
+S1
+R0
+R10
+8D:/Documents/ee_371/lab3/part2.sv
+FD:/Documents/ee_371/lab3/part2.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/Documents/ee_371/lab3/part2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371/lab3|D:/Documents/ee_371/lab3/part2.sv|
+!i113 1
+R6
+R7
+R8
+vpart3
+R1
+R9
+!i10b 1
+!s100 I3h]d2J?O:RCizmPj_@_K3
+IfF^mXDlGCbeM_FOa5R7ih0
+R3
+!s105 part3_sv_unit
+S1
+R0
+w1698114067
+8D:/Documents/ee_371/lab3/part3.sv
+FD:/Documents/ee_371/lab3/part3.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/Documents/ee_371/lab3/part3.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371/lab3|D:/Documents/ee_371/lab3/part3.sv|
+!i113 1
+R6
+R7
+R8
+vreg_file
+R1
+R2
+!i10b 1
+!s100 [@1_RbQU3J3FQI9VSJo9I2
+I;RgaFGlR^TA;mNQ>6OjZ82
+R3
+!s105 reg_file_sv_unit
+S1
+R0
+w1698114760
+8D:/Documents/ee_371/lab3/reg_file.sv
+FD:/Documents/ee_371/lab3/reg_file.sv
+L0 5
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/Documents/ee_371/lab3/reg_file.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Documents/ee_371/lab3|D:/Documents/ee_371/lab3/reg_file.sv|
+!i113 1
+R6
+R7
+R8

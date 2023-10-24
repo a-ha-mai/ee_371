@@ -15,15 +15,42 @@ module fifo #(parameter DATA_WIDTH=24, ADDR_WIDTH=3)
 	
 	// signal declarations
 	logic [ADDR_WIDTH-1:0] w_addr, r_addr;
-	logic w_en;
+	logic w_en, r_en;
 	
 	// enable write only when FIFO is not full
 	// or if reading and writing simultaneously
 	assign w_en = wr & (~full | rd);
-	assign r_en = wr & rd;
+	assign r_en = wr & rd & full;
 	
 	// instantiate FIFO controller and register file
 	fifo_ctrl #(ADDR_WIDTH) c_unit (.*);
 	reg_file #(DATA_WIDTH, ADDR_WIDTH) r_unit (.*);
 	
 endmodule  // fifo
+
+module fifo_tb ();
+	parameter DATA_WIDTH = 24;
+	parameter ADDR_WIDTH = 3;
+	
+	logic clk, reset, rd, wr, empty, full, w_en, r_en;
+	logic [DATA_WIDTH-1:0] w_data, r_data;
+	logic [ADDR_WIDTH-1:0] w_addr, r_addr;
+	
+	fifo_ctrl #(ADDR_WIDTH) c_unit (.*);
+	reg_file #(DATA_WIDTH, ADDR_WIDTH) r_unit (.*);
+	
+	parameter CLOCK_PERIOD = 100;
+	initial begin
+		clk <= 0;
+		forever #(CLOCK_PERIOD/2) clk <= ~clk;
+	end
+	
+	initial begin
+		rd <= 0; wr <= 0; w_data <= 24'b0;
+		reset <= 1; @(posedge clk);
+		reset <= 0; @(posedge clk);
+		
+		rd <= 1; wr <= 1; w_data <= 24'b1; repeat (16) @(posedge clk);
+		$stop;
+	end
+endmodule // fifo_tb
