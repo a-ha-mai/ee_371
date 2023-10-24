@@ -6,15 +6,16 @@
  * and r_data holds the value of the head of the buffer (unless empty).
  */
 module fifo #(parameter DATA_WIDTH=24, ADDR_WIDTH=3)
-            (clk, reset, rd, wr, empty, full, w_data, r_data);
+            (clk, reset, rd, wr, empty, full, w_data, w_addr, r_data);
 
 	input  logic clk, reset, rd, wr;
 	output logic empty, full;
 	input  logic [DATA_WIDTH-1:0] w_data;
+	output logic [ADDR_WIDTH-1:0] w_addr;
 	output logic [DATA_WIDTH-1:0] r_data;
 	
 	// signal declarations
-	logic [ADDR_WIDTH-1:0] w_addr, r_addr;
+	logic [ADDR_WIDTH-1:0] r_addr;
 	logic w_en, r_en;
 	
 	// enable write only when FIFO is not full
