@@ -455,3 +455,415 @@ do runlab_fifo.do
 # ** Note: $stop    : ./fifo.sv(55)
 #    Time: 1750 ps  Iteration: 1  Instance: /fifo_tb
 # Break in Module fifo_tb at ./fifo.sv line 55
+do runlab_part3.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:57:29 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# -- Compiling module fifo_tb
+# 
+# Top level modules:
+# 	fifo_tb
+# End time: 16:57:29 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:57:29 on Oct 24,2023
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 16:57:29 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:57:29 on Oct 24,2023
+# vlog -reportprogress 300 ./accumulator.sv 
+# -- Compiling module accumulator
+# -- Compiling module accumulator_tb
+# 
+# Top level modules:
+# 	accumulator_tb
+# End time: 16:57:30 on Oct 24,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:57:30 on Oct 24,2023
+# vlog -reportprogress 300 ./part3.sv 
+# -- Compiling module part3
+# -- Compiling module part3_tb
+# 
+# Top level modules:
+# 	part3_tb
+# End time: 16:57:30 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:57:36 on Oct 24,2023, Elapsed time: 2:43:20
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work part3_tb 
+# Start time: 16:57:37 on Oct 24,2023
+# Loading sv_std.std
+# Loading work.part3_tb
+# Loading work.part3
+# Loading work.fifo
+# Loading work.fifo_ctrl
+# Loading work.reg_file
+# Loading work.adder
+# Loading work.accumulator
+# ** Warning: (vsim-3015) ./part3.sv(18): [PCDPC] - Port size (24) does not match connection size (1) for port 'w_data'. The port definition is at: ./fifo.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/fifo1 File: ./fifo.sv
+# ** Warning: (vsim-3015) ./part3.sv(19): [PCDPC] - Port size (25) does not match connection size (32) for port 'a'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder1 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(19): [PCDPC] - Port size (25) does not match connection size (1) for port 'b'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder1 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(19): [PCDPC] - Port size (25) does not match connection size (24) for port 'sum'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder1 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(20): [PCDPC] - Port size (25) does not match connection size (24) for port 'a'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder2 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(20): [PCDPC] - Port size (25) does not match connection size (24) for port 'b'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder2 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(20): [PCDPC] - Port size (25) does not match connection size (24) for port 'sum'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder2 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(21): [PCDPC] - Port size (3) does not match connection size (2) for port 'w_addr'. The port definition is at: ./accumulator.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/accumulator1 File: ./accumulator.sv
+# ** Warning: (vsim-3015) ./part3.sv(21): [PCDPC] - Port size (25) does not match connection size (24) for port 'd'. The port definition is at: ./accumulator.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/accumulator1 File: ./accumulator.sv
+# ** Warning: (vsim-3015) ./part3.sv(21): [PCDPC] - Port size (25) does not match connection size (24) for port 'q'. The port definition is at: ./accumulator.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/accumulator1 File: ./accumulator.sv
+# ** Warning: (vsim-3839) ./part3.sv(40): Variable '/part3_tb/f_data', driven via a port connection, is multiply driven. See ./part3.sv(31).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb File: ./part3.sv
+# ** Error: Cannot open macro file: part3_wave.do
+# Error in macro ./runlab_part3.do line 20
+# Cannot open macro file: part3_wave.do
+#     while executing
+# "do part3_wave.do"
+add wave -position end  sim:/part3_tb/clk
+add wave -position end  sim:/part3_tb/reset
+add wave -position end  sim:/part3_tb/write
+add wave -position end  sim:/part3_tb/r_data
+add wave -position end  sim:/part3_tb/f_data
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part3_wave.do
+do runlab_part3.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:58:03 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# -- Compiling module fifo_tb
+# 
+# Top level modules:
+# 	fifo_tb
+# End time: 16:58:03 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:58:03 on Oct 24,2023
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 16:58:03 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:58:03 on Oct 24,2023
+# vlog -reportprogress 300 ./accumulator.sv 
+# -- Compiling module accumulator
+# -- Compiling module accumulator_tb
+# 
+# Top level modules:
+# 	accumulator_tb
+# End time: 16:58:03 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:58:03 on Oct 24,2023
+# vlog -reportprogress 300 ./part3.sv 
+# -- Compiling module part3
+# -- Compiling module part3_tb
+# 
+# Top level modules:
+# 	part3_tb
+# End time: 16:58:03 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:58:05 on Oct 24,2023, Elapsed time: 0:00:28
+# Errors: 3, Warnings: 11
+# vsim -voptargs=""+acc"" -t 1ps -lib work part3_tb 
+# Start time: 16:58:05 on Oct 24,2023
+# Loading sv_std.std
+# Loading work.part3_tb
+# Loading work.part3
+# Loading work.fifo
+# Loading work.fifo_ctrl
+# Loading work.reg_file
+# Loading work.adder
+# Loading work.accumulator
+# ** Warning: (vsim-3015) ./part3.sv(18): [PCDPC] - Port size (24) does not match connection size (1) for port 'w_data'. The port definition is at: ./fifo.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/fifo1 File: ./fifo.sv
+# ** Warning: (vsim-3015) ./part3.sv(19): [PCDPC] - Port size (25) does not match connection size (32) for port 'a'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder1 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(19): [PCDPC] - Port size (25) does not match connection size (1) for port 'b'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder1 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(19): [PCDPC] - Port size (25) does not match connection size (24) for port 'sum'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder1 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(20): [PCDPC] - Port size (25) does not match connection size (24) for port 'a'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder2 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(20): [PCDPC] - Port size (25) does not match connection size (24) for port 'b'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder2 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(20): [PCDPC] - Port size (25) does not match connection size (24) for port 'sum'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder2 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(21): [PCDPC] - Port size (3) does not match connection size (2) for port 'w_addr'. The port definition is at: ./accumulator.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/accumulator1 File: ./accumulator.sv
+# ** Warning: (vsim-3015) ./part3.sv(21): [PCDPC] - Port size (25) does not match connection size (24) for port 'd'. The port definition is at: ./accumulator.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/accumulator1 File: ./accumulator.sv
+# ** Warning: (vsim-3015) ./part3.sv(21): [PCDPC] - Port size (25) does not match connection size (24) for port 'q'. The port definition is at: ./accumulator.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/accumulator1 File: ./accumulator.sv
+# ** Warning: (vsim-3839) ./part3.sv(40): Variable '/part3_tb/f_data', driven via a port connection, is multiply driven. See ./part3.sv(31).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb File: ./part3.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./part3.sv(45)
+#    Time: 1750 ps  Iteration: 1  Instance: /part3_tb
+# Break in Module part3_tb at ./part3.sv line 45
+do runlab_part3.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:04:08 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# -- Compiling module fifo_tb
+# 
+# Top level modules:
+# 	fifo_tb
+# End time: 17:04:08 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:04:08 on Oct 24,2023
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 17:04:08 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:04:08 on Oct 24,2023
+# vlog -reportprogress 300 ./accumulator.sv 
+# -- Compiling module accumulator
+# -- Compiling module accumulator_tb
+# 
+# Top level modules:
+# 	accumulator_tb
+# End time: 17:04:08 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:04:08 on Oct 24,2023
+# vlog -reportprogress 300 ./part3.sv 
+# -- Compiling module part3
+# -- Compiling module part3_tb
+# 
+# Top level modules:
+# 	part3_tb
+# End time: 17:04:08 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:04:16 on Oct 24,2023, Elapsed time: 0:06:11
+# Errors: 0, Warnings: 11
+# vsim -voptargs=""+acc"" -t 1ps -lib work part3_tb 
+# Start time: 17:04:16 on Oct 24,2023
+# Loading sv_std.std
+# Loading work.part3_tb
+# Loading work.part3
+# Loading work.fifo
+# Loading work.fifo_ctrl
+# Loading work.reg_file
+# Loading work.adder
+# Loading work.accumulator
+# ** Warning: (vsim-3015) ./part3.sv(18): [PCDPC] - Port size (24) does not match connection size (1) for port 'w_data'. The port definition is at: ./fifo.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/fifo1 File: ./fifo.sv
+# ** Warning: (vsim-3015) ./part3.sv(19): [PCDPC] - Port size (25) does not match connection size (32) for port 'a'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder1 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(19): [PCDPC] - Port size (25) does not match connection size (1) for port 'b'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder1 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(19): [PCDPC] - Port size (25) does not match connection size (24) for port 'sum'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder1 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(20): [PCDPC] - Port size (25) does not match connection size (24) for port 'a'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder2 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(20): [PCDPC] - Port size (25) does not match connection size (24) for port 'b'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder2 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(20): [PCDPC] - Port size (25) does not match connection size (24) for port 'sum'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder2 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(21): [PCDPC] - Port size (3) does not match connection size (2) for port 'w_addr'. The port definition is at: ./accumulator.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/accumulator1 File: ./accumulator.sv
+# ** Warning: (vsim-3015) ./part3.sv(21): [PCDPC] - Port size (25) does not match connection size (24) for port 'd'. The port definition is at: ./accumulator.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/accumulator1 File: ./accumulator.sv
+# ** Warning: (vsim-3015) ./part3.sv(21): [PCDPC] - Port size (25) does not match connection size (24) for port 'q'. The port definition is at: ./accumulator.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/accumulator1 File: ./accumulator.sv
+# ** Warning: (vsim-3839) ./part3.sv(40): Variable '/part3_tb/f_data', driven via a port connection, is multiply driven. See ./part3.sv(31).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb File: ./part3.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./part3.sv(45)
+#    Time: 1750 ps  Iteration: 1  Instance: /part3_tb
+# Break in Module part3_tb at ./part3.sv line 45
+add wave -position end  sim:/part3_tb/part3_unit/accumulator_data
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part3_wave.do
+do runlab_part3.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:22:47 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# -- Compiling module fifo_tb
+# 
+# Top level modules:
+# 	fifo_tb
+# End time: 17:22:47 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:22:47 on Oct 24,2023
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 17:22:47 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:22:47 on Oct 24,2023
+# vlog -reportprogress 300 ./accumulator.sv 
+# -- Compiling module accumulator
+# -- Compiling module accumulator_tb
+# 
+# Top level modules:
+# 	accumulator_tb
+# End time: 17:22:47 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:22:47 on Oct 24,2023
+# vlog -reportprogress 300 ./part3.sv 
+# -- Compiling module part3
+# -- Compiling module part3_tb
+# 
+# Top level modules:
+# 	part3_tb
+# End time: 17:22:47 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:22:49 on Oct 24,2023, Elapsed time: 0:18:33
+# Errors: 0, Warnings: 11
+# vsim -voptargs=""+acc"" -t 1ps -lib work part3_tb 
+# Start time: 17:22:49 on Oct 24,2023
+# Loading sv_std.std
+# Loading work.part3_tb
+# Loading work.part3
+# Loading work.fifo
+# Loading work.fifo_ctrl
+# Loading work.reg_file
+# Loading work.adder
+# Loading work.accumulator
+# ** Warning: (vsim-3015) ./part3.sv(18): [PCDPC] - Port size (24) does not match connection size (1) for port 'w_data'. The port definition is at: ./fifo.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/fifo1 File: ./fifo.sv
+# ** Warning: (vsim-3015) ./part3.sv(19): [PCDPC] - Port size (25) does not match connection size (32) for port 'a'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder1 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(19): [PCDPC] - Port size (25) does not match connection size (1) for port 'b'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder1 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(19): [PCDPC] - Port size (25) does not match connection size (24) for port 'sum'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder1 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(20): [PCDPC] - Port size (25) does not match connection size (24) for port 'a'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder2 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(20): [PCDPC] - Port size (25) does not match connection size (24) for port 'b'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder2 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(20): [PCDPC] - Port size (25) does not match connection size (24) for port 'sum'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder2 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(21): [PCDPC] - Port size (3) does not match connection size (2) for port 'w_addr'. The port definition is at: ./accumulator.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/accumulator1 File: ./accumulator.sv
+# ** Warning: (vsim-3015) ./part3.sv(21): [PCDPC] - Port size (25) does not match connection size (24) for port 'd'. The port definition is at: ./accumulator.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/accumulator1 File: ./accumulator.sv
+# ** Warning: (vsim-3015) ./part3.sv(21): [PCDPC] - Port size (25) does not match connection size (24) for port 'q'. The port definition is at: ./accumulator.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/accumulator1 File: ./accumulator.sv
+# ** Warning: (vsim-3839) ./part3.sv(40): Variable '/part3_tb/f_data', driven via a port connection, is multiply driven. See ./part3.sv(31).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb File: ./part3.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./part3.sv(45)
+#    Time: 1750 ps  Iteration: 1  Instance: /part3_tb
+# Break in Module part3_tb at ./part3.sv line 45
+do runlab_part3.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:30:24 on Oct 24,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# -- Compiling module fifo_tb
+# 
+# Top level modules:
+# 	fifo_tb
+# End time: 17:30:24 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:30:24 on Oct 24,2023
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 17:30:24 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:30:24 on Oct 24,2023
+# vlog -reportprogress 300 ./accumulator.sv 
+# -- Compiling module accumulator
+# -- Compiling module accumulator_tb
+# 
+# Top level modules:
+# 	accumulator_tb
+# End time: 17:30:24 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:30:24 on Oct 24,2023
+# vlog -reportprogress 300 ./part3.sv 
+# -- Compiling module part3
+# -- Compiling module part3_tb
+# 
+# Top level modules:
+# 	part3_tb
+# End time: 17:30:24 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:30:29 on Oct 24,2023, Elapsed time: 0:07:40
+# Errors: 0, Warnings: 11
+# vsim -voptargs=""+acc"" -t 1ps -lib work part3_tb 
+# Start time: 17:30:29 on Oct 24,2023
+# Loading sv_std.std
+# Loading work.part3_tb
+# Loading work.part3
+# Loading work.fifo
+# Loading work.fifo_ctrl
+# Loading work.reg_file
+# Loading work.adder
+# Loading work.accumulator
+# ** Warning: (vsim-3015) ./part3.sv(18): [PCDPC] - Port size (24) does not match connection size (1) for port 'w_data'. The port definition is at: ./fifo.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/fifo1 File: ./fifo.sv
+# ** Warning: (vsim-3015) ./part3.sv(19): [PCDPC] - Port size (25) does not match connection size (32) for port 'a'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder1 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(19): [PCDPC] - Port size (25) does not match connection size (1) for port 'b'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder1 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(19): [PCDPC] - Port size (25) does not match connection size (24) for port 'sum'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder1 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(20): [PCDPC] - Port size (25) does not match connection size (24) for port 'a'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder2 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(20): [PCDPC] - Port size (25) does not match connection size (24) for port 'b'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder2 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(20): [PCDPC] - Port size (25) does not match connection size (24) for port 'sum'. The port definition is at: ./adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/adder2 File: ./adder.sv
+# ** Warning: (vsim-3015) ./part3.sv(21): [PCDPC] - Port size (3) does not match connection size (2) for port 'w_addr'. The port definition is at: ./accumulator.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/accumulator1 File: ./accumulator.sv
+# ** Warning: (vsim-3015) ./part3.sv(21): [PCDPC] - Port size (25) does not match connection size (24) for port 'd'. The port definition is at: ./accumulator.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/accumulator1 File: ./accumulator.sv
+# ** Warning: (vsim-3015) ./part3.sv(21): [PCDPC] - Port size (25) does not match connection size (24) for port 'q'. The port definition is at: ./accumulator.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb/part3_unit/accumulator1 File: ./accumulator.sv
+# ** Warning: (vsim-3839) ./part3.sv(40): Variable '/part3_tb/f_data', driven via a port connection, is multiply driven. See ./part3.sv(31).
+#    Time: 0 ps  Iteration: 0  Instance: /part3_tb File: ./part3.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./part3.sv(46)
+#    Time: 1750 ps  Iteration: 1  Instance: /part3_tb
+# Break in Module part3_tb at ./part3.sv line 46

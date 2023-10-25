@@ -1,5 +1,5 @@
 Analysis & Synthesis report for part1
-Tue Oct 24 12:24:25 2023
+Tue Oct 24 17:28:48 2023
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -102,7 +102,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Oct 24 12:24:25 2023       ;
+; Analysis & Synthesis Status     ; Successful - Tue Oct 24 17:28:48 2023       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; part1                                       ;
 ; Top-level Entity Name           ; combined_parts                              ;
@@ -214,83 +214,84 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
+;     Processors 5-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
-+------------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path   ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                  ; Library ;
-+------------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------+---------+
-; combined_parts.v                   ; yes             ; User Verilog HDL File                  ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/combined_parts.v                   ;         ;
-; part2.sv                           ; yes             ; User SystemVerilog HDL File            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/part2.sv                           ;         ;
-; part3.sv                           ; yes             ; User SystemVerilog HDL File            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/part3.sv                           ;         ;
-; fifo.sv                            ; yes             ; User SystemVerilog HDL File            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/fifo.sv                            ;         ;
-; fifo_ctrl.sv                       ; yes             ; User SystemVerilog HDL File            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/fifo_ctrl.sv                       ;         ;
-; reg_file.sv                        ; yes             ; User SystemVerilog HDL File            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/reg_file.sv                        ;         ;
-; adder.sv                           ; yes             ; User SystemVerilog HDL File            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/adder.sv                           ;         ;
-; accumulator.sv                     ; yes             ; User SystemVerilog HDL File            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/accumulator.sv                     ;         ;
-; c4.v                               ; yes             ; Auto-Found Wizard-Generated File       ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/c4.v                               ;         ;
-; altsyncram.tdf                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf         ;         ;
-; stratix_ram_block.inc              ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratix_ram_block.inc  ;         ;
-; lpm_mux.inc                        ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mux.inc            ;         ;
-; lpm_decode.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_decode.inc         ;         ;
-; aglobal170.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/aglobal170.inc         ;         ;
-; a_rdenreg.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/a_rdenreg.inc          ;         ;
-; altrom.inc                         ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altrom.inc             ;         ;
-; altram.inc                         ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altram.inc             ;         ;
-; altdpram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altdpram.inc           ;         ;
-; db/altsyncram_0rh1.tdf             ; yes             ; Auto-Generated Megafunction            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf             ;         ;
-; note_data.mif                      ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/note_data.mif                      ;         ;
-; db/decode_41a.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/decode_41a.tdf                  ;         ;
-; db/mux_9hb.tdf                     ; yes             ; Auto-Generated Megafunction            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/mux_9hb.tdf                     ;         ;
-; clock_generator.v                  ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/clock_generator.v                  ;         ;
-; altpll.tdf                         ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf             ;         ;
-; stratix_pll.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratix_pll.inc        ;         ;
-; stratixii_pll.inc                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratixii_pll.inc      ;         ;
-; cycloneii_pll.inc                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/cycloneii_pll.inc      ;         ;
-; db/altpll_1uu1.tdf                 ; yes             ; Auto-Generated Megafunction            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altpll_1uu1.tdf                 ;         ;
-; audio_and_video_config.v           ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/audio_and_video_config.v           ;         ;
-; altera_up_slow_clock_generator.v   ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_slow_clock_generator.v   ;         ;
-; altera_up_i2c_av_auto_initialize.v ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_i2c_av_auto_initialize.v ;         ;
-; altera_up_i2c.v                    ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_i2c.v                    ;         ;
-; audio_codec.v                      ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/audio_codec.v                      ;         ;
-; altera_up_clock_edge.v             ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_clock_edge.v             ;         ;
-; altera_up_audio_in_deserializer.v  ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_audio_in_deserializer.v  ;         ;
-; altera_up_audio_bit_counter.v      ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_audio_bit_counter.v      ;         ;
-; altera_up_sync_fifo.v              ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_sync_fifo.v              ;         ;
-; scfifo.tdf                         ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/scfifo.tdf             ;         ;
-; a_regfifo.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/a_regfifo.inc          ;         ;
-; a_dpfifo.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/a_dpfifo.inc           ;         ;
-; a_i2fifo.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/a_i2fifo.inc           ;         ;
-; a_fffifo.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/a_fffifo.inc           ;         ;
-; a_f2fifo.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/a_f2fifo.inc           ;         ;
-; db/scfifo_8ba1.tdf                 ; yes             ; Auto-Generated Megafunction            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/scfifo_8ba1.tdf                 ;         ;
-; db/a_dpfifo_r2a1.tdf               ; yes             ; Auto-Generated Megafunction            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/a_dpfifo_r2a1.tdf               ;         ;
-; db/altsyncram_p3i1.tdf             ; yes             ; Auto-Generated Megafunction            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_p3i1.tdf             ;         ;
-; db/cmpr_6l8.tdf                    ; yes             ; Auto-Generated Megafunction            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/cmpr_6l8.tdf                    ;         ;
-; db/cntr_h2b.tdf                    ; yes             ; Auto-Generated Megafunction            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/cntr_h2b.tdf                    ;         ;
-; db/cntr_u27.tdf                    ; yes             ; Auto-Generated Megafunction            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/cntr_u27.tdf                    ;         ;
-; db/cntr_i2b.tdf                    ; yes             ; Auto-Generated Megafunction            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/cntr_i2b.tdf                    ;         ;
-; altera_up_audio_out_serializer.v   ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_audio_out_serializer.v   ;         ;
-; lpm_divide.tdf                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_divide.tdf         ;         ;
-; abs_divider.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/abs_divider.inc        ;         ;
-; sign_div_unsign.inc                ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/sign_div_unsign.inc    ;         ;
-; db/lpm_divide_0am.tdf              ; yes             ; Auto-Generated Megafunction            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/lpm_divide_0am.tdf              ;         ;
-; db/sign_div_unsign_7kh.tdf         ; yes             ; Auto-Generated Megafunction            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/sign_div_unsign_7kh.tdf         ;         ;
-; db/alt_u_div_kse.tdf               ; yes             ; Auto-Generated Megafunction            ; C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/alt_u_div_kse.tdf               ;         ;
-+------------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                             ;
++------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path   ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                             ; Library ;
++------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------+---------+
+; combined_parts.v                   ; yes             ; User Verilog HDL File                  ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/combined_parts.v                   ;         ;
+; part2.sv                           ; yes             ; User SystemVerilog HDL File            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part2.sv                           ;         ;
+; part3.sv                           ; yes             ; User SystemVerilog HDL File            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part3.sv                           ;         ;
+; fifo.sv                            ; yes             ; User SystemVerilog HDL File            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/fifo.sv                            ;         ;
+; fifo_ctrl.sv                       ; yes             ; User SystemVerilog HDL File            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/fifo_ctrl.sv                       ;         ;
+; reg_file.sv                        ; yes             ; User SystemVerilog HDL File            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/reg_file.sv                        ;         ;
+; adder.sv                           ; yes             ; User SystemVerilog HDL File            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/adder.sv                           ;         ;
+; accumulator.sv                     ; yes             ; User SystemVerilog HDL File            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/accumulator.sv                     ;         ;
+; c4.v                               ; yes             ; Auto-Found Wizard-Generated File       ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/c4.v                               ;         ;
+; altsyncram.tdf                     ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/altsyncram.tdf           ;         ;
+; stratix_ram_block.inc              ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/stratix_ram_block.inc    ;         ;
+; lpm_mux.inc                        ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/lpm_mux.inc              ;         ;
+; lpm_decode.inc                     ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/lpm_decode.inc           ;         ;
+; aglobal170.inc                     ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/aglobal170.inc           ;         ;
+; a_rdenreg.inc                      ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/a_rdenreg.inc            ;         ;
+; altrom.inc                         ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/altrom.inc               ;         ;
+; altram.inc                         ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/altram.inc               ;         ;
+; altdpram.inc                       ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/altdpram.inc             ;         ;
+; db/altsyncram_0rh1.tdf             ; yes             ; Auto-Generated Megafunction            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf             ;         ;
+; note_data.mif                      ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/note_data.mif                      ;         ;
+; db/decode_41a.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/decode_41a.tdf                  ;         ;
+; db/mux_9hb.tdf                     ; yes             ; Auto-Generated Megafunction            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/mux_9hb.tdf                     ;         ;
+; clock_generator.v                  ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/clock_generator.v                  ;         ;
+; altpll.tdf                         ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/altpll.tdf               ;         ;
+; stratix_pll.inc                    ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/stratix_pll.inc          ;         ;
+; stratixii_pll.inc                  ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/stratixii_pll.inc        ;         ;
+; cycloneii_pll.inc                  ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/cycloneii_pll.inc        ;         ;
+; db/altpll_1uu1.tdf                 ; yes             ; Auto-Generated Megafunction            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altpll_1uu1.tdf                 ;         ;
+; audio_and_video_config.v           ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/audio_and_video_config.v           ;         ;
+; altera_up_slow_clock_generator.v   ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_slow_clock_generator.v   ;         ;
+; altera_up_i2c_av_auto_initialize.v ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_i2c_av_auto_initialize.v ;         ;
+; altera_up_i2c.v                    ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_i2c.v                    ;         ;
+; audio_codec.v                      ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/audio_codec.v                      ;         ;
+; altera_up_clock_edge.v             ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_clock_edge.v             ;         ;
+; altera_up_audio_in_deserializer.v  ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_audio_in_deserializer.v  ;         ;
+; altera_up_audio_bit_counter.v      ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_audio_bit_counter.v      ;         ;
+; altera_up_sync_fifo.v              ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_sync_fifo.v              ;         ;
+; scfifo.tdf                         ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/scfifo.tdf               ;         ;
+; a_regfifo.inc                      ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/a_regfifo.inc            ;         ;
+; a_dpfifo.inc                       ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/a_dpfifo.inc             ;         ;
+; a_i2fifo.inc                       ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/a_i2fifo.inc             ;         ;
+; a_fffifo.inc                       ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/a_fffifo.inc             ;         ;
+; a_f2fifo.inc                       ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/a_f2fifo.inc             ;         ;
+; db/scfifo_8ba1.tdf                 ; yes             ; Auto-Generated Megafunction            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/scfifo_8ba1.tdf                 ;         ;
+; db/a_dpfifo_r2a1.tdf               ; yes             ; Auto-Generated Megafunction            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/a_dpfifo_r2a1.tdf               ;         ;
+; db/altsyncram_p3i1.tdf             ; yes             ; Auto-Generated Megafunction            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_p3i1.tdf             ;         ;
+; db/cmpr_6l8.tdf                    ; yes             ; Auto-Generated Megafunction            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/cmpr_6l8.tdf                    ;         ;
+; db/cntr_h2b.tdf                    ; yes             ; Auto-Generated Megafunction            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/cntr_h2b.tdf                    ;         ;
+; db/cntr_u27.tdf                    ; yes             ; Auto-Generated Megafunction            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/cntr_u27.tdf                    ;         ;
+; db/cntr_i2b.tdf                    ; yes             ; Auto-Generated Megafunction            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/cntr_i2b.tdf                    ;         ;
+; altera_up_audio_out_serializer.v   ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_audio_out_serializer.v   ;         ;
+; lpm_divide.tdf                     ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/lpm_divide.tdf           ;         ;
+; abs_divider.inc                    ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/abs_divider.inc          ;         ;
+; sign_div_unsign.inc                ; yes             ; Megafunction                           ; c:/users/jason/documents/cse369/quartus/libraries/megafunctions/sign_div_unsign.inc      ;         ;
+; db/lpm_divide_0am.tdf              ; yes             ; Auto-Generated Megafunction            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/lpm_divide_0am.tdf              ;         ;
+; db/sign_div_unsign_7kh.tdf         ; yes             ; Auto-Generated Megafunction            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/sign_div_unsign_7kh.tdf         ;         ;
+; db/alt_u_div_kse.tdf               ; yes             ; Auto-Generated Megafunction            ; C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/alt_u_div_kse.tdf               ;         ;
++------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -1692,7 +1693,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -1702,41 +1703,42 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Oct 24 12:24:11 2023
+    Info: Processing started: Tue Oct 24 17:28:24 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off task3_1 -c part1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file combined_parts.v
-    Info (12023): Found entity 1: combined_parts File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/combined_parts.v Line: 1
-Warning (10229): Verilog HDL Expression warning at part2.sv(13): truncated literal to match 15 bits File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/part2.sv Line: 13
+    Info (12023): Found entity 1: combined_parts File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/combined_parts.v Line: 1
+Warning (10229): Verilog HDL Expression warning at part2.sv(13): truncated literal to match 15 bits File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part2.sv Line: 13
 Info (12021): Found 1 design units, including 1 entities, in source file part2.sv
-    Info (12023): Found entity 1: part2 File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/part2.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file part3.sv
-    Info (12023): Found entity 1: part3 File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/part3.sv Line: 2
+    Info (12023): Found entity 1: part2 File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part2.sv Line: 1
+Info (12021): Found 2 design units, including 2 entities, in source file part3.sv
+    Info (12023): Found entity 1: part3 File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part3.sv Line: 2
+    Info (12023): Found entity 2: part3_tb File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part3.sv Line: 24
 Info (12021): Found 2 design units, including 2 entities, in source file fifo.sv
-    Info (12023): Found entity 1: fifo File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/fifo.sv Line: 8
-    Info (12023): Found entity 2: fifo_tb File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/fifo.sv Line: 32
+    Info (12023): Found entity 1: fifo File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/fifo.sv Line: 8
+    Info (12023): Found entity 2: fifo_tb File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/fifo.sv Line: 32
 Info (12021): Found 1 design units, including 1 entities, in source file fifo_ctrl.sv
-    Info (12023): Found entity 1: fifo_ctrl File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/fifo_ctrl.sv Line: 6
+    Info (12023): Found entity 1: fifo_ctrl File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/fifo_ctrl.sv Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file reg_file.sv
-    Info (12023): Found entity 1: reg_file File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/reg_file.sv Line: 5
+    Info (12023): Found entity 1: reg_file File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/reg_file.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
-    Info (12023): Found entity 1: adder File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/adder.sv Line: 2
+    Info (12023): Found entity 1: adder File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/adder.sv Line: 2
 Info (12021): Found 2 design units, including 2 entities, in source file accumulator.sv
-    Info (12023): Found entity 1: accumulator File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/accumulator.sv Line: 2
-    Info (12023): Found entity 2: accumulator_tb File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/accumulator.sv Line: 20
-Warning (10236): Verilog HDL Implicit Net warning at combined_parts.v(37): created implicit net for "filtered_writedata_left" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/combined_parts.v Line: 37
-Warning (10236): Verilog HDL Implicit Net warning at combined_parts.v(38): created implicit net for "filtered_writedata_right" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/combined_parts.v Line: 38
-Warning (10236): Verilog HDL Implicit Net warning at part3.sv(16): created implicit net for "in" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/part3.sv Line: 16
+    Info (12023): Found entity 1: accumulator File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/accumulator.sv Line: 2
+    Info (12023): Found entity 2: accumulator_tb File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/accumulator.sv Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at combined_parts.v(37): created implicit net for "filtered_writedata_left" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/combined_parts.v Line: 37
+Warning (10236): Verilog HDL Implicit Net warning at combined_parts.v(38): created implicit net for "filtered_writedata_right" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/combined_parts.v Line: 38
+Warning (10236): Verilog HDL Implicit Net warning at part3.sv(16): created implicit net for "in" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part3.sv Line: 16
 Info (12127): Elaborating entity "combined_parts" for the top level hierarchy
-Info (12128): Elaborating entity "part2" for hierarchy "part2:p2" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/combined_parts.v Line: 32
-Warning (10230): Verilog HDL assignment warning at part2.sv(12): truncated value with size 32 to match size of target (15) File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/part2.sv Line: 12
+Info (12128): Elaborating entity "part2" for hierarchy "part2:p2" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/combined_parts.v Line: 32
+Warning (10230): Verilog HDL assignment warning at part2.sv(12): truncated value with size 32 to match size of target (15) File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part2.sv Line: 12
 Warning (12125): Using design file c4.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: C4 File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/c4.v Line: 40
-Info (12128): Elaborating entity "C4" for hierarchy "part2:p2|C4:tone" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/part2.sv Line: 19
-Info (12128): Elaborating entity "altsyncram" for hierarchy "part2:p2|C4:tone|altsyncram:altsyncram_component" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/c4.v Line: 82
-Info (12130): Elaborated megafunction instantiation "part2:p2|C4:tone|altsyncram:altsyncram_component" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/c4.v Line: 82
-Info (12133): Instantiated megafunction "part2:p2|C4:tone|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/c4.v Line: 82
+    Info (12023): Found entity 1: C4 File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/c4.v Line: 40
+Info (12128): Elaborating entity "C4" for hierarchy "part2:p2|C4:tone" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part2.sv Line: 19
+Info (12128): Elaborating entity "altsyncram" for hierarchy "part2:p2|C4:tone|altsyncram:altsyncram_component" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/c4.v Line: 82
+Info (12130): Elaborated megafunction instantiation "part2:p2|C4:tone|altsyncram:altsyncram_component" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/c4.v Line: 82
+Info (12133): Instantiated megafunction "part2:p2|C4:tone|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/c4.v Line: 82
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -1753,28 +1755,28 @@ Info (12133): Instantiated megafunction "part2:p2|C4:tone|altsyncram:altsyncram_
     Info (12134): Parameter "width_a" = "24"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_0rh1.tdf
-    Info (12023): Found entity 1: altsyncram_0rh1 File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 32
-Info (12128): Elaborating entity "altsyncram_0rh1" for hierarchy "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+    Info (12023): Found entity 1: altsyncram_0rh1 File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 32
+Info (12128): Elaborating entity "altsyncram_0rh1" for hierarchy "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated" File: c:/users/jason/documents/cse369/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_41a.tdf
-    Info (12023): Found entity 1: decode_41a File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/decode_41a.tdf Line: 23
-Info (12128): Elaborating entity "decode_41a" for hierarchy "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|decode_41a:rden_decode" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 41
+    Info (12023): Found entity 1: decode_41a File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/decode_41a.tdf Line: 23
+Info (12128): Elaborating entity "decode_41a" for hierarchy "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|decode_41a:rden_decode" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 41
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_9hb.tdf
-    Info (12023): Found entity 1: mux_9hb File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/mux_9hb.tdf Line: 23
-Info (12128): Elaborating entity "mux_9hb" for hierarchy "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|mux_9hb:mux2" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 42
-Info (12128): Elaborating entity "part3" for hierarchy "part3:p3_left" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/combined_parts.v Line: 37
-Warning (10230): Verilog HDL assignment warning at part3.sv(16): truncated value with size 24 to match size of target (1) File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/part3.sv Line: 16
-Info (12128): Elaborating entity "fifo" for hierarchy "part3:p3_left|fifo:fifo1" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/part3.sv Line: 18
-Info (12128): Elaborating entity "fifo_ctrl" for hierarchy "part3:p3_left|fifo:fifo1|fifo_ctrl:c_unit" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/fifo.sv Line: 27
-Info (12128): Elaborating entity "reg_file" for hierarchy "part3:p3_left|fifo:fifo1|reg_file:r_unit" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/fifo.sv Line: 28
-Info (12128): Elaborating entity "adder" for hierarchy "part3:p3_left|adder:adder1" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/part3.sv Line: 19
-Info (12128): Elaborating entity "accumulator" for hierarchy "part3:p3_left|accumulator:accumulator1" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/part3.sv Line: 21
-Warning (10230): Verilog HDL assignment warning at accumulator.sv(14): truncated value with size 32 to match size of target (25) File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/accumulator.sv Line: 14
+    Info (12023): Found entity 1: mux_9hb File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/mux_9hb.tdf Line: 23
+Info (12128): Elaborating entity "mux_9hb" for hierarchy "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|mux_9hb:mux2" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 42
+Info (12128): Elaborating entity "part3" for hierarchy "part3:p3_left" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/combined_parts.v Line: 37
+Warning (10230): Verilog HDL assignment warning at part3.sv(16): truncated value with size 24 to match size of target (1) File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part3.sv Line: 16
+Info (12128): Elaborating entity "fifo" for hierarchy "part3:p3_left|fifo:fifo1" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part3.sv Line: 18
+Info (12128): Elaborating entity "fifo_ctrl" for hierarchy "part3:p3_left|fifo:fifo1|fifo_ctrl:c_unit" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/fifo.sv Line: 27
+Info (12128): Elaborating entity "reg_file" for hierarchy "part3:p3_left|fifo:fifo1|reg_file:r_unit" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/fifo.sv Line: 28
+Info (12128): Elaborating entity "adder" for hierarchy "part3:p3_left|adder:adder1" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part3.sv Line: 19
+Info (12128): Elaborating entity "accumulator" for hierarchy "part3:p3_left|accumulator:accumulator1" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part3.sv Line: 21
+Warning (10230): Verilog HDL assignment warning at accumulator.sv(14): truncated value with size 32 to match size of target (25) File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/accumulator.sv Line: 14
 Warning (12125): Using design file clock_generator.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: clock_generator File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/clock_generator.v Line: 48
-Info (12128): Elaborating entity "clock_generator" for hierarchy "clock_generator:my_clock_gen" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/combined_parts.v Line: 63
-Info (12128): Elaborating entity "altpll" for hierarchy "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/clock_generator.v Line: 134
-Info (12130): Elaborated megafunction instantiation "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/clock_generator.v Line: 134
-Info (12133): Instantiated megafunction "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" with the following parameter: File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/clock_generator.v Line: 134
+    Info (12023): Found entity 1: clock_generator File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/clock_generator.v Line: 48
+Info (12128): Elaborating entity "clock_generator" for hierarchy "clock_generator:my_clock_gen" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/combined_parts.v Line: 63
+Info (12128): Elaborating entity "altpll" for hierarchy "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/clock_generator.v Line: 134
+Info (12130): Elaborated megafunction instantiation "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/clock_generator.v Line: 134
+Info (12133): Instantiated megafunction "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" with the following parameter: File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/clock_generator.v Line: 134
     Info (12134): Parameter "clk0_divide_by" = "31"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
     Info (12134): Parameter "clk0_multiply_by" = "14"
@@ -1832,38 +1834,38 @@ Info (12133): Instantiated megafunction "clock_generator:my_clock_gen|altpll:DE_
     Info (12134): Parameter "port_sclkout1" = "PORT_UNUSED"
     Info (12134): Parameter "valid_lock_multiplier" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altpll_1uu1.tdf
-    Info (12023): Found entity 1: altpll_1uu1 File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altpll_1uu1.tdf Line: 26
-Info (12128): Elaborating entity "altpll_1uu1" for hierarchy "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio|altpll_1uu1:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf Line: 898
+    Info (12023): Found entity 1: altpll_1uu1 File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altpll_1uu1.tdf Line: 26
+Info (12128): Elaborating entity "altpll_1uu1" for hierarchy "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio|altpll_1uu1:auto_generated" File: c:/users/jason/documents/cse369/quartus/libraries/megafunctions/altpll.tdf Line: 898
 Warning (12125): Using design file audio_and_video_config.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: audio_and_video_config File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/audio_and_video_config.v Line: 49
-Info (12128): Elaborating entity "audio_and_video_config" for hierarchy "audio_and_video_config:cfg" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/combined_parts.v Line: 73
+    Info (12023): Found entity 1: audio_and_video_config File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/audio_and_video_config.v Line: 49
+Info (12128): Elaborating entity "audio_and_video_config" for hierarchy "audio_and_video_config:cfg" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/combined_parts.v Line: 73
 Warning (12125): Using design file altera_up_slow_clock_generator.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Altera_UP_Slow_Clock_Generator File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_slow_clock_generator.v Line: 53
-Info (12128): Elaborating entity "Altera_UP_Slow_Clock_Generator" for hierarchy "audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/audio_and_video_config.v Line: 180
+    Info (12023): Found entity 1: Altera_UP_Slow_Clock_Generator File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_slow_clock_generator.v Line: 53
+Info (12128): Elaborating entity "Altera_UP_Slow_Clock_Generator" for hierarchy "audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/audio_and_video_config.v Line: 180
 Warning (12125): Using design file altera_up_i2c_av_auto_initialize.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Altera_UP_I2C_AV_Auto_Initialize File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_i2c_av_auto_initialize.v Line: 48
-Info (12128): Elaborating entity "Altera_UP_I2C_AV_Auto_Initialize" for hierarchy "audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/audio_and_video_config.v Line: 205
+    Info (12023): Found entity 1: Altera_UP_I2C_AV_Auto_Initialize File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_i2c_av_auto_initialize.v Line: 48
+Info (12128): Elaborating entity "Altera_UP_I2C_AV_Auto_Initialize" for hierarchy "audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/audio_and_video_config.v Line: 205
 Warning (12125): Using design file altera_up_i2c.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Altera_UP_I2C File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_i2c.v Line: 48
-Info (12128): Elaborating entity "Altera_UP_I2C" for hierarchy "audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/audio_and_video_config.v Line: 252
+    Info (12023): Found entity 1: Altera_UP_I2C File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_i2c.v Line: 48
+Info (12128): Elaborating entity "Altera_UP_I2C" for hierarchy "audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/audio_and_video_config.v Line: 252
 Warning (12125): Using design file audio_codec.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: audio_codec File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/audio_codec.v Line: 49
-Info (12128): Elaborating entity "audio_codec" for hierarchy "audio_codec:codec" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/combined_parts.v Line: 94
+    Info (12023): Found entity 1: audio_codec File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/audio_codec.v Line: 49
+Info (12128): Elaborating entity "audio_codec" for hierarchy "audio_codec:codec" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/combined_parts.v Line: 94
 Warning (12125): Using design file altera_up_clock_edge.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Altera_UP_Clock_Edge File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_clock_edge.v Line: 48
-Info (12128): Elaborating entity "Altera_UP_Clock_Edge" for hierarchy "audio_codec:codec|Altera_UP_Clock_Edge:Bit_Clock_Edges" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/audio_codec.v Line: 181
+    Info (12023): Found entity 1: Altera_UP_Clock_Edge File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_clock_edge.v Line: 48
+Info (12128): Elaborating entity "Altera_UP_Clock_Edge" for hierarchy "audio_codec:codec|Altera_UP_Clock_Edge:Bit_Clock_Edges" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/audio_codec.v Line: 181
 Warning (12125): Using design file altera_up_audio_in_deserializer.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Altera_UP_Audio_In_Deserializer File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_audio_in_deserializer.v Line: 47
-Info (12128): Elaborating entity "Altera_UP_Audio_In_Deserializer" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/audio_codec.v Line: 238
+    Info (12023): Found entity 1: Altera_UP_Audio_In_Deserializer File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_audio_in_deserializer.v Line: 47
+Info (12128): Elaborating entity "Altera_UP_Audio_In_Deserializer" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/audio_codec.v Line: 238
 Warning (12125): Using design file altera_up_audio_bit_counter.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Altera_UP_Audio_Bit_Counter File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_audio_bit_counter.v Line: 49
-Info (12128): Elaborating entity "Altera_UP_Audio_Bit_Counter" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_audio_in_deserializer.v Line: 197
+    Info (12023): Found entity 1: Altera_UP_Audio_Bit_Counter File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_audio_bit_counter.v Line: 49
+Info (12128): Elaborating entity "Altera_UP_Audio_Bit_Counter" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_audio_in_deserializer.v Line: 197
 Warning (12125): Using design file altera_up_sync_fifo.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Altera_UP_SYNC_FIFO File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_sync_fifo.v Line: 47
-Info (12128): Elaborating entity "Altera_UP_SYNC_FIFO" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_audio_in_deserializer.v Line: 219
-Info (12128): Elaborating entity "scfifo" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_sync_fifo.v Line: 153
-Info (12130): Elaborated megafunction instantiation "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_sync_fifo.v Line: 153
-Info (12133): Instantiated megafunction "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" with the following parameter: File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_sync_fifo.v Line: 153
+    Info (12023): Found entity 1: Altera_UP_SYNC_FIFO File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_sync_fifo.v Line: 47
+Info (12128): Elaborating entity "Altera_UP_SYNC_FIFO" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_audio_in_deserializer.v Line: 219
+Info (12128): Elaborating entity "scfifo" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_sync_fifo.v Line: 153
+Info (12130): Elaborated megafunction instantiation "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_sync_fifo.v Line: 153
+Info (12133): Instantiated megafunction "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" with the following parameter: File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_sync_fifo.v Line: 153
     Info (12134): Parameter "add_ram_output_register" = "OFF"
     Info (12134): Parameter "intended_device_family" = "Cyclone II"
     Info (12134): Parameter "lpm_numwords" = "128"
@@ -1875,123 +1877,123 @@ Info (12133): Instantiated megafunction "audio_codec:codec|Altera_UP_Audio_In_De
     Info (12134): Parameter "underflow_checking" = "OFF"
     Info (12134): Parameter "use_eab" = "ON"
 Info (12021): Found 1 design units, including 1 entities, in source file db/scfifo_8ba1.tdf
-    Info (12023): Found entity 1: scfifo_8ba1 File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/scfifo_8ba1.tdf Line: 25
-Info (12128): Elaborating entity "scfifo_8ba1" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/scfifo.tdf Line: 300
+    Info (12023): Found entity 1: scfifo_8ba1 File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/scfifo_8ba1.tdf Line: 25
+Info (12128): Elaborating entity "scfifo_8ba1" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated" File: c:/users/jason/documents/cse369/quartus/libraries/megafunctions/scfifo.tdf Line: 300
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_dpfifo_r2a1.tdf
-    Info (12023): Found entity 1: a_dpfifo_r2a1 File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/a_dpfifo_r2a1.tdf Line: 33
-Info (12128): Elaborating entity "a_dpfifo_r2a1" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/scfifo_8ba1.tdf Line: 38
+    Info (12023): Found entity 1: a_dpfifo_r2a1 File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/a_dpfifo_r2a1.tdf Line: 33
+Info (12128): Elaborating entity "a_dpfifo_r2a1" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/scfifo_8ba1.tdf Line: 38
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_p3i1.tdf
-    Info (12023): Found entity 1: altsyncram_p3i1 File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_p3i1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_p3i1" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/a_dpfifo_r2a1.tdf Line: 46
+    Info (12023): Found entity 1: altsyncram_p3i1 File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_p3i1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_p3i1" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/a_dpfifo_r2a1.tdf Line: 46
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_6l8.tdf
-    Info (12023): Found entity 1: cmpr_6l8 File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/cmpr_6l8.tdf Line: 23
-Info (12128): Elaborating entity "cmpr_6l8" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:almost_full_comparer" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/a_dpfifo_r2a1.tdf Line: 55
-Info (12128): Elaborating entity "cmpr_6l8" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:three_comparison" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/a_dpfifo_r2a1.tdf Line: 56
+    Info (12023): Found entity 1: cmpr_6l8 File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/cmpr_6l8.tdf Line: 23
+Info (12128): Elaborating entity "cmpr_6l8" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:almost_full_comparer" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/a_dpfifo_r2a1.tdf Line: 55
+Info (12128): Elaborating entity "cmpr_6l8" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:three_comparison" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/a_dpfifo_r2a1.tdf Line: 56
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_h2b.tdf
-    Info (12023): Found entity 1: cntr_h2b File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/cntr_h2b.tdf Line: 26
-Info (12128): Elaborating entity "cntr_h2b" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_h2b:rd_ptr_msb" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/a_dpfifo_r2a1.tdf Line: 57
+    Info (12023): Found entity 1: cntr_h2b File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/cntr_h2b.tdf Line: 26
+Info (12128): Elaborating entity "cntr_h2b" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_h2b:rd_ptr_msb" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/a_dpfifo_r2a1.tdf Line: 57
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_u27.tdf
-    Info (12023): Found entity 1: cntr_u27 File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/cntr_u27.tdf Line: 26
-Info (12128): Elaborating entity "cntr_u27" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_u27:usedw_counter" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/a_dpfifo_r2a1.tdf Line: 58
+    Info (12023): Found entity 1: cntr_u27 File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/cntr_u27.tdf Line: 26
+Info (12128): Elaborating entity "cntr_u27" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_u27:usedw_counter" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/a_dpfifo_r2a1.tdf Line: 58
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_i2b.tdf
-    Info (12023): Found entity 1: cntr_i2b File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/cntr_i2b.tdf Line: 26
-Info (12128): Elaborating entity "cntr_i2b" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_i2b:wr_ptr" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/a_dpfifo_r2a1.tdf Line: 59
+    Info (12023): Found entity 1: cntr_i2b File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/cntr_i2b.tdf Line: 26
+Info (12128): Elaborating entity "cntr_i2b" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_i2b:wr_ptr" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/a_dpfifo_r2a1.tdf Line: 59
 Warning (12125): Using design file altera_up_audio_out_serializer.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Altera_UP_Audio_Out_Serializer File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_audio_out_serializer.v Line: 47
-Info (12128): Elaborating entity "Altera_UP_Audio_Out_Serializer" for hierarchy "audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/audio_codec.v Line: 267
-Warning (12030): Port "clk" on the entity instantiation of "DE_Clock_Generator_Audio" is connected to a signal of width 1. The formal width of the signal in the module is 6.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/clock_generator.v Line: 134
-Warning (12010): Port "d" on the entity instantiation of "accumulator1" is connected to a signal of width 24. The formal width of the signal in the module is 25.  The extra bits will be driven by GND. File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/part3.sv Line: 21
-Warning (12030): Port "q" on the entity instantiation of "accumulator1" is connected to a signal of width 24. The formal width of the signal in the module is 25.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/part3.sv Line: 21
-Warning (12010): Port "w_addr" on the entity instantiation of "accumulator1" is connected to a signal of width 2. The formal width of the signal in the module is 3.  The extra bits will be driven by GND. File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/part3.sv Line: 21
-Warning (12010): Port "a" on the entity instantiation of "adder2" is connected to a signal of width 24. The formal width of the signal in the module is 25.  The extra bits will be driven by GND. File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/part3.sv Line: 20
-Warning (12010): Port "b" on the entity instantiation of "adder2" is connected to a signal of width 24. The formal width of the signal in the module is 25.  The extra bits will be driven by GND. File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/part3.sv Line: 20
-Warning (12030): Port "sum" on the entity instantiation of "adder2" is connected to a signal of width 24. The formal width of the signal in the module is 25.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/part3.sv Line: 20
-Warning (12020): Port "a" on the entity instantiation of "adder1" is connected to a signal of width 32. The formal width of the signal in the module is 25.  The extra bits will be ignored. File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/part3.sv Line: 19
-Warning (12010): Port "b" on the entity instantiation of "adder1" is connected to a signal of width 1. The formal width of the signal in the module is 25.  The extra bits will be driven by GND. File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/part3.sv Line: 19
-Warning (12030): Port "sum" on the entity instantiation of "adder1" is connected to a signal of width 24. The formal width of the signal in the module is 25.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/part3.sv Line: 19
-Warning (12010): Port "w_data" on the entity instantiation of "fifo1" is connected to a signal of width 1. The formal width of the signal in the module is 24.  The extra bits will be driven by GND. File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/part3.sv Line: 18
+    Info (12023): Found entity 1: Altera_UP_Audio_Out_Serializer File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_audio_out_serializer.v Line: 47
+Info (12128): Elaborating entity "Altera_UP_Audio_Out_Serializer" for hierarchy "audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/audio_codec.v Line: 267
+Warning (12030): Port "clk" on the entity instantiation of "DE_Clock_Generator_Audio" is connected to a signal of width 1. The formal width of the signal in the module is 6.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/clock_generator.v Line: 134
+Warning (12010): Port "d" on the entity instantiation of "accumulator1" is connected to a signal of width 24. The formal width of the signal in the module is 25.  The extra bits will be driven by GND. File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part3.sv Line: 21
+Warning (12030): Port "q" on the entity instantiation of "accumulator1" is connected to a signal of width 24. The formal width of the signal in the module is 25.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part3.sv Line: 21
+Warning (12010): Port "w_addr" on the entity instantiation of "accumulator1" is connected to a signal of width 2. The formal width of the signal in the module is 3.  The extra bits will be driven by GND. File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part3.sv Line: 21
+Warning (12010): Port "a" on the entity instantiation of "adder2" is connected to a signal of width 24. The formal width of the signal in the module is 25.  The extra bits will be driven by GND. File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part3.sv Line: 20
+Warning (12010): Port "b" on the entity instantiation of "adder2" is connected to a signal of width 24. The formal width of the signal in the module is 25.  The extra bits will be driven by GND. File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part3.sv Line: 20
+Warning (12030): Port "sum" on the entity instantiation of "adder2" is connected to a signal of width 24. The formal width of the signal in the module is 25.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part3.sv Line: 20
+Warning (12020): Port "a" on the entity instantiation of "adder1" is connected to a signal of width 32. The formal width of the signal in the module is 25.  The extra bits will be ignored. File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part3.sv Line: 19
+Warning (12010): Port "b" on the entity instantiation of "adder1" is connected to a signal of width 1. The formal width of the signal in the module is 25.  The extra bits will be driven by GND. File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part3.sv Line: 19
+Warning (12030): Port "sum" on the entity instantiation of "adder1" is connected to a signal of width 24. The formal width of the signal in the module is 25.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part3.sv Line: 19
+Warning (12010): Port "w_data" on the entity instantiation of "fifo1" is connected to a signal of width 1. The formal width of the signal in the module is 24.  The extra bits will be driven by GND. File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/part3.sv Line: 18
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a96" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2155
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a97" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2177
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a98" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2199
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a99" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2221
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a100" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2243
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a101" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2265
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a102" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2287
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a103" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2309
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a104" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2331
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a105" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2353
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a106" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2375
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a107" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2397
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a108" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2419
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a109" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2441
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a110" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2463
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a111" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2485
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a112" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2507
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a113" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2529
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a114" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2551
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a115" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2573
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a116" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2595
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a117" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2617
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a118" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2639
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a119" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2661
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a120" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2683
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a121" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2705
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a122" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2727
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a123" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2749
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a124" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2771
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a125" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2793
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a126" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2815
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a127" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2837
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a128" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2859
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a129" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2881
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a130" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2903
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a131" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2925
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a132" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2947
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a133" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2969
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a134" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 2991
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a135" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 3013
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a136" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 3035
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a137" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 3057
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a138" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 3079
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a139" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 3101
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a140" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 3123
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a141" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 3145
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a142" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 3167
-        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a143" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/altsyncram_0rh1.tdf Line: 3189
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a96" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2155
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a97" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2177
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a98" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2199
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a99" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2221
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a100" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2243
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a101" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2265
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a102" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2287
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a103" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2309
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a104" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2331
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a105" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2353
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a106" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2375
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a107" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2397
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a108" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2419
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a109" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2441
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a110" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2463
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a111" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2485
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a112" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2507
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a113" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2529
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a114" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2551
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a115" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2573
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a116" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2595
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a117" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2617
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a118" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2639
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a119" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2661
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a120" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2683
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a121" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2705
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a122" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2727
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a123" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2749
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a124" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2771
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a125" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2793
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a126" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2815
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a127" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2837
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a128" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2859
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a129" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2881
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a130" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2903
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a131" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2925
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a132" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2947
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a133" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2969
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a134" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 2991
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a135" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 3013
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a136" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 3035
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a137" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 3057
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a138" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 3079
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a139" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 3101
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a140" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 3123
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a141" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 3145
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a142" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 3167
+        Warning (14320): Synthesized away node "part2:p2|C4:tone|altsyncram:altsyncram_component|altsyncram_0rh1:auto_generated|ram_block1a143" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/altsyncram_0rh1.tdf Line: 3189
 Info (276014): Found 3 instances of uninferred RAM logic
-    Info (276004): RAM logic "audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|Ram0" is uninferred due to inappropriate RAM size File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/altera_up_i2c_av_auto_initialize.v Line: 305
-    Info (276004): RAM logic "part3:p3_right|fifo:fifo1|reg_file:r_unit|array_reg" is uninferred due to inappropriate RAM size File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/reg_file.sv Line: 14
-    Info (276004): RAM logic "part3:p3_left|fifo:fifo1|reg_file:r_unit|array_reg" is uninferred due to inappropriate RAM size File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/reg_file.sv Line: 14
+    Info (276004): RAM logic "audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|Ram0" is uninferred due to inappropriate RAM size File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/altera_up_i2c_av_auto_initialize.v Line: 305
+    Info (276004): RAM logic "part3:p3_right|fifo:fifo1|reg_file:r_unit|array_reg" is uninferred due to inappropriate RAM size File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/reg_file.sv Line: 14
+    Info (276004): RAM logic "part3:p3_left|fifo:fifo1|reg_file:r_unit|array_reg" is uninferred due to inappropriate RAM size File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/reg_file.sv Line: 14
 Info (278001): Inferred 1 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "part3:p3_right|accumulator:accumulator1|Div0" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/accumulator.sv Line: 14
-Info (12130): Elaborated megafunction instantiation "part3:p3_right|accumulator:accumulator1|lpm_divide:Div0" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/accumulator.sv Line: 14
-Info (12133): Instantiated megafunction "part3:p3_right|accumulator:accumulator1|lpm_divide:Div0" with the following parameter: File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/accumulator.sv Line: 14
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "part3:p3_right|accumulator:accumulator1|Div0" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/accumulator.sv Line: 14
+Info (12130): Elaborated megafunction instantiation "part3:p3_right|accumulator:accumulator1|lpm_divide:Div0" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/accumulator.sv Line: 14
+Info (12133): Instantiated megafunction "part3:p3_right|accumulator:accumulator1|lpm_divide:Div0" with the following parameter: File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/accumulator.sv Line: 14
     Info (12134): Parameter "LPM_WIDTHN" = "3"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_0am.tdf
-    Info (12023): Found entity 1: lpm_divide_0am File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/lpm_divide_0am.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_0am File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/lpm_divide_0am.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_7kh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_7kh File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/sign_div_unsign_7kh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_7kh File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/sign_div_unsign_7kh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_kse.tdf
-    Info (12023): Found entity 1: alt_u_div_kse File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/db/alt_u_div_kse.tdf Line: 23
+    Info (12023): Found entity 1: alt_u_div_kse File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/db/alt_u_div_kse.tdf Line: 23
 Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 6 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 7 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 8 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/combined_parts.v Line: 6
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/combined_parts.v Line: 6
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/combined_parts.v Line: 6
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/combined_parts.v Line: 6
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/combined_parts.v Line: 6
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/combined_parts.v Line: 6
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/combined_parts.v Line: 6
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/Anna/Documents/ee_371/ee_371/lab3/combined_parts.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/combined_parts.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/combined_parts.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/combined_parts.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/combined_parts.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/combined_parts.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/combined_parts.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/combined_parts.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/Jason/Downloads/ee_371-main/ee_371-main/lab3/combined_parts.v Line: 6
 Info (21057): Implemented 926 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 17 input pins
     Info (21059): Implemented 3 output pins
@@ -2001,9 +2003,9 @@ Info (21057): Implemented 926 device resources after synthesis - the final resou
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 2 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 91 warnings
-    Info: Peak virtual memory: 4859 megabytes
-    Info: Processing ended: Tue Oct 24 12:24:25 2023
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:27
+    Info: Peak virtual memory: 4923 megabytes
+    Info: Processing ended: Tue Oct 24 17:28:48 2023
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:00:47
 
 

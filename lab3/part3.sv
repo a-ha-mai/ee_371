@@ -20,3 +20,29 @@ module part3 (clk, reset, write, r_data, f_data);
 	adder #(DATA_WIDTH) adder2 (.a(add1_data), .b(accumulator_data), .sum(f_data));
 	accumulator #(DATA_WIDTH, ADDR_WIDTH) accumulator1 (.clk(clk), .reset(reset), .enable(write), .full(full), .w_addr(w_addr), .d(f_data), .q(accumulator_data));
 endmodule
+
+module part3_tb ();
+	parameter DATA_WIDTH = 24;
+
+	logic clk, reset, write;
+	logic [DATA_WIDTH-1:0] r_data;
+	logic [DATA_WIDTH-1:0] f_data;
+	
+	part3 part3_unit (.*);
+	
+	parameter CLOCK_PERIOD = 100;
+	initial begin
+		clk <= 0;
+		forever #(CLOCK_PERIOD/2) clk <= ~clk;
+	end
+	
+	initial begin
+		write <= 0; r_data <= 24'b0; f_data <= 24'b0;
+		reset <= 1; @(posedge clk);
+		reset <= 0; @(posedge clk);
+		write <= 1; r_data <= 24'b1; 
+		write <= 1; r_data <= 24'b111111111111111111111111; repeat (16) @(posedge clk);
+		
+		$stop;
+	end
+endmodule // part3_tb
