@@ -11,7 +11,7 @@ module accumulator #(parameter DATA_WIDTH=24, ADDR_WIDTH=2, N=4)
 	always_ff @(posedge clk) 
 		if (reset) accumulator <= 0;
 		else if (full & enable) accumulator <= d + accumulator;
-		else if (~full & enable) accumulator <= (d + accumulator) * (N / (w_addr + 1));
+		else if (~full & enable) accumulator <= (d + (accumulator * (w_addr / N))) * (N / (w_addr + 1));
 		else accumulator <= accumulator;
 	
 	assign q = accumulator;
