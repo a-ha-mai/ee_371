@@ -1,0 +1,213 @@
+|DE1_SoC
+CLOCK_50 => CLOCK_50.IN3
+KEY[0] => KEY[0].IN2
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[3] => KEY[3].IN2
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+HEX0[0] <= seg7:comb_3.leds
+HEX0[1] <= seg7:comb_3.leds
+HEX0[2] <= seg7:comb_3.leds
+HEX0[3] <= seg7:comb_3.leds
+HEX0[4] <= seg7:comb_3.leds
+HEX0[5] <= seg7:comb_3.leds
+HEX0[6] <= seg7:comb_3.leds
+LEDR[0] <= <GND>
+LEDR[1] <= <GND>
+LEDR[2] <= <GND>
+LEDR[3] <= <GND>
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= top_level:tl_unit.done
+
+
+|DE1_SoC|dff_pair:dff_1
+clk => clk.IN2
+d => d.IN2
+q <= dff_single:dff2.q
+
+
+|DE1_SoC|dff_pair:dff_1|dff_single:dff1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+
+
+|DE1_SoC|dff_pair:dff_1|dff_single:dff2
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+
+
+|DE1_SoC|dff_pair:dff_2
+clk => clk.IN2
+d => d.IN2
+q <= dff_single:dff2.q
+
+
+|DE1_SoC|dff_pair:dff_2|dff_single:dff1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+
+
+|DE1_SoC|dff_pair:dff_2|dff_single:dff2
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+
+
+|DE1_SoC|top_level:tl_unit
+clk => controller:c_unit.clk
+clk => datapath:d_unit.clk
+reset => controller:c_unit.reset
+s => controller:c_unit.s
+A_val[0] => datapath:d_unit.A_val[0]
+A_val[1] => datapath:d_unit.A_val[1]
+A_val[2] => datapath:d_unit.A_val[2]
+A_val[3] => datapath:d_unit.A_val[3]
+A_val[4] => datapath:d_unit.A_val[4]
+A_val[5] => datapath:d_unit.A_val[5]
+A_val[6] => datapath:d_unit.A_val[6]
+A_val[7] => datapath:d_unit.A_val[7]
+done <= controller:c_unit.done
+result[0] <= datapath:d_unit.result[0]
+result[1] <= datapath:d_unit.result[1]
+result[2] <= datapath:d_unit.result[2]
+
+
+|DE1_SoC|top_level:tl_unit|controller:c_unit
+clk => ps[0].CLK
+clk => ps[1].CLK
+clk => ps[2].CLK
+clk => ps[3].CLK
+clk => ps[4].CLK
+clk => ps[5].CLK
+clk => ps[6].CLK
+clk => ps[7].CLK
+clk => ps[8].CLK
+clk => ps[9].CLK
+clk => ps[10].CLK
+clk => ps[11].CLK
+clk => ps[12].CLK
+clk => ps[13].CLK
+clk => ps[14].CLK
+clk => ps[15].CLK
+clk => ps[16].CLK
+clk => ps[17].CLK
+clk => ps[18].CLK
+clk => ps[19].CLK
+clk => ps[20].CLK
+clk => ps[21].CLK
+clk => ps[22].CLK
+clk => ps[23].CLK
+clk => ps[24].CLK
+clk => ps[25].CLK
+clk => ps[26].CLK
+clk => ps[27].CLK
+clk => ps[28].CLK
+clk => ps[29].CLK
+clk => ps[30].CLK
+clk => ps[31].CLK
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+s => Selector1.IN5
+s => Selector0.IN5
+s => load_A.IN1
+A[0] => incr_result.IN1
+A[0] => Equal4.IN31
+A[1] => Equal4.IN30
+A[2] => Equal4.IN29
+A[3] => Equal4.IN28
+A[4] => Equal4.IN27
+A[5] => Equal4.IN26
+A[6] => Equal4.IN25
+A[7] => Equal4.IN24
+load_A <= load_A.DB_MAX_OUTPUT_PORT_TYPE
+shift_A <= Equal5.DB_MAX_OUTPUT_PORT_TYPE
+incr_result <= incr_result.DB_MAX_OUTPUT_PORT_TYPE
+clr_result <= Equal3.DB_MAX_OUTPUT_PORT_TYPE
+done <= Equal6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|top_level:tl_unit|datapath:d_unit
+clk => result[0]~reg0.CLK
+clk => result[1]~reg0.CLK
+clk => result[2]~reg0.CLK
+clk => A[0]~reg0.CLK
+clk => A[1]~reg0.CLK
+clk => A[2]~reg0.CLK
+clk => A[3]~reg0.CLK
+clk => A[4]~reg0.CLK
+clk => A[5]~reg0.CLK
+clk => A[6]~reg0.CLK
+clk => A[7]~reg0.CLK
+A_val[0] => A.DATAB
+A_val[1] => A.DATAB
+A_val[2] => A.DATAB
+A_val[3] => A.DATAB
+A_val[4] => A.DATAB
+A_val[5] => A.DATAB
+A_val[6] => A.DATAB
+A_val[7] => A.DATAB
+load_A => A.OUTPUTSELECT
+load_A => A.OUTPUTSELECT
+load_A => A.OUTPUTSELECT
+load_A => A.OUTPUTSELECT
+load_A => A.OUTPUTSELECT
+load_A => A.OUTPUTSELECT
+load_A => A.OUTPUTSELECT
+load_A => A.OUTPUTSELECT
+shift_A => A.OUTPUTSELECT
+shift_A => A.OUTPUTSELECT
+shift_A => A.OUTPUTSELECT
+shift_A => A.OUTPUTSELECT
+shift_A => A.OUTPUTSELECT
+shift_A => A.OUTPUTSELECT
+shift_A => A.OUTPUTSELECT
+shift_A => A.OUTPUTSELECT
+incr_result => result.OUTPUTSELECT
+incr_result => result.OUTPUTSELECT
+incr_result => result.OUTPUTSELECT
+clr_result => result.OUTPUTSELECT
+clr_result => result.OUTPUTSELECT
+clr_result => result.OUTPUTSELECT
+A[0] <= A[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= A[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[2] <= A[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[3] <= A[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[4] <= A[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[5] <= A[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[6] <= A[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[7] <= A[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[0] <= result[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|seg7:comb_3
+hex[0] => Decoder0.IN3
+hex[1] => Decoder0.IN2
+hex[2] => Decoder0.IN1
+hex[3] => Decoder0.IN0
+leds[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+leds[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

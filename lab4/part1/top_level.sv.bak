@@ -1,0 +1,18 @@
+module top_level ();
+
+	parameter N = 8;
+	parameter logN = 3;
+
+	// port definitions
+	input logic clk, reset, s, A_val;
+	output logic done;
+	output logic [logN-1:0] result;
+
+	// internal signals
+	logic load_A, shift_A, incr_result, clr_result;
+	
+	// instantiate controller and datapath
+	controller c_unit (.*);
+	datapath d_unit (.*);
+
+endmodule // top_level
