@@ -1,0 +1,76 @@
+`timescale 1 ps / 1 ps
+
+module p2_top_level (clk, reset, s, A, done, found, loc);
+	parameter DATA_WIDTH = 8;
+	parameter ADDR_WIDTH = 5;
+	
+	// port definitions
+	input logic clk, reset, s;
+	input logic [DATA_WIDTH-1:0] A;
+	output logic done, found;
+	output logic [ADDR_WIDTH-1:0] loc;
+	
+	// internal signals
+	logic reset_ptr, load_A, r_shift_m_ptr, set_l_ptr;
+	logic [ADDR_WIDTH-1:0] m_ptr;
+	logic [DATA_WIDTH-1:0] data_in, data_out;
+	
+	// instantiate controller and datapath
+	controller #(DATA_WIDTH, ADDR_WIDTH) c_unit (.*);
+	datapath #(DATA_WIDTH, ADDR_WIDTH) d_unit (.*);
+	
+endmodule // p2_top_level
+
+module p2_top_level_tb ();
+	parameter DATA_WIDTH = 8;
+	parameter ADDR_WIDTH = 5;
+	
+	// inputs
+	logic clk, reset, s;
+	logic [DATA_WIDTH-1:0] A;
+	
+	// outputs
+	logic done, found;
+	logic [ADDR_WIDTH-1:0] loc;
+	
+	top_level dut (.*);
+	
+	parameter CLOCK_PERIOD = 100;
+	initial begin
+		clk <= 0;
+		forever #(CLOCK_PERIOD/2) clk <= ~clk;
+	end
+	
+	initial begin
+		// intialize values + final value in rom test
+		s <= 0; A <= 8'b11111111;
+		reset <= 1; @(posedge clk);
+		reset <= 0; @(posedge clk);
+		
+		repeat (2) @(posedge clk);
+		
+		s <= 1; repeat (12) @(posedge clk);
+		
+		// midpoint of rom test
+		A <= 8'b01100001;
+		s <= 0; repeat (3) @(posedge clk);
+		s <= 1; repeat (12) @(posedge clk);
+		
+		// address 0
+		A <= 8'b00000000;
+		s <= 0; repeat (3) @(posedge clk);
+		s <= 1; repeat (12) @(posedge clk);
+		
+		// not in rom test
+		A <= 8'b10010100;
+		s <= 0; repeat (3) @(posedge clk);
+		s <= 1; repeat (12) @(posedge clk);
+		
+		// address 13
+		A <= 8'b01001111;
+		s <= 0; repeat (3) @(posedge clk);
+		s <= 1; repeat (12) @(posedge clk);
+		
+		$stop;
+	end
+endmodule // p2_top_level_tb

@@ -1,0 +1,32 @@
+module datapath #(parameter DATA_WIDTH=8, ADDR_WIDTH=5)
+					  (clk, A, reset_ptr, load_A, r_shift_loc, set_r_ptr, data_in, data_out, loc);
+
+	// port definitions
+	input logic clk; // external inputs
+	input logic [DATA_WIDTH-1:0] A;
+	input logic reset_ptr, load_A, r_shift_loc, set_r_ptr; // control signals
+	output logic [DATA_WIDTH-1:0] data_in, data_out; // status signal
+	output logic [ADDR_WIDTH:0] loc; // external output
+	
+	logic [ADDR_WIDTH-1:0] r_ptr;
+	logic [DATA_WIDTH-1:0] rom [(2 ** ADDR_WIDTH)-1:0];
+	
+	// Load values from a mif file into the array
+	initial begin
+		$readmemb("rom32x5.mif", rom);
+	end
+	
+	// datapath logic
+	always_ff @(posedge clk) begin
+		if (reset_ptr) begin 
+			loc <= 6'b100000; 
+			r_ptr <= 5'b00000; 
+		end
+		if (load_A) data_in <= A;
+		if (r_shift_loc) begin
+			loc <= (loc >> 1) + r_ptr;
+			data_out <= rom[loc - 1];
+		end
+		if (set_r_ptr) r_ptr <= loc;
+	end
+endmodule

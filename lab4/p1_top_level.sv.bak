@@ -1,4 +1,4 @@
-module top_level (clk, reset, s, A_val, done, result);
+module p1_top_level (clk, reset, s, A_val, done, result);
 
 	parameter N = 8;
 	parameter logN = 3;
@@ -14,12 +14,12 @@ module top_level (clk, reset, s, A_val, done, result);
 	logic [N-1:0] A;
 	
 	// instantiate controller and datapath
-	controller #(N) c_unit (.*);
-	datapath #(N, logN) d_unit (.*);
+	p1_controller #(N) c_unit (.*);
+	p1_datapath #(N, logN) d_unit (.*);
 
-endmodule // top_level
+endmodule // p1_top_level
 
-module top_level_tb ();
+module p1_top_level_tb ();
 	parameter N = 8;
 	parameter logN = 3;
 	
@@ -54,4 +54,4 @@ module top_level_tb ();
 		$stop;
 	end
 	
-endmodule
+endmodule // p1_top_level_tb

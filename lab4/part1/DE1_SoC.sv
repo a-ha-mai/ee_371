@@ -6,11 +6,10 @@ module DE1_SoC (CLOCK_50, KEY, SW, HEX0, LEDR);
 	output logic [9:0] LEDR;
 	
 	logic reset, s;
-	logic [2:0] result;
+	logic [3:0] result;
 	
-	dff_pair dff_1 (.clk(CLOCK_50), .d(KEY[0]), .q(reset));
-	dff_pair dff_2 (.clk(CLOCK_50), .d(KEY[3]), .q(s));
-	top_level tl_unit (.clk(CLOCK_50), .reset(KEY[0]), .s(KEY[3]), .A_val(SW[7:0]), .done(LEDR[9]), .result(result));
+	dff_pair dff_1 (.clk(CLOCK_50), .d(~KEY[3]), .q(reset));
+	dff_pair dff_2 (.clk(CLOCK_50), .d(~KEY[0]), .q(s));
+	top_level tl_unit (.clk(CLOCK_50), .reset(reset), .s(s), .A_val(SW[7:0]), .done(LEDR[9]), .result(result));
 	seg7 (.hex(result), .leds(HEX0));
-	
 endmodule // DE1_SoC

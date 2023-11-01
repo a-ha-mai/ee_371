@@ -1,0 +1,12 @@
+module rom32x8 (loc, data_out);
+	input logic [4:0] loc;
+	output logic [7:0] data_out;
+	
+	logic [7:0] rom [4:0];
+	
+	initial begin
+		$readmemh("rom32.8.txt", rom);
+	end
+	
+	assign data_out = rom[loc];
+endmodule

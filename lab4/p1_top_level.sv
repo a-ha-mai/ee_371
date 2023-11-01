@@ -1,4 +1,4 @@
-module top_level (clk, reset, s, A_val, done, result);
+module p1_top_level (clk, reset, s, A_val, done, result);
 
 	parameter N = 8;
 	parameter logN = 3;
@@ -7,19 +7,19 @@ module top_level (clk, reset, s, A_val, done, result);
 	input logic clk, reset, s;
 	input logic [N-1:0] A_val;
 	output logic done;
-	output logic [logN-1:0] result;
+	output logic [logN:0] result;
 
 	// internal signals
 	logic load_A, shift_A, incr_result, clr_result;
 	logic [N-1:0] A;
 	
 	// instantiate controller and datapath
-	controller #(N) c_unit (.*);
-	datapath #(N, logN) d_unit (.*);
+	p1_controller #(N) c_unit (.*);
+	p1_datapath #(N, logN) d_unit (.*);
 
-endmodule // top_level
+endmodule // p1_top_level
 
-module top_level_tb ();
+module p1_top_level_tb ();
 	parameter N = 8;
 	parameter logN = 3;
 	
@@ -31,7 +31,7 @@ module top_level_tb ();
 	logic done;
 	logic [logN-1:0] result;
 	
-	top_level dut (.*);
+	p1_top_level dut (.*);
 	
 	parameter CLOCK_PERIOD = 100;
 	initial begin
@@ -54,4 +54,4 @@ module top_level_tb ();
 		$stop;
 	end
 	
-endmodule
+endmodule // p1_top_level_tb
